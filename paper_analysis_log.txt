@@ -1,0 +1,2261 @@
+-----------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  C:\Users\jsoriano\Dropbox\2025 Student Adv Metrics Research\Marriage and Divorce\Output/paper_analysis_log.txt
+  log type:  text
+ opened on:  25 Jun 2025, 16:55:49
+r; t=0.01 16:55:49
+
+. 
+. * Install required packages if needed
+. capture ssc install coefplot
+r; t=1.28 16:55:51
+
+. capture ssc install reghdfe
+r; t=5.46 16:55:56
+
+. capture ssc install estout
+r; t=3.69 16:56:00
+
+. 
+. /*==============================================================================
+> PART I: DATA PREPARATION
+> ==============================================================================*/
+. 
+. display ""
+
+r; t=0.00 16:56:00
+
+. display "=============================================================="
+==============================================================
+r; t=0.00 16:56:00
+
+. display "=== PART I: DATA PREPARATION ==="
+=== PART I: DATA PREPARATION ===
+r; t=0.00 16:56:00
+
+. display "=============================================================="
+==============================================================
+r; t=0.00 16:56:00
+
+. 
+. /*------------------------------------------------------------------------------
+> 1. LOAD AND PREPARE CASINO DATA (EXACT MATCH TO ORIGINAL)
+> ------------------------------------------------------------------------------*/
+. 
+. use "$data\casino_data.dta", clear
+r; t=0.01 16:56:00
+
+. 
+. * Focus only on casino counties (not neighboring counties) initially
+. keep if casino_co == 1
+(184 observations deleted)
+r; t=0.00 16:56:00
+
+. 
+. * Create unique county identifier (state + county FIPS)
+. gen county_id = gestfips * 1000 + gtco
+r; t=0.00 16:56:00
+
+. 
+. * For counties with multiple casino openings, keep the earliest treatment year
+. bysort county_id: egen min_treat_year = min(treat_year)
+r; t=0.01 16:56:00
+
+. replace treat_year = min_treat_year
+(31 real changes made)
+r; t=0.00 16:56:00
+
+. drop min_treat_year
+r; t=0.00 16:56:00
+
+. 
+. * Keep one observation per county-year and relevant variables
+. keep county_id tuyear gestfips gtco treat_year casino_no
+r; t=0.00 16:56:00
+
+. rename tuyear year
+r; t=0.05 16:56:00
+
+. duplicates drop county_id year, force
+
+Duplicates in terms of county_id year
+
+(5 observations deleted)
+r; t=0.01 16:56:00
+
+. 
+. * Generate treatment variables
+. gen treated = 1  // All observations are casino counties
+r; t=0.00 16:56:00
+
+. gen post_treatment = (year >= treat_year) if !missing(treat_year)
+r; t=0.00 16:56:00
+
+. gen treat_post = treated * post_treatment
+r; t=0.00 16:56:00
+
+. gen rel_time = year - treat_year if !missing(treat_year)
+r; t=0.00 16:56:00
+
+. 
+. * Create complete balanced panel 2000-2023 for casino counties
+. preserve
+r; t=0.00 16:56:00
+
+. keep county_id treat_year gestfips gtco casino_no
+r; t=0.00 16:56:00
+
+. bysort county_id: egen max_casino_no = max(casino_no)
+r; t=0.00 16:56:00
+
+. replace casino_no = max_casino_no
+(25 real changes made)
+r; t=0.00 16:56:00
+
+. drop max_casino_no
+r; t=0.00 16:56:00
+
+. duplicates drop county_id, force
+
+Duplicates in terms of county_id
+
+(27 observations deleted)
+r; t=0.00 16:56:00
+
+. tempfile county_info
+r; t=0.00 16:56:00
+
+. save `county_info'
+file C:\Users\jsoriano\AppData\Local\Temp\ST_3718_000003.tmp saved as .dta format
+r; t=0.00 16:56:00
+
+. restore
+r; t=0.00 16:56:00
+
+. 
+. * Expand to full panel
+. keep county_id year
+r; t=0.00 16:56:00
+
+. expand 24
+(2,208 observations created)
+r; t=0.00 16:56:00
+
+. bysort county_id: replace year = 1999 + _n
+(2,232 real changes made)
+r; t=0.00 16:56:00
+
+. keep if year >= 2000 & year <= 2023
+(648 observations deleted)
+r; t=0.00 16:56:00
+
+. 
+. * Remove duplicates and merge back county info
+. duplicates drop county_id year, force
+
+Duplicates in terms of county_id year
+
+(0 observations are duplicates)
+r; t=0.00 16:56:00
+
+. merge m:1 county_id using `county_info', keep(match) nogen
+
+    Result                      Number of obs
+    -----------------------------------------
+    Not matched                             0
+    Matched                             1,656  
+    -----------------------------------------
+r; t=0.04 16:56:00
+
+. 
+. * Recreate treatment variables for full panel
+. gen treated = 1
+r; t=0.00 16:56:00
+
+. gen post_treatment = (year >= treat_year) if !missing(treat_year)
+r; t=0.00 16:56:00
+
+. gen treat_post = treated * post_treatment
+r; t=0.00 16:56:00
+
+. gen rel_time = year - treat_year if !missing(treat_year)
+r; t=0.00 16:56:00
+
+. 
+. tempfile casino_clean_basic
+r; t=0.00 16:56:00
+
+. save `casino_clean_basic'
+file C:\Users\jsoriano\AppData\Local\Temp\ST_3718_000004.tmp saved as .dta format
+r; t=0.00 16:56:00
+
+. 
+. * Now load full casino data including nearby counties
+. clear
+r; t=0.00 16:56:00
+
+. use "$data\casino_data.dta", clear
+r; t=0.00 16:56:00
+
+. gen county_id = gestfips * 1000 + gtco
+r; t=0.00 16:56:00
+
+. gen casino_county = (casino_co == 1)
+r; t=0.00 16:56:00
+
+. gen nearby_county = (near_co == 1)
+r; t=0.00 16:56:00
+
+. 
+. * Clean treatment year
+. bysort county_id: egen min_treat_year = min(treat_year) if casino_county == 1
+(184 missing values generated)
+r; t=0.00 16:56:00
+
+. bysort county_id: egen treat_year_clean = max(min_treat_year)
+(153 missing values generated)
+r; t=0.00 16:56:00
+
+. replace treat_year = treat_year_clean if casino_county == 1
+(31 real changes made)
+r; t=0.00 16:56:00
+
+. drop min_treat_year treat_year_clean
+r; t=0.00 16:56:00
+
+. 
+. * Keep necessary variables
+. keep county_id tuyear gestfips gtco treat_year casino_no casino_county nearby_county 
+r; t=0.00 16:56:00
+
+. rename tuyear year
+r; t=0.00 16:56:00
+
+. duplicates drop county_id year, force
+
+Duplicates in terms of county_id year
+
+(26 observations deleted)
+r; t=0.00 16:56:00
+
+. 
+. * Generate treatment variables
+. gen treated = casino_county
+r; t=0.00 16:56:00
+
+. gen post_treatment = (year >= treat_year) if casino_county == 1 & !missing(treat_year)
+(166 missing values generated)
+r; t=0.00 16:56:00
+
+. replace post_treatment = 0 if casino_county == 0
+(166 real changes made)
+r; t=0.00 16:56:00
+
+. gen treat_post = treated * post_treatment
+r; t=0.00 16:56:00
+
+. gen rel_time = year - treat_year if casino_county == 1 & !missing(treat_year)
+(166 missing values generated)
+r; t=0.00 16:56:00
+
+. 
+. * Create county-level info file
+. preserve
+r; t=0.00 16:56:00
+
+.     keep county_id treat_year gestfips gtco casino_no casino_county nearby_county
+r; t=0.00 16:56:00
+
+.     bysort county_id: egen max_casino_no = max(casino_no)
+r; t=0.00 16:56:00
+
+.     replace casino_no = max_casino_no
+(60 real changes made)
+r; t=0.00 16:56:00
+
+.     drop max_casino_no
+r; t=0.00 16:56:00
+
+.     bysort county_id: egen max_casino_county = max(casino_county)
+r; t=0.00 16:56:00
+
+.     bysort county_id: egen max_nearby_county = max(nearby_county)
+r; t=0.00 16:56:00
+
+.     replace casino_county = max_casino_county
+(21 real changes made)
+r; t=0.00 16:56:00
+
+.     replace nearby_county = max_nearby_county
+(20 real changes made)
+r; t=0.00 16:56:00
+
+.     drop max_casino_county max_nearby_county
+r; t=0.00 16:56:00
+
+.     duplicates drop county_id, force
+
+Duplicates in terms of county_id
+
+(84 observations deleted)
+r; t=0.00 16:56:00
+
+.     tempfile county_info_full
+r; t=0.00 16:56:00
+
+.     save `county_info_full'
+file C:\Users\jsoriano\AppData\Local\Temp\ST_3718_000006.tmp saved as .dta format
+r; t=0.00 16:56:00
+
+. restore
+r; t=0.00 16:56:00
+
+. 
+. * Create balanced panel
+. keep county_id year
+r; t=0.00 16:56:00
+
+. expand 24
+(5,957 observations created)
+r; t=0.00 16:56:00
+
+. bysort county_id: replace year = 1999 + _n
+(6,035 real changes made)
+r; t=0.00 16:56:00
+
+. keep if year >= 2000 & year <= 2023
+(2,016 observations deleted)
+r; t=0.00 16:56:00
+
+. duplicates drop county_id year, force
+
+Duplicates in terms of county_id year
+
+(0 observations are duplicates)
+r; t=0.00 16:56:00
+
+. 
+. * Merge county info back
+. merge m:1 county_id using `county_info_full', keep(match) nogen
+
+    Result                      Number of obs
+    -----------------------------------------
+    Not matched                             0
+    Matched                             4,200  
+    -----------------------------------------
+r; t=0.01 16:56:00
+
+. 
+. * Generate treatment variables for balanced panel
+. gen treated_full = casino_county
+r; t=0.00 16:56:00
+
+. gen post_treatment_full = (year >= treat_year) if casino_county == 1 & !missing(treat_year)
+(2,592 missing values generated)
+r; t=0.00 16:56:00
+
+. replace post_treatment_full = 0 if casino_county == 0
+(2,592 real changes made)
+r; t=0.00 16:56:00
+
+. gen treat_post_full = treated_full * post_treatment_full
+r; t=0.00 16:56:00
+
+. gen rel_time_full = year - treat_year if casino_county == 1 & !missing(treat_year)
+(2,592 missing values generated)
+r; t=0.00 16:56:00
+
+. 
+. tempfile casino_clean
+r; t=0.00 16:56:00
+
+. save `casino_clean'
+file C:\Users\jsoriano\AppData\Local\Temp\ST_3718_000007.tmp saved as .dta format
+r; t=0.00 16:56:00
+
+. 
+. /*------------------------------------------------------------------------------
+> 2. PREPARE MAIN ANALYSIS DATASET (ACS + CASINO DATA) - EXACT MATCH
+> ------------------------------------------------------------------------------*/
+. 
+. use "$data\ACSData.dta", clear
+r; t=6.73 16:56:07
+
+. 
+. * Keep only years 2000-2023
+. keep if year >= 2000 & year <= 2023
+(0 observations deleted)
+r; t=4.17 16:56:11
+
+. 
+. * Create county identifier to match casino data (statefip = gestfips, countyfip = gtco)
+. gen county_id = statefip * 1000 + countyfip
+(5,027,734 missing values generated)
+r; t=3.35 16:56:14
+
+. 
+. * Keep only adults aged 18+ (marriage-eligible population)
+. keep if age >= 18
+(17,444,777 observations deleted)
+r; t=4.50 16:56:19
+
+. 
+. * RESTRICT SAMPLE TO PEOPLE 40 AND UNDER
+. keep if age <= 40
+(38,409,376 observations deleted)
+r; t=3.53 16:56:22
+
+. 
+. * Create outcome variables
+. gen married = (marst == 1)  // Married, spouse present
+r; t=2.23 16:56:25
+
+. gen divorced = (marst == 4)  // Divorced
+r; t=1.03 16:56:26
+
+. gen widowed = (marst == 5)   // Widowed
+r; t=1.18 16:56:27
+
+. gen never_married = (marst == 6)  // Never married
+r; t=1.26 16:56:28
+
+. 
+. * Create marriage transition variables (first marriage proxy)
+. gen newly_married = (married == 1 & age >= 18 & age <= 35)  // Proxy for recent marriage
+r; t=2.04 16:56:30
+
+. 
+. * Number of children in household (already exists as nchild)
+. * Create binary indicators for having children
+. gen has_children = (nchild > 0) if !missing(nchild)
+r; t=2.30 16:56:32
+
+. gen num_children = nchild
+r; t=1.08 16:56:34
+
+. 
+. * Create demographic controls
+. gen female = (sex == 2)
+r; t=1.30 16:56:35
+
+. gen age_sq = age^2
+r; t=1.14 16:56:36
+
+. 
+. * Education categories (if available in your ACS extract)
+. * Note: Check if education variable exists in your data
+. capture confirm variable educ
+r; t=0.00 16:56:36
+
+. if _rc == 0 {
+.     gen high_school = (educ >= 6)  // Adjust based on your education coding
+r; t=0.00 16:56:36
+.     gen college = (educ >= 10)     // Adjust based on your education coding
+r; t=0.00 16:56:36
+. }
+r; t=0.00 16:56:36
+
+. 
+. * Race/ethnicity controls
+. gen white = (race == 1)
+r; t=1.38 16:56:37
+
+. gen black = (race == 2)
+r; t=1.09 16:56:38
+
+. gen hispanic = (hispan >= 1 & hispan <= 4)
+r; t=1.65 16:56:40
+
+. 
+. * Create age groups for heterogeneity analysis (18-29 and 30-40)
+. gen age_group = 1 if age >= 18 & age <= 29
+(10,946,151 missing values generated)
+r; t=1.79 16:56:42
+
+. replace age_group = 2 if age >= 30 & age <= 40
+(10,946,151 real changes made)
+r; t=2.19 16:56:44
+
+. label define age_group_lab 1 "18-29" 2 "30-40"
+r; t=0.00 16:56:44
+
+. label values age_group age_group_lab
+r; t=0.00 16:56:44
+
+. 
+. * Create residence duration variables
+. gen acs_sample = 1
+r; t=0.87 16:56:45
+
+. replace acs_sample = 0 if inlist(sample, 200001, 200002, 200003, 200005, 200006, 200007, 200008)
+(4,528,825 real changes made)
+r; t=1.54 16:56:47
+
+. 
+. sort sample serial
+r; t=1.05 16:56:48
+
+. by sample serial: egen movedin_hh = max(movedin)
+r; t=34.52 16:57:22
+
+. gen longterm_resident = (movedin_hh >= 4) if !missing(movedin_hh)
+r; t=1.69 16:57:24
+
+. 
+. * Keep relevant variables
+. keep county_id year married divorced widowed never_married newly_married ///
+>      has_children num_children female age age_sq white black hispanic ///
+>      perwt statefip countyfip age_group longterm_resident acs_sample
+r; t=0.60 16:57:24
+
+. 
+. /*==============================================================================
+> 3. MERGE DATASETS AND CREATE CONTROL GROUP - EXACT MATCH
+> ==============================================================================*/
+. 
+. * Merge with casino data
+. merge m:1 county_id year using `casino_clean'
+
+    Result                      Number of obs
+    -----------------------------------------
+    Not matched                    16,506,518
+        from master                16,504,854  (_merge==1)
+        from using                      1,664  (_merge==2)
+
+    Matched                         5,796,969  (_merge==3)
+    -----------------------------------------
+r; t=17.81 16:57:42
+
+. 
+. * Create control group from counties that never get casinos
+. * Keep casino counties (treated) and counties that never appear in casino data (controls)
+. gen in_casino_data = (_merge == 3)
+r; t=0.77 16:57:43
+
+. gen ever_treated = in_casino_data
+r; t=0.99 16:57:44
+
+. 
+. * For control counties, set treatment variables to zero
+. replace treated_full = 0 if _merge == 1
+(16,504,854 real changes made)
+r; t=2.34 16:57:46
+
+. replace post_treatment_full = 0 if _merge == 1  
+(16,504,854 real changes made)
+r; t=1.93 16:57:48
+
+. replace treat_post_full = 0 if _merge == 1
+(16,504,854 real changes made)
+r; t=2.100 16:57:51
+
+. replace treat_year = . if _merge == 1
+(0 real changes made)
+r; t=1.04 16:57:52
+
+. replace rel_time_full = . if _merge == 1
+(0 real changes made)
+r; t=1.57 16:57:54
+
+. replace casino_no = 0 if _merge == 1  // Control counties have 0 prior casinos
+(16,504,854 real changes made)
+r; t=1.37 16:57:55
+
+. replace casino_county = 0 if _merge == 1
+(16,504,854 real changes made)
+r; t=1.40 16:57:57
+
+. replace nearby_county = 0 if _merge == 1
+(16,504,854 real changes made)
+r; t=1.30 16:57:58
+
+. 
+. * Create sample type indicator
+. gen sample_type = 1 if casino_county == 1
+(18,996,575 missing values generated)
+r; t=1.02 16:57:59
+
+. replace sample_type = 2 if nearby_county == 1 & casino_county == 0
+(2,491,721 real changes made)
+r; t=1.31 16:58:00
+
+. replace sample_type = 3 if _merge == 1
+(16,504,854 real changes made)
+r; t=1.07 16:58:01
+
+. 
+. * Keep both treated and control counties
+. keep if _merge == 1 | _merge == 3
+(1,664 observations deleted)
+r; t=1.19 16:58:03
+
+. drop _merge
+r; t=0.34 16:58:03
+
+. 
+. * Fill in treatment status consistently within counties
+. bysort county_id: egen max_ever_treated = max(ever_treated)
+r; t=6.60 16:58:09
+
+. replace ever_treated = max_ever_treated
+(0 real changes made)
+r; t=0.97 16:58:10
+
+. drop max_ever_treated
+r; t=0.00 16:58:10
+
+. 
+. * Create donut sample indicator
+. gen donut_sample = (sample_type == 1 | sample_type == 3)
+r; t=1.22 16:58:12
+
+. 
+. * Generate final treatment variables
+. gen treated = casino_county
+r; t=0.74 16:58:12
+
+. gen post_treatment = post_treatment_full
+r; t=1.00 16:58:13
+
+. gen treat_post = treated * post_treatment
+r; t=1.13 16:58:15
+
+. gen rel_time = rel_time_full
+(18,995,641 missing values generated)
+r; t=0.84 16:58:15
+
+. 
+. * Create 8-year event study variables (EXACT MATCH TO ORIGINAL)
+. forvalues i = 3(-1)2 {
+  2.     gen lag`i'_ext = 0  // Start with 0 for everyone (including controls)
+  3.     replace lag`i'_ext = 1 if rel_time == -`i' & !missing(rel_time)  // Only treated counties get 1
+  4. }
+(101,967 real changes made)
+(68,336 real changes made)
+r; t=3.62 16:58:19
+
+. 
+. forvalues i = 0/7 {
+  2.     gen lead`i'_ext = 0  // Start with 0 for everyone (including controls)
+  3.     replace lead`i'_ext = 1 if rel_time == `i' & !missing(rel_time)  // Only treated counties get 1
+  4. }
+(71,506 real changes made)
+(120,971 real changes made)
+(133,077 real changes made)
+(130,763 real changes made)
+(130,070 real changes made)
+(132,709 real changes made)
+(135,900 real changes made)
+(143,020 real changes made)
+r; t=15.82 16:58:35
+
+. 
+. gen lead8plus_ext = 0
+r; t=0.71 16:58:36
+
+. replace lead8plus_ext = 1 if rel_time >= 8 & !missing(rel_time)
+(1,216,881 real changes made)
+r; t=1.12 16:58:37
+
+. 
+. * Create spillover variables
+. gen casino_post = casino_county * post_treatment
+r; t=1.02 16:58:38
+
+. gen nearby_post = nearby_county * post_treatment
+r; t=2.91 16:58:41
+
+. 
+. 
+end of do-file
+
+r; t=172.21 16:58:41
+. do "C:\Users\jsoriano\AppData\Local\Temp\STD3718_00004x.tmp"
+
+. 
+. /*==============================================================================
+> FIGURE 3: MECHANISM TEST EVENT STUDIES
+> ==============================================================================*/
+. 
+. display ""
+
+r; t=0.00 16:58:41
+
+. display "=== FIGURE 3: MECHANISM EVENT STUDIES ==="
+=== FIGURE 3: MECHANISM EVENT STUDIES ===
+r; t=0.00 16:58:41
+
+. 
+. * Create mechanism comparison figure for women
+. coefplot (w_longterm, ///
+>             ciopts(lcolor(navy) lwidth(medium)) ///
+>             mcolor(navy) msymbol(O) msize(medium) ///
+>             label("Long-term Residents (5+ years)")) ///
+>          (w_recent, ///
+>             ciopts(lcolor(maroon) lwidth(medium)) ///
+>             mcolor(maroon) msymbol(D) msize(medium) ///
+>             label("Recent Movers (<5 years)")), ///
+>     keep(lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext) /
+> //
+>     vertical ///
+>     coeflabels(lag3_ext = "-3" lag2_ext = "-2" lead0_ext = "0" lead1_ext = "1" lead2_ext = "2" ///
+>               lead3_ext = "3" lead4_ext = "4" lead5_ext = "5" lead6_ext = "6" ///
+>               lead7_ext = "7" lead8plus_ext = "8+", labsize(medium)) ///
+>     yline(0, lcolor(gray) lpattern(dash) lwidth(medium)) ///
+>     xline(2.5, lcolor(gray) lpattern(dash) lwidth(medium)) ///
+>     title("Women", size(large) margin(medium) color(black)) ///
+>     xtitle("Years Relative to Casino Opening", size(medium) margin(medium)) ///
+>     ytitle("Effect on Number of Children", size(medium) margin(medium)) ///
+>     ylabel(-0.2(0.05)0.05, labsize(medium) format(%9.2f) grid glcolor(gs15) glwidth(thin)) ///
+>     xlabel(-3(1)8, labsize(medium)) ///
+>     legend(position(6) rows(1) size(medium) ///
+>           region(lcolor(none) fcolor(none)) ///
+>           symxsize(5) keygap(2) rowgap(1)) ///
+>     name(women_mech_clean, replace) ///
+>     graphregion(color(white) margin(medium)) ///
+>     plotregion(color(white) margin(medium)) ///
+>     scheme(s1color)
+estimation result w_longterm not found
+r(111); t=0.22 16:58:41
+
+end of do-file
+
+r(111); t=0.26 16:58:41
+
+. do "C:\Users\jsoriano\AppData\Local\Temp\STD3718_000050.tmp"
+
+. /*==============================================================================
+> TABLE 4: EFFECTS BY RESIDENCE DURATION
+> ==============================================================================*/
+. 
+. display ""
+
+r; t=0.00 16:58:41
+
+. display "=== TABLE 4: EFFECTS BY RESIDENCE DURATION ==="
+=== TABLE 4: EFFECTS BY RESIDENCE DURATION ===
+r; t=0.00 16:58:41
+
+. 
+. eststo clear
+r; t=0.01 16:58:41
+
+. 
+. * Women - Long-term residents (5+ years)
+. reghdfe num_children ///
+>     lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext ///
+>     age age_sq if female == 1 & donut_sample == 1 & acs_sample == 1 & longterm_resident == 1 [aw=perwt], ///
+>     absorb(county_id year) vce(cluster county_id)
+(MWFE estimator converged in 5 iterations)
+
+HDFE Linear regression                            Number of obs   =  1,307,686
+Absorbing 2 HDFE groups                           F(  13,    468) =     881.88
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.1351
+                                                  Adj R-squared   =     0.1348
+                                                  Within R-sq.    =     0.1106
+Number of clusters (county_id) =        469       Root MSE        =     1.2303
+
+                             (Std. err. adjusted for 469 clusters in county_id)
+-------------------------------------------------------------------------------
+              |               Robust
+ num_children | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+--------------+----------------------------------------------------------------
+     lag3_ext |  -.0036302   .0197668    -0.18   0.854    -.0424728    .0352125
+     lag2_ext |  -.0014276   .0132841    -0.11   0.914    -.0275314    .0246762
+    lead0_ext |  -.0545777   .0292372    -1.87   0.063    -.1120302    .0028749
+    lead1_ext |  -.0343545   .0416409    -0.83   0.410    -.1161808    .0474718
+    lead2_ext |   -.029339   .0426177    -0.69   0.492    -.1130847    .0544067
+    lead3_ext |  -.0082452   .0323978    -0.25   0.799    -.0719083    .0554179
+    lead4_ext |  -.0387227    .031171    -1.24   0.215    -.0999752    .0225298
+    lead5_ext |  -.0577743   .0430863    -1.34   0.181    -.1424409    .0268924
+    lead6_ext |   -.054131   .0292509    -1.85   0.065    -.1116104    .0033484
+    lead7_ext |  -.0628459   .0305253    -2.06   0.040    -.1228296   -.0028623
+lead8plus_ext |   -.109275   .0365575    -2.99   0.003    -.1811122   -.0374378
+          age |   .3599237   .0108741    33.10   0.000     .3385556    .3812918
+       age_sq |  -.0046701   .0001832   -25.50   0.000      -.00503   -.0043102
+        _cons |  -5.111185   .1555874   -32.85   0.000    -5.416921   -4.805449
+-------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+   county_id |       469         469           0    *|
+        year |        19           1          18     |
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+r; t=36.03 16:59:17
+
+. eststo w_longterm
+r; t=0.46 16:59:18
+
+. 
+. * Women - Recent movers (<5 years)
+. reghdfe num_children ///
+>     lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext ///
+>     age age_sq if female == 1 & donut_sample == 1 & acs_sample == 1 & longterm_resident == 0 [aw=perwt], ///
+>     absorb(county_id year) vce(cluster county_id)
+(MWFE estimator converged in 5 iterations)
+
+HDFE Linear regression                            Number of obs   =  5,823,068
+Absorbing 2 HDFE groups                           F(  13,    468) =    1272.95
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.2313
+                                                  Adj R-squared   =     0.2312
+                                                  Within R-sq.    =     0.2136
+Number of clusters (county_id) =        469       Root MSE        =     1.0325
+
+                             (Std. err. adjusted for 469 clusters in county_id)
+-------------------------------------------------------------------------------
+              |               Robust
+ num_children | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+--------------+----------------------------------------------------------------
+     lag3_ext |   .0068881    .012985     0.53   0.596    -.0186279    .0324042
+     lag2_ext |   .0074596   .0141856     0.53   0.599    -.0204157    .0353349
+    lead0_ext |  -.0164243   .0117286    -1.40   0.162    -.0394715     .006623
+    lead1_ext |  -.0041758   .0205839    -0.20   0.839    -.0446242    .0362725
+    lead2_ext |  -.0047725   .0165233    -0.29   0.773    -.0372416    .0276966
+    lead3_ext |  -.0133036   .0159424    -0.83   0.404    -.0446313     .018024
+    lead4_ext |  -.0163339     .01726    -0.95   0.344    -.0502506    .0175829
+    lead5_ext |  -.0227843   .0171132    -1.33   0.184    -.0564125     .010844
+    lead6_ext |  -.0237467   .0162235    -1.46   0.144    -.0556267    .0081333
+    lead7_ext |  -.0276914   .0188183    -1.47   0.142    -.0646704    .0092875
+lead8plus_ext |  -.0650465   .0181561    -3.58   0.000    -.1007241   -.0293689
+          age |   .1409572   .0107377    13.13   0.000     .1198571    .1620572
+       age_sq |  -.0010186   .0001797    -5.67   0.000    -.0013718   -.0006655
+        _cons |  -2.299216     .15292   -15.04   0.000    -2.599711   -1.998722
+-------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+   county_id |       469         469           0    *|
+        year |        19           1          18     |
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+r; t=103.76 17:01:01
+
+. eststo w_recent
+r; t=0.55 17:01:02
+
+. 
+. * Men - Long-term residents (5+ years)
+. reghdfe num_children ///
+>     lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext ///
+>     age age_sq if female == 0 & donut_sample == 1 & acs_sample == 1 & longterm_resident == 1 [aw=perwt], ///
+>     absorb(county_id year) vce(cluster county_id)
+(MWFE estimator converged in 5 iterations)
+
+HDFE Linear regression                            Number of obs   =  1,206,324
+Absorbing 2 HDFE groups                           F(  13,    468) =     747.95
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.1523
+                                                  Adj R-squared   =     0.1519
+                                                  Within R-sq.    =     0.1250
+Number of clusters (county_id) =        469       Root MSE        =     1.2264
+
+                             (Std. err. adjusted for 469 clusters in county_id)
+-------------------------------------------------------------------------------
+              |               Robust
+ num_children | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+--------------+----------------------------------------------------------------
+     lag3_ext |  -.0257019   .0181084    -1.42   0.156    -.0612858    .0098819
+     lag2_ext |  -.0276017   .0182212    -1.51   0.130    -.0634071    .0082037
+    lead0_ext |  -.0734569   .0217289    -3.38   0.001    -.1161551   -.0307587
+    lead1_ext |  -.0205317   .0396202    -0.52   0.605    -.0983872    .0573239
+    lead2_ext |  -.0273024   .0342637    -0.80   0.426    -.0946322    .0400274
+    lead3_ext |  -.0478587   .0319416    -1.50   0.135    -.1106254    .0149081
+    lead4_ext |  -.0617109   .0321456    -1.92   0.055    -.1248786    .0014567
+    lead5_ext |  -.0704826   .0372315    -1.89   0.059    -.1436442     .002679
+    lead6_ext |  -.0702047    .026974    -2.60   0.010    -.1232099   -.0171995
+    lead7_ext |  -.0944549   .0288904    -3.27   0.001    -.1512258    -.037684
+lead8plus_ext |  -.1119538   .0339491    -3.30   0.001    -.1786652   -.0452423
+          age |   .1931135   .0111806    17.27   0.000      .171143    .2150839
+       age_sq |  -.0018358   .0001829   -10.04   0.000    -.0021952   -.0014763
+        _cons |  -3.073784   .1649777   -18.63   0.000    -3.397973   -2.749595
+-------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+   county_id |       469         469           0    *|
+        year |        19           1          18     |
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+r; t=25.72 17:01:28
+
+. eststo m_longterm
+r; t=0.48 17:01:28
+
+. 
+. * Men - Recent movers (<5 years)
+. reghdfe num_children ///
+>     lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext ///
+>     age age_sq if female == 0 & donut_sample == 1 & acs_sample == 1 & longterm_resident == 0 [aw=perwt], ///
+>     absorb(county_id year) vce(cluster county_id)
+(MWFE estimator converged in 5 iterations)
+
+HDFE Linear regression                            Number of obs   =  6,020,750
+Absorbing 2 HDFE groups                           F(  13,    468) =     531.20
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.1722
+                                                  Adj R-squared   =     0.1721
+                                                  Within R-sq.    =     0.1597
+Number of clusters (county_id) =        469       Root MSE        =     0.8857
+
+                             (Std. err. adjusted for 469 clusters in county_id)
+-------------------------------------------------------------------------------
+              |               Robust
+ num_children | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+--------------+----------------------------------------------------------------
+     lag3_ext |   .0012975   .0090693     0.14   0.886    -.0165241    .0191192
+     lag2_ext |  -.0090687   .0115434    -0.79   0.432     -.031752    .0136146
+    lead0_ext |   .0007574   .0085132     0.09   0.929    -.0159714    .0174861
+    lead1_ext |   .0145163   .0124215     1.17   0.243    -.0098926    .0389251
+    lead2_ext |  -.0003633    .008265    -0.04   0.965    -.0166045    .0158779
+    lead3_ext |   .0115612   .0097211     1.19   0.235    -.0075413    .0306637
+    lead4_ext |   .0044271   .0105347     0.42   0.675    -.0162742    .0251283
+    lead5_ext |  -.0054886   .0105974    -0.52   0.605     -.026313    .0153358
+    lead6_ext |   .0037018   .0108378     0.34   0.733     -.017595    .0249987
+    lead7_ext |   .0054792    .013342     0.41   0.681    -.0207384    .0316969
+lead8plus_ext |  -.0254966    .009994    -2.55   0.011    -.0451353    -.005858
+          age |   .0313855   .0060132     5.22   0.000     .0195692    .0432018
+       age_sq |   .0005002   .0000982     5.10   0.000     .0003073    .0006931
+        _cons |  -.8117719   .0887932    -9.14   0.000    -.9862545   -.6372893
+-------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+   county_id |       469         469           0    *|
+        year |        19           1          18     |
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+r; t=104.57 17:03:13
+
+. eststo m_recent
+r; t=0.48 17:03:13
+
+. 
+. * Export Table 4
+. esttab w_longterm w_recent m_longterm m_recent ///
+>     using "$output/table4_residence_duration.tex", replace ///
+>     keep(lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext) /
+> //
+>     coeflabels(lag3_ext "t-3" lag2_ext "t-2" lead0_ext "t" lead1_ext "t+1" lead2_ext "t+2" ///
+>               lead3_ext "t+3" lead4_ext "t+4" lead5_ext "t+5" lead6_ext "t+6" ///
+>               lead7_ext "t+7" lead8plus_ext "t+8+") ///
+>     mgroups("Women" "Men", pattern(1 0 1 0) ///
+>            prefix(\multicolumn{@span}{c}{) suffix(}) span erepeat(\cmidrule(lr){@span})) ///
+>     mtitles("Long-term (5+)" "Recent (<5)" "Long-term (5+)" "Recent (<5)") ///
+>     stats(N r2, fmt(%9.0fc %9.3f) labels("Observations" "R-squared")) ///
+>     se(%9.3f) b(%9.3f) star(* 0.10 ** 0.05 *** 0.01) ///
+>     title("Effects by Residence Duration: Number of Children") ///
+>     addnotes("Standard errors clustered at county level in parentheses." ///
+>             "Long-term = 5+ years in residence, Recent = <5 years in residence." ///
+>             "Donut sample excludes nearby counties. *** p<0.01, ** p<0.05, * p<0.1.")
+(output written to C:\Users\jsoriano\Dropbox\2025 Student Adv Metrics Research\Marriage and Divorce\Output/table4_residence_d
+> uration.tex)
+r; t=5.50 17:03:19
+
+. 
+. /*==============================================================================
+> FIGURE 3: MECHANISM TEST EVENT STUDIES
+> ==============================================================================*/
+. 
+. display ""
+
+r; t=0.00 17:03:19
+
+. display "=== FIGURE 3: MECHANISM EVENT STUDIES ==="
+=== FIGURE 3: MECHANISM EVENT STUDIES ===
+r; t=0.00 17:03:19
+
+. 
+. * Create mechanism comparison figure for women
+. coefplot (w_longterm, ///
+>             ciopts(lcolor(navy) lwidth(medium)) ///
+>             mcolor(navy) msymbol(O) msize(medium) ///
+>             label("Long-term Residents (5+ years)")) ///
+>          (w_recent, ///
+>             ciopts(lcolor(maroon) lwidth(medium)) ///
+>             mcolor(maroon) msymbol(D) msize(medium) ///
+>             label("Recent Movers (<5 years)")), ///
+>     keep(lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext) /
+> //
+>     vertical ///
+>     coeflabels(lag3_ext = "-3" lag2_ext = "-2" lead0_ext = "0" lead1_ext = "1" lead2_ext = "2" ///
+>               lead3_ext = "3" lead4_ext = "4" lead5_ext = "5" lead6_ext = "6" ///
+>               lead7_ext = "7" lead8plus_ext = "8+", labsize(medium)) ///
+>     yline(0, lcolor(gray) lpattern(dash) lwidth(medium)) ///
+>     xline(2.5, lcolor(gray) lpattern(dash) lwidth(medium)) ///
+>     title("Women", size(large) margin(medium) color(black)) ///
+>     xtitle("Years Relative to Casino Opening", size(medium) margin(medium)) ///
+>     ytitle("Effect on Number of Children", size(medium) margin(medium)) ///
+>     ylabel(-0.2(0.05)0.05, labsize(medium) format(%9.2f) grid glcolor(gs15) glwidth(thin)) ///
+>     xlabel(-3(1)8, labsize(medium)) ///
+>     legend(position(6) rows(1) size(medium) ///
+>           region(lcolor(none) fcolor(none)) ///
+>           symxsize(5) keygap(2) rowgap(1)) ///
+>     name(women_mech_clean, replace) ///
+>     graphregion(color(white) margin(medium)) ///
+>     plotregion(color(white) margin(medium)) ///
+>     scheme(s1color)
+r; t=22.12 17:03:41
+
+. 
+. * Create mechanism comparison figure for men
+. coefplot (m_longterm, ///
+>             ciopts(lcolor(navy) lwidth(medium)) ///
+>             mcolor(navy) msymbol(O) msize(medium) ///
+>             label("Long-term Residents (5+ years)")) ///
+>          (m_recent, ///
+>             ciopts(lcolor(maroon) lwidth(medium)) ///
+>             mcolor(maroon) msymbol(D) msize(medium) ///
+>             label("Recent Movers (<5 years)")), ///
+>     keep(lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext) /
+> //
+>     vertical ///
+>     coeflabels(lag3_ext = "-3" lag2_ext = "-2" lead0_ext = "0" lead1_ext = "1" lead2_ext = "2" ///
+>               lead3_ext = "3" lead4_ext = "4" lead5_ext = "5" lead6_ext = "6" ///
+>               lead7_ext = "7" lead8plus_ext = "8+", labsize(medium)) ///
+>     yline(0, lcolor(gray) lpattern(dash) lwidth(medium)) ///
+>     xline(2.5, lcolor(gray) lpattern(dash) lwidth(medium)) ///
+>     title("Men", size(large) margin(medium) color(black)) ///
+>     xtitle("Years Relative to Casino Opening", size(medium) margin(medium)) ///
+>     ytitle("Effect on Number of Children", size(medium) margin(medium)) ///
+>     ylabel(-0.2(0.05)0.05, labsize(medium) format(%9.2f) grid glcolor(gs15) glwidth(thin)) ///
+>     xlabel(-3(1)8, labsize(medium)) ///
+>     legend(position(6) rows(1) size(medium) ///
+>           region(lcolor(none) fcolor(none)) ///
+>           symxsize(5) keygap(2) rowgap(1)) ///
+>     name(men_mech_clean, replace) ///
+>     graphregion(color(white) margin(medium)) ///
+>     plotregion(color(white) margin(medium)) ///
+>     scheme(s1color)
+r; t=20.10 17:04:01
+
+. 
+. * Combine both panels with cleaner formatting
+. graph combine women_mech_clean men_mech_clean, ///
+>     title("Mechanism Test: Fertility Effects by Residence Duration", ///
+>           size(large) margin(medium) color(black)) ///
+>     subtitle("Behavioral Change vs Selection", ///
+>             size(medlarge) margin(small) color(black)) ///
+>     note("Long-term residents (5+ years in residence) vs recent movers (<5 years in residence)." ///
+>          "Stronger effects for long-term residents suggest behavioral change rather than selection." ///
+>          "Donut sample excludes nearby counties.", ///
+>          size(small) margin(small) position(7)) ///
+>     rows(1) cols(2) ///
+>     graphregion(color(white) margin(large)) ///
+>     plotregion(color(white)) ///
+>     scheme(s1color) ///
+>     ycommon xcommon
+r; t=4.91 17:04:06
+
+.     
+. graph export "$output/figure3_mechanism_test.png", replace width(1600) height(900)
+file C:\Users\jsoriano\Dropbox\2025 Student Adv Metrics Research\Marriage and Divorce\Output/figure3_mechanism_test.png
+    saved as PNG format
+r; t=0.36 17:04:06
+
+. graph export "$output/figure3_mechanism_test.pdf", replace
+unable to save PDF file
+r(691); t=0.13 17:04:06
+
+end of do-file
+
+r(691); t=325.33 17:04:06
+
+. do "C:\Users\jsoriano\AppData\Local\Temp\STD3718_000051.tmp"
+
+. /*==============================================================================
+> TABLE 4: EFFECTS BY RESIDENCE DURATION
+> ==============================================================================*/
+. 
+. display ""
+
+r; t=0.00 17:04:06
+
+. display "=== TABLE 4: EFFECTS BY RESIDENCE DURATION ==="
+=== TABLE 4: EFFECTS BY RESIDENCE DURATION ===
+r; t=0.00 17:04:06
+
+. 
+. eststo clear
+r; t=1.82 17:04:08
+
+. 
+. * Women - Long-term residents (5+ years)
+. reghdfe num_children ///
+>     lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext ///
+>     age age_sq if female == 1 & donut_sample == 1 & acs_sample == 1 & longterm_resident == 1 [aw=perwt], ///
+>     absorb(county_id year) vce(cluster county_id)
+(MWFE estimator converged in 5 iterations)
+
+HDFE Linear regression                            Number of obs   =  1,307,686
+Absorbing 2 HDFE groups                           F(  13,    468) =     881.88
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.1351
+                                                  Adj R-squared   =     0.1348
+                                                  Within R-sq.    =     0.1106
+Number of clusters (county_id) =        469       Root MSE        =     1.2303
+
+                             (Std. err. adjusted for 469 clusters in county_id)
+-------------------------------------------------------------------------------
+              |               Robust
+ num_children | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+--------------+----------------------------------------------------------------
+     lag3_ext |  -.0036302   .0197668    -0.18   0.854    -.0424728    .0352125
+     lag2_ext |  -.0014276   .0132841    -0.11   0.914    -.0275314    .0246762
+    lead0_ext |  -.0545777   .0292372    -1.87   0.063    -.1120302    .0028749
+    lead1_ext |  -.0343545   .0416409    -0.83   0.410    -.1161808    .0474718
+    lead2_ext |   -.029339   .0426177    -0.69   0.492    -.1130847    .0544067
+    lead3_ext |  -.0082452   .0323978    -0.25   0.799    -.0719083    .0554179
+    lead4_ext |  -.0387227    .031171    -1.24   0.215    -.0999752    .0225298
+    lead5_ext |  -.0577743   .0430863    -1.34   0.181    -.1424409    .0268924
+    lead6_ext |   -.054131   .0292509    -1.85   0.065    -.1116104    .0033484
+    lead7_ext |  -.0628459   .0305253    -2.06   0.040    -.1228296   -.0028623
+lead8plus_ext |   -.109275   .0365575    -2.99   0.003    -.1811122   -.0374378
+          age |   .3599237   .0108741    33.10   0.000     .3385556    .3812918
+       age_sq |  -.0046701   .0001832   -25.50   0.000      -.00503   -.0043102
+        _cons |  -5.111185   .1555874   -32.85   0.000    -5.416921   -4.805449
+-------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+   county_id |       469         469           0    *|
+        year |        19           1          18     |
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+r; t=28.77 17:04:37
+
+. eststo w_longterm
+r; t=0.48 17:04:38
+
+. 
+. * Women - Recent movers (<5 years)
+. reghdfe num_children ///
+>     lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext ///
+>     age age_sq if female == 1 & donut_sample == 1 & acs_sample == 1 & longterm_resident == 0 [aw=perwt], ///
+>     absorb(county_id year) vce(cluster county_id)
+(MWFE estimator converged in 5 iterations)
+
+HDFE Linear regression                            Number of obs   =  5,823,068
+Absorbing 2 HDFE groups                           F(  13,    468) =    1272.95
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.2313
+                                                  Adj R-squared   =     0.2312
+                                                  Within R-sq.    =     0.2136
+Number of clusters (county_id) =        469       Root MSE        =     1.0325
+
+                             (Std. err. adjusted for 469 clusters in county_id)
+-------------------------------------------------------------------------------
+              |               Robust
+ num_children | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+--------------+----------------------------------------------------------------
+     lag3_ext |   .0068881    .012985     0.53   0.596    -.0186279    .0324042
+     lag2_ext |   .0074596   .0141856     0.53   0.599    -.0204157    .0353349
+    lead0_ext |  -.0164243   .0117286    -1.40   0.162    -.0394715     .006623
+    lead1_ext |  -.0041758   .0205839    -0.20   0.839    -.0446242    .0362725
+    lead2_ext |  -.0047725   .0165233    -0.29   0.773    -.0372416    .0276966
+    lead3_ext |  -.0133036   .0159424    -0.83   0.404    -.0446313     .018024
+    lead4_ext |  -.0163339     .01726    -0.95   0.344    -.0502506    .0175829
+    lead5_ext |  -.0227843   .0171132    -1.33   0.184    -.0564125     .010844
+    lead6_ext |  -.0237467   .0162235    -1.46   0.144    -.0556267    .0081333
+    lead7_ext |  -.0276914   .0188183    -1.47   0.142    -.0646704    .0092875
+lead8plus_ext |  -.0650465   .0181561    -3.58   0.000    -.1007241   -.0293689
+          age |   .1409572   .0107377    13.13   0.000     .1198571    .1620572
+       age_sq |  -.0010186   .0001797    -5.67   0.000    -.0013718   -.0006655
+        _cons |  -2.299216     .15292   -15.04   0.000    -2.599711   -1.998722
+-------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+   county_id |       469         469           0    *|
+        year |        19           1          18     |
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+r; t=100.80 17:06:18
+
+. eststo w_recent
+r; t=0.47 17:06:19
+
+. 
+. * Men - Long-term residents (5+ years)
+. reghdfe num_children ///
+>     lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext ///
+>     age age_sq if female == 0 & donut_sample == 1 & acs_sample == 1 & longterm_resident == 1 [aw=perwt], ///
+>     absorb(county_id year) vce(cluster county_id)
+(MWFE estimator converged in 5 iterations)
+
+HDFE Linear regression                            Number of obs   =  1,206,324
+Absorbing 2 HDFE groups                           F(  13,    468) =     747.95
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.1523
+                                                  Adj R-squared   =     0.1519
+                                                  Within R-sq.    =     0.1250
+Number of clusters (county_id) =        469       Root MSE        =     1.2264
+
+                             (Std. err. adjusted for 469 clusters in county_id)
+-------------------------------------------------------------------------------
+              |               Robust
+ num_children | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+--------------+----------------------------------------------------------------
+     lag3_ext |  -.0257019   .0181084    -1.42   0.156    -.0612858    .0098819
+     lag2_ext |  -.0276017   .0182212    -1.51   0.130    -.0634071    .0082037
+    lead0_ext |  -.0734569   .0217289    -3.38   0.001    -.1161551   -.0307587
+    lead1_ext |  -.0205317   .0396202    -0.52   0.605    -.0983872    .0573239
+    lead2_ext |  -.0273024   .0342637    -0.80   0.426    -.0946322    .0400274
+    lead3_ext |  -.0478587   .0319416    -1.50   0.135    -.1106254    .0149081
+    lead4_ext |  -.0617109   .0321456    -1.92   0.055    -.1248786    .0014567
+    lead5_ext |  -.0704826   .0372315    -1.89   0.059    -.1436442     .002679
+    lead6_ext |  -.0702047    .026974    -2.60   0.010    -.1232099   -.0171995
+    lead7_ext |  -.0944549   .0288904    -3.27   0.001    -.1512258    -.037684
+lead8plus_ext |  -.1119538   .0339491    -3.30   0.001    -.1786652   -.0452423
+          age |   .1931135   .0111806    17.27   0.000      .171143    .2150839
+       age_sq |  -.0018358   .0001829   -10.04   0.000    -.0021952   -.0014763
+        _cons |  -3.073784   .1649777   -18.63   0.000    -3.397973   -2.749595
+-------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+   county_id |       469         469           0    *|
+        year |        19           1          18     |
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+r; t=17.90 17:06:37
+
+. eststo m_longterm
+r; t=0.34 17:06:37
+
+. 
+. * Men - Recent movers (<5 years)
+. reghdfe num_children ///
+>     lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext ///
+>     age age_sq if female == 0 & donut_sample == 1 & acs_sample == 1 & longterm_resident == 0 [aw=perwt], ///
+>     absorb(county_id year) vce(cluster county_id)
+(MWFE estimator converged in 5 iterations)
+
+HDFE Linear regression                            Number of obs   =  6,020,750
+Absorbing 2 HDFE groups                           F(  13,    468) =     531.20
+Statistics robust to heteroskedasticity           Prob > F        =     0.0000
+                                                  R-squared       =     0.1722
+                                                  Adj R-squared   =     0.1721
+                                                  Within R-sq.    =     0.1597
+Number of clusters (county_id) =        469       Root MSE        =     0.8857
+
+                             (Std. err. adjusted for 469 clusters in county_id)
+-------------------------------------------------------------------------------
+              |               Robust
+ num_children | Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+--------------+----------------------------------------------------------------
+     lag3_ext |   .0012975   .0090693     0.14   0.886    -.0165241    .0191192
+     lag2_ext |  -.0090687   .0115434    -0.79   0.432     -.031752    .0136146
+    lead0_ext |   .0007574   .0085132     0.09   0.929    -.0159714    .0174861
+    lead1_ext |   .0145163   .0124215     1.17   0.243    -.0098926    .0389251
+    lead2_ext |  -.0003633    .008265    -0.04   0.965    -.0166045    .0158779
+    lead3_ext |   .0115612   .0097211     1.19   0.235    -.0075413    .0306637
+    lead4_ext |   .0044271   .0105347     0.42   0.675    -.0162742    .0251283
+    lead5_ext |  -.0054886   .0105974    -0.52   0.605     -.026313    .0153358
+    lead6_ext |   .0037018   .0108378     0.34   0.733     -.017595    .0249987
+    lead7_ext |   .0054792    .013342     0.41   0.681    -.0207384    .0316969
+lead8plus_ext |  -.0254966    .009994    -2.55   0.011    -.0451353    -.005858
+          age |   .0313855   .0060132     5.22   0.000     .0195692    .0432018
+       age_sq |   .0005002   .0000982     5.10   0.000     .0003073    .0006931
+        _cons |  -.8117719   .0887932    -9.14   0.000    -.9862545   -.6372893
+-------------------------------------------------------------------------------
+
+Absorbed degrees of freedom:
+-----------------------------------------------------+
+ Absorbed FE | Categories  - Redundant  = Num. Coefs |
+-------------+---------------------------------------|
+   county_id |       469         469           0    *|
+        year |        19           1          18     |
+-----------------------------------------------------+
+* = FE nested within cluster; treated as redundant for DoF computation
+r; t=71.65 17:07:49
+
+. eststo m_recent
+r; t=0.35 17:07:49
+
+. 
+. * Export Table 4
+. esttab w_longterm w_recent m_longterm m_recent ///
+>     using "$output/table4_residence_duration.tex", replace ///
+>     keep(lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext) /
+> //
+>     coeflabels(lag3_ext "t-3" lag2_ext "t-2" lead0_ext "t" lead1_ext "t+1" lead2_ext "t+2" ///
+>               lead3_ext "t+3" lead4_ext "t+4" lead5_ext "t+5" lead6_ext "t+6" ///
+>               lead7_ext "t+7" lead8plus_ext "t+8+") ///
+>     mgroups("Women" "Men", pattern(1 0 1 0) ///
+>            prefix(\multicolumn{@span}{c}{) suffix(}) span erepeat(\cmidrule(lr){@span})) ///
+>     mtitles("Long-term (5+)" "Recent (<5)" "Long-term (5+)" "Recent (<5)") ///
+>     stats(N r2, fmt(%9.0fc %9.3f) labels("Observations" "R-squared")) ///
+>     se(%9.3f) b(%9.3f) star(* 0.10 ** 0.05 *** 0.01) ///
+>     title("Effects by Residence Duration: Number of Children") ///
+>     addnotes("Standard errors clustered at county level in parentheses." ///
+>             "Long-term = 5+ years in residence, Recent = <5 years in residence." ///
+>             "Donut sample excludes nearby counties. *** p<0.01, ** p<0.05, * p<0.1.")
+(output written to C:\Users\jsoriano\Dropbox\2025 Student Adv Metrics Research\Marriage and Divorce\Output/table4_residence_d
+> uration.tex)
+r; t=4.73 17:07:54
+
+. 
+. /*==============================================================================
+> FIGURE 3: MECHANISM TEST EVENT STUDIES
+> ==============================================================================*/
+. 
+. display ""
+
+r; t=0.00 17:07:54
+
+. display "=== FIGURE 3: MECHANISM EVENT STUDIES ==="
+=== FIGURE 3: MECHANISM EVENT STUDIES ===
+r; t=0.00 17:07:54
+
+. 
+. * Create mechanism comparison figure for women
+. coefplot (w_longterm, ///
+>             ciopts(lcolor(navy) lwidth(medium)) ///
+>             mcolor(navy) msymbol(O) msize(medium) ///
+>             label("Long-term Residents (5+ years)")) ///
+>          (w_recent, ///
+>             ciopts(lcolor(maroon) lwidth(medium)) ///
+>             mcolor(maroon) msymbol(D) msize(medium) ///
+>             label("Recent Movers (<5 years)")), ///
+>     keep(lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext) /
+> //
+>     vertical ///
+>     coeflabels(lag3_ext = "-3" lag2_ext = "-2" lead0_ext = "0" lead1_ext = "1" lead2_ext = "2" ///
+>               lead3_ext = "3" lead4_ext = "4" lead5_ext = "5" lead6_ext = "6" ///
+>               lead7_ext = "7" lead8plus_ext = "8+", labsize(medium)) ///
+>     yline(0, lcolor(gray) lpattern(dash) lwidth(medium)) ///
+>     xline(2.5, lcolor(gray) lpattern(dash) lwidth(medium)) ///
+>     title("Women", size(large) margin(medium) color(black)) ///
+>     xtitle("Years Relative to Casino Opening", size(medium) margin(medium)) ///
+>     ytitle("Effect on Number of Children", size(medium) margin(medium)) ///
+>     ylabel(-0.2(0.05)0.05, labsize(medium) format(%9.2f) grid glcolor(gs15) glwidth(thin)) ///
+>     xlabel(-3(1)8, labsize(medium)) ///
+>     legend(position(6) rows(1) size(medium) ///
+>           region(lcolor(none) fcolor(none)) ///
+>           symxsize(5) keygap(2) rowgap(1)) ///
+>     name(women_mech_clean, replace) ///
+>     graphregion(color(white) margin(medium)) ///
+>     plotregion(color(white) margin(medium)) ///
+>     scheme(s1color)
+r; t=16.85 17:08:11
+
+. 
+. * Create mechanism comparison figure for men
+. coefplot (m_longterm, ///
+>             ciopts(lcolor(navy) lwidth(medium)) ///
+>             mcolor(navy) msymbol(O) msize(medium) ///
+>             label("Long-term Residents (5+ years)")) ///
+>          (m_recent, ///
+>             ciopts(lcolor(maroon) lwidth(medium)) ///
+>             mcolor(maroon) msymbol(D) msize(medium) ///
+>             label("Recent Movers (<5 years)")), ///
+>     keep(lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext) /
+> //
+>     vertical ///
+>     coeflabels(lag3_ext = "-3" lag2_ext = "-2" lead0_ext = "0" lead1_ext = "1" lead2_ext = "2" ///
+>               lead3_ext = "3" lead4_ext = "4" lead5_ext = "5" lead6_ext = "6" ///
+>               lead7_ext = "7" lead8plus_ext = "8+", labsize(medium)) ///
+>     yline(0, lcolor(gray) lpattern(dash) lwidth(medium)) ///
+>     xline(2.5, lcolor(gray) lpattern(dash) lwidth(medium)) ///
+>     title("Men", size(large) margin(medium) color(black)) ///
+>     xtitle("Years Relative to Casino Opening", size(medium) margin(medium)) ///
+>     ytitle("Effect on Number of Children", size(medium) margin(medium)) ///
+>     ylabel(-0.2(0.05)0.05, labsize(medium) format(%9.2f) grid glcolor(gs15) glwidth(thin)) ///
+>     xlabel(-3(1)8, labsize(medium)) ///
+>     legend(position(6) rows(1) size(medium) ///
+>           region(lcolor(none) fcolor(none)) ///
+>           symxsize(5) keygap(2) rowgap(1)) ///
+>     name(men_mech_clean, replace) ///
+>     graphregion(color(white) margin(medium)) ///
+>     plotregion(color(white) margin(medium)) ///
+>     scheme(s1color)
+r; t=16.51 17:08:27
+
+. 
+. * Combine both panels with cleaner formatting
+. graph combine women_mech_clean men_mech_clean, ///
+>     title("Mechanism Test: Fertility Effects by Residence Duration", ///
+>           size(large) margin(medium) color(black)) ///
+>     subtitle("Behavioral Change vs Selection", ///
+>             size(medlarge) margin(small) color(black)) ///
+>     note("Long-term residents (5+ years in residence) vs recent movers (<5 years in residence)." ///
+>          "Stronger effects for long-term residents suggest behavioral change rather than selection." ///
+>          "Donut sample excludes nearby counties.", ///
+>          size(small) margin(small) position(7)) ///
+>     rows(1) cols(2) ///
+>     graphregion(color(white) margin(large)) ///
+>     plotregion(color(white)) ///
+>     scheme(s1color) ///
+>     ycommon xcommon
+r; t=3.36 17:08:31
+
+.     
+. graph export "$output/figure3_mechanism_test.png", replace width(1600) height(900)
+file C:\Users\jsoriano\Dropbox\2025 Student Adv Metrics Research\Marriage and Divorce\Output/figure3_mechanism_test.png
+    saved as PNG format
+r; t=0.39 17:08:31
+
+. graph export "$output/figure3_mechanism_test.pdf", replace
+unable to save PDF file
+r(691); t=0.07 17:08:31
+
+end of do-file
+
+r(691); t=264.53 17:08:31
+
+. graph export "$output/figure3_mechanism_test.pdf", replace
+file C:\Users\jsoriano\Dropbox\2025 Student Adv Metrics Research\Marriage and Divorce\Output/figure3_mechanism_test.pdf
+    saved as PDF format
+r; t=0.10 17:09:09
+
+. do "C:\Users\jsoriano\AppData\Local\Temp\STD3718_000052.tmp"
+
+. /*==============================================================================
+> FIGURE 3: MECHANISM TEST EVENT STUDIES
+> ==============================================================================*/
+. 
+. display ""
+
+r; t=0.00 17:15:06
+
+. display "=== FIGURE 3: MECHANISM EVENT STUDIES ==="
+=== FIGURE 3: MECHANISM EVENT STUDIES ===
+r; t=0.00 17:15:06
+
+. 
+. * Create mechanism comparison figure for women
+. coefplot (w_longterm, ///
+>             ciopts(lcolor(navy) lwidth(medium)) ///
+>             mcolor(navy) msymbol(O) msize(medium) ///
+>             label("Long-term Residents (5+ years)")) ///
+>          (w_recent, ///
+>             ciopts(lcolor(maroon) lwidth(medium)) ///
+>             mcolor(maroon) msymbol(D) msize(medium) ///
+>             label("Recent Movers (<5 years)")), ///
+>     keep(lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext) /
+> //
+>     vertical ///
+>     coeflabels(lag3_ext = "-3" lag2_ext = "-2" lead0_ext = "0" lead1_ext = "1" lead2_ext = "2" ///
+>               lead3_ext = "3" lead4_ext = "4" lead5_ext = "5" lead6_ext = "6" ///
+>               lead7_ext = "7" lead8plus_ext = "8+") ///
+>     yline(0, lcolor(gray) lpattern(dash) lwidth(medium)) ///
+>     xline(2.5, lcolor(gray) lpattern(dash) lwidth(medium)) ///
+>     title("Women", size(large) margin(medium) color(black)) ///
+>     xtitle("Years Relative to Casino Opening", size(medium) margin(medium)) ///
+>     ytitle("Effect on Number of Children", size(medium) margin(large)) ///
+>     ylabel(-0.2(0.05)0.05, labsize(medium) format(%9.2f) angle(0)) ///
+>     xlabel(-3(1)8, labsize(medium) angle(0)) ///
+>     legend(position(6) rows(2) size(medium) ///
+>           region(lcolor(none) fcolor(none)) ///
+>           symxsize(6) keygap(3) rowgap(2) colgap(2)) ///
+>     name(women_mech_clean, replace) ///
+>     graphregion(color(white) margin(large)) ///
+>     plotregion(color(white) margin(large)) ///
+>     scheme(s1color)
+r; t=18.15 17:15:24
+
+. 
+. * Create mechanism comparison figure for men
+. coefplot (m_longterm, ///
+>             ciopts(lcolor(navy) lwidth(medium)) ///
+>             mcolor(navy) msymbol(O) msize(medium) ///
+>             label("Long-term Residents (5+ years)")) ///
+>          (m_recent, ///
+>             ciopts(lcolor(maroon) lwidth(medium)) ///
+>             mcolor(maroon) msymbol(D) msize(medium) ///
+>             label("Recent Movers (<5 years)")), ///
+>     keep(lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext) /
+> //
+>     vertical ///
+>     coeflabels(lag3_ext = "-3" lag2_ext = "-2" lead0_ext = "0" lead1_ext = "1" lead2_ext = "2" ///
+>               lead3_ext = "3" lead4_ext = "4" lead5_ext = "5" lead6_ext = "6" ///
+>               lead7_ext = "7" lead8plus_ext = "8+") ///
+>     yline(0, lcolor(gray) lpattern(dash) lwidth(medium)) ///
+>     xline(2.5, lcolor(gray) lpattern(dash) lwidth(medium)) ///
+>     title("Men", size(large) margin(medium) color(black)) ///
+>     xtitle("Years Relative to Casino Opening", size(medium) margin(medium)) ///
+>     ytitle("Effect on Number of Children", size(medium) margin(large)) ///
+>     ylabel(-0.2(0.05)0.05, labsize(medium) format(%9.2f) angle(0)) ///
+>     xlabel(-3(1)8, labsize(medium) angle(0)) ///
+>     legend(position(6) rows(2) size(medium) ///
+>           region(lcolor(none) fcolor(none)) ///
+>           symxsize(6) keygap(3) rowgap(2) colgap(2)) ///
+>     name(men_mech_clean, replace) ///
+>     graphregion(color(white) margin(large)) ///
+>     plotregion(color(white) margin(large)) ///
+>     scheme(s1color)
+r; t=15.95 17:15:40
+
+. 
+. * Combine both panels with better spacing and formatting
+. graph combine women_mech_clean men_mech_clean, ///
+>     title("Mechanism Test: Fertility Effects by Residence Duration", ///
+>           size(large) margin(medium) color(black)) ///
+>     subtitle("Behavioral Change vs Selection", ///
+>             size(medlarge) margin(small) color(black)) ///
+>     note("Long-term residents (5+ years in residence) vs recent movers (<5 years in residence)." ///
+>          " Stronger effects for long-term residents suggest behavioral change rather than selection." ///
+>          " Donut sample excludes nearby counties.", ///
+>          size(small) margin(medium) position(7) span) ///
+>     rows(1) cols(2) ///
+>     graphregion(color(white) margin(vlarge)) ///
+>     plotregion(color(white)) ///
+>     scheme(s1color) ///
+>     ycommon xcommon ///
+>     imargin(medium)
+r; t=3.34 17:15:44
+
+.     
+. graph export "$output/figure3_mechanism_test.png", replace width(1800) height(1000)
+file C:\Users\jsoriano\Dropbox\2025 Student Adv Metrics Research\Marriage and Divorce\Output/figure3_mechanism_test.png
+    saved as PNG format
+r; t=0.42 17:15:44
+
+. graph export "$output/figure3_mechanism_test.pdf", replace
+file C:\Users\jsoriano\Dropbox\2025 Student Adv Metrics Research\Marriage and Divorce\Output/figure3_mechanism_test.pdf
+    saved as PDF format
+r; t=0.07 17:15:44
+
+. 
+end of do-file
+
+r; t=37.97 17:15:44
+. do "C:\Users\jsoriano\AppData\Local\Temp\STD3718_000053.tmp"
+
+. /*==============================================================================
+> FIGURE 3: MECHANISM TEST EVENT STUDIES
+> ==============================================================================*/
+. 
+. display ""
+
+r; t=0.00 17:19:33
+
+. display "=== FIGURE 3: MECHANISM EVENT STUDIES ==="
+=== FIGURE 3: MECHANISM EVENT STUDIES ===
+r; t=0.00 17:19:33
+
+. 
+. * Create clean individual panels first
+. * Women panel
+. coefplot (w_longterm, ///
+>             ciopts(lcolor(navy) lwidth(thick)) ///
+>             mcolor(navy) msymbol(O) msize(large) ///
+>             label("Long-term Residents")) ///
+>          (w_recent, ///
+>             ciopts(lcolor(maroon) lwidth(thick)) ///
+>             mcolor(maroon) msymbol(D) msize(large) ///
+>             label("Recent Movers")), ///
+>     keep(lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext) /
+> //
+>     vertical ///
+>     coeflabels(lag3_ext = "-3" lag2_ext = "-2" lead0_ext = "0" lead1_ext = "1" lead2_ext = "2" ///
+>               lead3_ext = "3" lead4_ext = "4" lead5_ext = "5" lead6_ext = "6" ///
+>               lead7_ext = "7" lead8plus_ext = "8+") ///
+>     yline(0, lcolor(gs8) lpattern(dash)) ///
+>     xline(2.5, lcolor(gs8) lpattern(dash)) ///
+>     title("Women", size(huge) color(black)) ///
+>     xtitle("Years Relative to Casino Opening", size(large)) ///
+>     ytitle("Effect on Number of Children", size(large)) ///
+>     ylabel(-0.20(0.05)0.05, format(%4.2f) labsize(large)) ///
+>     xlabel(, labsize(large)) ///
+>     legend(off) ///
+>     name(women_panel, replace) ///
+>     scheme(s1mono)
+r; t=18.18 17:19:52
+
+. 
+. * Men panel  
+. coefplot (m_longterm, ///
+>             ciopts(lcolor(navy) lwidth(thick)) ///
+>             mcolor(navy) msymbol(O) msize(large) ///
+>             label("Long-term Residents")) ///
+>          (m_recent, ///
+>             ciopts(lcolor(maroon) lwidth(thick)) ///
+>             mcolor(maroon) msymbol(D) msize(large) ///
+>             label("Recent Movers")), ///
+>     keep(lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext) /
+> //
+>     vertical ///
+>     coeflabels(lag3_ext = "-3" lag2_ext = "-2" lead0_ext = "0" lead1_ext = "1" lead2_ext = "2" ///
+>               lead3_ext = "3" lead4_ext = "4" lead5_ext = "5" lead6_ext = "6" ///
+>               lead7_ext = "7" lead8plus_ext = "8+") ///
+>     yline(0, lcolor(gs8) lpattern(dash)) ///
+>     xline(2.5, lcolor(gs8) lpattern(dash)) ///
+>     title("Men", size(huge) color(black)) ///
+>     xtitle("Years Relative to Casino Opening", size(large)) ///
+>     ytitle("Effect on Number of Children", size(large)) ///
+>     ylabel(-0.20(0.05)0.05, format(%4.2f) labsize(large)) ///
+>     xlabel(, labsize(large)) ///
+>     legend(position(6) rows(1) size(large) ///
+>           order(1 "Long-term Residents (5+ years)" 2 "Recent Movers (<5 years)") ///
+>           symxsize(8) keygap(3)) ///
+>     name(men_panel, replace) ///
+>     scheme(s1mono)
+r; t=16.66 17:20:08
+
+. 
+. * Combine with minimal formatting
+. graph combine women_panel men_panel, ///
+>     title("Mechanism Test: Fertility Effects by Residence Duration", size(vlarge)) ///
+>     subtitle("Behavioral Change vs Selection", size(large)) ///
+>     note("Long-term residents (5+ years) vs recent movers (<5 years). Stronger effects for long-term residents suggest beha
+> vioral change.", ///
+>          size(medium)) ///
+>     cols(2) ///
+>     ycommon xcommon ///
+>     scheme(s1mono)
+r; t=3.11 17:20:11
+
+.     
+. graph export "$output/figure3_mechanism_test.png", replace width(1400) height(700)
+file C:\Users\jsoriano\Dropbox\2025 Student Adv Metrics Research\Marriage and Divorce\Output/figure3_mechanism_test.png
+    saved as PNG format
+r; t=0.28 17:20:12
+
+. graph export "$output/figure3_mechanism_test.pdf", replace
+file C:\Users\jsoriano\Dropbox\2025 Student Adv Metrics Research\Marriage and Divorce\Output/figure3_mechanism_test.pdf
+    saved as PDF format
+r; t=0.10 17:20:12
+
+. 
+. 
+end of do-file
+
+r; t=38.36 17:20:12
+. do "C:\Users\jsoriano\AppData\Local\Temp\STD3718_000054.tmp"
+
+. /*==============================================================================
+> FIGURE 3: MECHANISM TEST EVENT STUDIES
+> ==============================================================================*/
+. 
+. display ""
+
+r; t=0.00 17:27:39
+
+. display "=== FIGURE 3: MECHANISM EVENT STUDIES ==="
+=== FIGURE 3: MECHANISM EVENT STUDIES ===
+r; t=0.00 17:27:39
+
+. 
+. * Create clean individual panels first
+. * Women panel
+. coefplot (w_longterm, ///
+>             ciopts(lcolor(navy) lwidth(thick)) ///
+>             mcolor(navy) msymbol(O) msize(large) ///
+>             label("Long-term Residents")) ///
+>          (w_recent, ///
+>             ciopts(lcolor(maroon) lwidth(thick)) ///
+>             mcolor(maroon) msymbol(D) msize(large) ///
+>             label("Recent Movers")), ///
+>     keep(lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext) /
+> //
+>     vertical ///
+>     coeflabels(lag3_ext = "-3" lag2_ext = "-2" lead0_ext = "0" lead1_ext = "1" lead2_ext = "2" ///
+>               lead3_ext = "3" lead4_ext = "4" lead5_ext = "5" lead6_ext = "6" ///
+>               lead7_ext = "7" lead8plus_ext = "8+") ///
+>     yline(0, lcolor(gs8) lpattern(dash)) ///
+>     xline(2.5, lcolor(gs8) lpattern(dash)) ///
+>     title("Women", size(huge) color(black)) ///
+>     xtitle("Years Relative to Casino Opening", size(large)) ///
+>     ytitle("Effect on Number of Children", size(large)) ///
+>     ylabel(-0.20(0.05)0.05, format(%4.2f) labsize(large)) ///
+>     xlabel(, labsize(large)) ///
+>     legend(off) ///
+>     name(women_panel, replace) ///
+>     scheme(s1mono)
+r; t=17.21 17:27:56
+
+. 
+. * Men panel - match women's formatting exactly
+. coefplot (m_longterm, ///
+>             ciopts(lcolor(navy) lwidth(thick)) ///
+>             mcolor(navy) msymbol(O) msize(large) ///
+>             label("Long-term Residents")) ///
+>          (m_recent, ///
+>             ciopts(lcolor(maroon) lwidth(thick)) ///
+>             mcolor(maroon) msymbol(D) msize(large) ///
+>             label("Recent Movers")), ///
+>     keep(lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext) /
+> //
+>     vertical ///
+>     coeflabels(lag3_ext = "-3" lag2_ext = "-2" lead0_ext = "0" lead1_ext = "1" lead2_ext = "2" ///
+>               lead3_ext = "3" lead4_ext = "4" lead5_ext = "5" lead6_ext = "6" ///
+>               lead7_ext = "7" lead8plus_ext = "8+") ///
+>     yline(0, lcolor(gs8) lpattern(dash)) ///
+>     xline(2.5, lcolor(gs8) lpattern(dash)) ///
+>     title("Men", size(huge) color(black)) ///
+>     xtitle("Years Relative to Casino Opening", size(large)) ///
+>     ytitle("Effect on Number of Children", size(large)) ///
+>     ylabel(-0.20(0.05)0.05, format(%4.2f) labsize(large)) ///
+>     xlabel(, labsize(large)) ///
+>     legend(off) ///
+>     name(men_panel, replace) ///
+>     scheme(s1mono)
+r; t=16.41 17:28:12
+
+. 
+. * Combine with external legend
+. graph combine women_panel men_panel, ///
+>     title("Mechanism Test: Fertility Effects by Residence Duration", size(vlarge)) ///
+>     subtitle("Behavioral Change vs Selection", size(large)) ///
+>     cols(2) ///
+>     ycommon xcommon ///
+>     scheme(s1mono)
+r; t=3.33 17:28:16
+
+.     
+. * Add legend as separate text note
+. graph export "$output/figure3_mechanism_test_temp.png", replace width(1400) height(700)
+(file C:\Users\jsoriano\Dropbox\2025 Student Adv Metrics Research\Marriage and
+    Divorce\Output/figure3_mechanism_test_temp.png not found)
+file C:\Users\jsoriano\Dropbox\2025 Student Adv Metrics Research\Marriage and
+    Divorce\Output/figure3_mechanism_test_temp.png saved as PNG format
+r; t=0.25 17:28:16
+
+. 
+. * Create version with proper legend using twoway
+. twoway ///
+>     (scatter _n _n if _n == 1, mcolor(navy) msymbol(O) msize(large)) ///
+>     (scatter _n _n if _n == 1, mcolor(maroon) msymbol(D) msize(large)), ///
+>     legend(order(1 "Long-term Residents (5+ years)" 2 "Recent Movers (<5 years)") ///
+>            position(6) rows(1) size(large) symxsize(8) keygap(3)) ///
+>     ylabel(none) xlabel(none) ///
+>     ytitle("") xtitle("") ///
+>     plotregion(style(none)) graphregion(style(none)) ///
+>     name(legend_only, replace)
+variable _n not found
+r(111); t=0.78 17:28:17
+
+end of do-file
+
+r(111); t=38.00 17:28:17
+
+. do "C:\Users\jsoriano\AppData\Local\Temp\STD3718_000055.tmp"
+
+. /*==============================================================================
+> FIGURE 3: MECHANISM TEST EVENT STUDIES
+> ==============================================================================*/
+. 
+. display ""
+
+r; t=0.00 17:36:40
+
+. display "=== FIGURE 3: MECHANISM EVENT STUDIES ==="
+=== FIGURE 3: MECHANISM EVENT STUDIES ===
+r; t=0.00 17:36:40
+
+. 
+. * Create clean individual panels first
+. * Women panel
+. coefplot (w_longterm, ///
+>             ciopts(lcolor(navy) lwidth(thick)) ///
+>             mcolor(navy) msymbol(O) msize(large) ///
+>             label("Long-term Residents")) ///
+>          (w_recent, ///
+>             ciopts(lcolor(maroon) lwidth(thick)) ///
+>             mcolor(maroon) msymbol(D) msize(large) ///
+>             label("Recent Movers")), ///
+>     keep(lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext) /
+> //
+>     vertical ///
+>     coeflabels(lag3_ext = "-3" lag2_ext = "-2" lead0_ext = "0" lead1_ext = "1" lead2_ext = "2" ///
+>               lead3_ext = "3" lead4_ext = "4" lead5_ext = "5" lead6_ext = "6" ///
+>               lead7_ext = "7" lead8plus_ext = "8+") ///
+>     yline(0, lcolor(gs8) lpattern(dash)) ///
+>     xline(2.5, lcolor(gs8) lpattern(dash)) ///
+>     title("Women", size(huge) color(black)) ///
+>     xtitle("Years Relative to Casino Opening", size(large)) ///
+>     ytitle("Effect on Number of Children", size(large)) ///
+>     ylabel(-0.20(0.05)0.05, format(%4.2f) labsize(large)) ///
+>     xlabel(, labsize(large)) ///
+>     legend(off) ///
+>     name(women_panel, replace) ///
+>     scheme(s1mono)
+r; t=18.07 17:36:58
+
+. 
+. * Men panel - match women's formatting exactly
+. coefplot (m_longterm, ///
+>             ciopts(lcolor(navy) lwidth(thick)) ///
+>             mcolor(navy) msymbol(O) msize(large) ///
+>             label("Long-term Residents")) ///
+>          (m_recent, ///
+>             ciopts(lcolor(maroon) lwidth(thick)) ///
+>             mcolor(maroon) msymbol(D) msize(large) ///
+>             label("Recent Movers")), ///
+>     keep(lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext) /
+> //
+>     vertical ///
+>     coeflabels(lag3_ext = "-3" lag2_ext = "-2" lead0_ext = "0" lead1_ext = "1" lead2_ext = "2" ///
+>               lead3_ext = "3" lead4_ext = "4" lead5_ext = "5" lead6_ext = "6" ///
+>               lead7_ext = "7" lead8plus_ext = "8+") ///
+>     yline(0, lcolor(gs8) lpattern(dash)) ///
+>     xline(2.5, lcolor(gs8) lpattern(dash)) ///
+>     title("Men", size(huge) color(black)) ///
+>     xtitle("Years Relative to Casino Opening", size(large)) ///
+>     ytitle("Effect on Number of Children", size(large)) ///
+>     ylabel(-0.20(0.05)0.05, format(%4.2f) labsize(large)) ///
+>     xlabel(, labsize(large)) ///
+>     legend(off) ///
+>     name(men_panel, replace) ///
+>     scheme(s1mono)
+r; t=15.92 17:37:14
+
+. 
+. * Final version - combine with clear note explaining symbols    
+. graph combine women_panel men_panel, ///
+>     title("Mechanism Test: Fertility Effects by Residence Duration", size(vlarge)) ///
+>     subtitle("Behavioral Change vs Selection", size(large)) ///
+>     note("● Long-term Residents (5+ years)     ♦ Recent Movers (<5 years)" ///
+>          "Stronger effects for long-term residents suggest behavioral change rather than selection." ///
+>          "Donut sample excludes nearby counties.", ///
+>          size(medium)) ///
+>     cols(2) ///
+>     ycommon xcommon ///
+>     scheme(s1mono)
+r; t=3.30 17:37:17
+
+.     
+. graph export "$output/figure3_mechanism_test.png", replace width(1400) height(700)
+file C:\Users\jsoriano\Dropbox\2025 Student Adv Metrics Research\Marriage and Divorce\Output/figure3_mechanism_test.png
+    saved as PNG format
+r; t=0.30 17:37:17
+
+. graph export "$output/figure3_mechanism_test.pdf", replace
+file C:\Users\jsoriano\Dropbox\2025 Student Adv Metrics Research\Marriage and Divorce\Output/figure3_mechanism_test.pdf
+    saved as PDF format
+r; t=0.09 17:37:17
+
+. 
+end of do-file
+
+r; t=37.71 17:37:17
+. do "C:\Users\jsoriano\AppData\Local\Temp\STD3718_000056.tmp"
+
+. /*==============================================================================
+> FIGURE 3: MECHANISM TEST EVENT STUDIES
+> ==============================================================================*/
+. 
+. display ""
+
+r; t=0.00 17:47:49
+
+. display "=== FIGURE 3: MECHANISM EVENT STUDIES ==="
+=== FIGURE 3: MECHANISM EVENT STUDIES ===
+r; t=0.00 17:47:49
+
+. 
+. * Create clean individual panels first
+. * Women panel
+. coefplot (w_longterm, ///
+>             ciopts(lcolor(navy) lwidth(thick)) ///
+>             mcolor(navy) msymbol(O) msize(large) ///
+>             label("Long-term Residents")) ///
+>          (w_recent, ///
+>             ciopts(lcolor(maroon) lwidth(thick)) ///
+>             mcolor(maroon) msymbol(D) msize(large) ///
+>             label("Recent Movers")), ///
+>     keep(lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext) /
+> //
+>     vertical ///
+>     coeflabels(lag3_ext = "-3" lag2_ext = "-2" lead0_ext = "0" lead1_ext = "1" lead2_ext = "2" ///
+>               lead3_ext = "3" lead4_ext = "4" lead5_ext = "5" lead6_ext = "6" ///
+>               lead7_ext = "7" lead8plus_ext = "8+") ///
+>     yline(0, lcolor(gs8) lpattern(dash)) ///
+>     xline(2.5, lcolor(gs8) lpattern(dash)) ///
+>     title("Women", size(huge) color(black)) ///
+>     xtitle("Years Relative to Casino Opening", size(large)) ///
+>     ytitle("Effect on Number of Children", size(large)) ///
+>     ylabel(-0.20(0.05)0.05, format(%4.2f) labsize(large)) ///
+>     xlabel(1(1)11, labsize(large) valuelabel) ///
+>     legend(off) ///
+>     name(women_panel, replace) ///
+>     scheme(s1mono)
+r; t=17.99 17:48:07
+
+. 
+. * Men panel - match women's formatting exactly
+. coefplot (m_longterm, ///
+>             ciopts(lcolor(navy) lwidth(thick)) ///
+>             mcolor(navy) msymbol(O) msize(large) ///
+>             label("Long-term Residents")) ///
+>          (m_recent, ///
+>             ciopts(lcolor(maroon) lwidth(thick)) ///
+>             mcolor(maroon) msymbol(D) msize(large) ///
+>             label("Recent Movers")), ///
+>     keep(lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext) /
+> //
+>     vertical ///
+>     coeflabels(lag3_ext = "-3" lag2_ext = "-2" lead0_ext = "0" lead1_ext = "1" lead2_ext = "2" ///
+>               lead3_ext = "3" lead4_ext = "4" lead5_ext = "5" lead6_ext = "6" ///
+>               lead7_ext = "7" lead8plus_ext = "8+") ///
+>     yline(0, lcolor(gs8) lpattern(dash)) ///
+>     xline(2.5, lcolor(gs8) lpattern(dash)) ///
+>     title("Men", size(huge) color(black)) ///
+>     xtitle("Years Relative to Casino Opening", size(large)) ///
+>     ytitle("Effect on Number of Children", size(large)) ///
+>     ylabel(-0.20(0.05)0.05, format(%4.2f) labsize(large)) ///
+>     xlabel(1(1)11, labsize(large) valuelabel) ///
+>     legend(off) ///
+>     name(men_panel, replace) ///
+>     scheme(s1mono)
+r; t=15.55 17:48:23
+
+. 
+. * Final version - combine with clear note explaining symbols    
+. graph combine women_panel men_panel, ///
+>     title("Mechanism Test: Fertility Effects by Residence Duration", size(vlarge)) ///
+>     subtitle("Behavioral Change vs Selection", size(large)) ///
+>     note("● Long-term Residents (5+ years)     ♦ Recent Movers (<5 years)" ///
+>          "Stronger effects for long-term residents suggest behavioral change rather than selection." ///
+>          "Donut sample excludes nearby counties.", ///
+>          size(medium)) ///
+>     cols(2) ///
+>     ycommon xcommon ///
+>     scheme(s1mono)
+r; t=2.94 17:48:26
+
+.     
+. graph export "$output/figure3_mechanism_test.png", replace width(1400) height(700)
+file C:\Users\jsoriano\Dropbox\2025 Student Adv Metrics Research\Marriage and Divorce\Output/figure3_mechanism_test.png
+    saved as PNG format
+r; t=0.23 17:48:26
+
+. graph export "$output/figure3_mechanism_test.pdf", replace
+file C:\Users\jsoriano\Dropbox\2025 Student Adv Metrics Research\Marriage and Divorce\Output/figure3_mechanism_test.pdf
+    saved as PDF format
+r; t=0.07 17:48:26
+
+. 
+end of do-file
+
+r; t=36.81 17:48:26
+. do "C:\Users\jsoriano\AppData\Local\Temp\STD3718_000057.tmp"
+
+. /*==============================================================================
+> FIGURE 3: MECHANISM TEST EVENT STUDIES
+> ==============================================================================*/
+. 
+. display ""
+
+r; t=0.00 17:51:30
+
+. display "=== FIGURE 3: MECHANISM EVENT STUDIES ==="
+=== FIGURE 3: MECHANISM EVENT STUDIES ===
+r; t=0.00 17:51:30
+
+. 
+. * Create clean individual panels first
+. * Women panel
+. coefplot (w_longterm, ///
+>             ciopts(lcolor(navy) lwidth(thick)) ///
+>             mcolor(navy) msymbol(O) msize(large) ///
+>             label("Long-term Residents")) ///
+>          (w_recent, ///
+>             ciopts(lcolor(maroon) lwidth(thick)) ///
+>             mcolor(maroon) msymbol(D) msize(large) ///
+>             label("Recent Movers")), ///
+>     keep(lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext) /
+> //
+>     vertical ///
+>     coeflabels(lag3_ext = "-3" lag2_ext = "-2" lead0_ext = "0" lead1_ext = "1" lead2_ext = "2" ///
+>               lead3_ext = "3" lead4_ext = "4" lead5_ext = "5" lead6_ext = "6" ///
+>               lead7_ext = "7" lead8plus_ext = "8+") ///
+>     yline(0, lcolor(gs8) lpattern(dash)) ///
+>     xline(2.5, lcolor(gs8) lpattern(dash)) ///
+>     title("Women", size(huge) color(black)) ///
+>     xtitle("Years Relative to Casino Opening", size(large)) ///
+>     ytitle("Effect on Number of Children", size(large)) ///
+>     ylabel(-0.20(0.05)0.05, format(%4.2f) labsize(large)) ///
+>     xlabel(, labsize(large)) ///
+>     xscale(range(0.5 11.5)) ///
+>     legend(off) ///
+>     name(women_panel, replace) ///
+>     scheme(s1mono)
+r; t=18.18 17:51:49
+
+. 
+. * Men panel - match women's formatting exactly
+. coefplot (m_longterm, ///
+>             ciopts(lcolor(navy) lwidth(thick)) ///
+>             mcolor(navy) msymbol(O) msize(large) ///
+>             label("Long-term Residents")) ///
+>          (m_recent, ///
+>             ciopts(lcolor(maroon) lwidth(thick)) ///
+>             mcolor(maroon) msymbol(D) msize(large) ///
+>             label("Recent Movers")), ///
+>     keep(lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext) /
+> //
+>     vertical ///
+>     coeflabels(lag3_ext = "-3" lag2_ext = "-2" lead0_ext = "0" lead1_ext = "1" lead2_ext = "2" ///
+>               lead3_ext = "3" lead4_ext = "4" lead5_ext = "5" lead6_ext = "6" ///
+>               lead7_ext = "7" lead8plus_ext = "8+") ///
+>     yline(0, lcolor(gs8) lpattern(dash)) ///
+>     xline(2.5, lcolor(gs8) lpattern(dash)) ///
+>     title("Men", size(huge) color(black)) ///
+>     xtitle("Years Relative to Casino Opening", size(large)) ///
+>     ytitle("Effect on Number of Children", size(large)) ///
+>     ylabel(-0.20(0.05)0.05, format(%4.2f) labsize(large)) ///
+>     xlabel(, labsize(large)) ///
+>     xscale(range(0.5 11.5)) ///
+>     legend(off) ///
+>     name(men_panel, replace) ///
+>     scheme(s1mono)
+r; t=15.54 17:52:04
+
+. 
+. * Final version - combine with clear note explaining symbols    
+. graph combine women_panel men_panel, ///
+>     title("Mechanism Test: Fertility Effects by Residence Duration", size(vlarge)) ///
+>     subtitle("Behavioral Change vs Selection", size(large)) ///
+>     note("● Long-term Residents (5+ years)     ♦ Recent Movers (<5 years)" ///
+>          "Stronger effects for long-term residents suggest behavioral change rather than selection." ///
+>          "Donut sample excludes nearby counties.", ///
+>          size(medium)) ///
+>     cols(2) ///
+>     ycommon xcommon ///
+>     scheme(s1mono)
+r; t=3.20 17:52:07
+
+.     
+. graph export "$output/figure3_mechanism_test.png", replace width(1400) height(700)
+file C:\Users\jsoriano\Dropbox\2025 Student Adv Metrics Research\Marriage and Divorce\Output/figure3_mechanism_test.png
+    saved as PNG format
+r; t=0.38 17:52:08
+
+. graph export "$output/figure3_mechanism_test.pdf", replace
+file C:\Users\jsoriano\Dropbox\2025 Student Adv Metrics Research\Marriage and Divorce\Output/figure3_mechanism_test.pdf
+    saved as PDF format
+r; t=0.12 17:52:08
+
+. 
+end of do-file
+
+r; t=37.45 17:52:08
+. do "C:\Users\jsoriano\AppData\Local\Temp\STD3718_000058.tmp"
+
+. /*==============================================================================
+> FIGURE 3: MECHANISM TEST EVENT STUDIES
+> ==============================================================================*/
+. 
+. display ""
+
+r; t=0.00 17:54:36
+
+. display "=== FIGURE 3: MECHANISM EVENT STUDIES ==="
+=== FIGURE 3: MECHANISM EVENT STUDIES ===
+r; t=0.00 17:54:36
+
+. 
+. * Create clean individual panels first
+. * Women panel
+. coefplot (w_longterm, ///
+>             ciopts(lcolor(navy) lwidth(thick)) ///
+>             mcolor(navy) msymbol(O) msize(large) ///
+>             label("Long-term Residents")) ///
+>          (w_recent, ///
+>             ciopts(lcolor(maroon) lwidth(thick)) ///
+>             mcolor(maroon) msymbol(D) msize(large) ///
+>             label("Recent Movers")), ///
+>     keep(lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext) /
+> //
+>     vertical ///
+>     coeflabels(lag3_ext = "-3" lag2_ext = "-2" lead0_ext = "0" lead1_ext = "1" lead2_ext = "2" ///
+>               lead3_ext = "3" lead4_ext = "4" lead5_ext = "5" lead6_ext = "6" ///
+>               lead7_ext = "7" lead8plus_ext = "8+") ///
+>     yline(0, lcolor(gs8) lpattern(dash)) ///
+>     xline(2.5, lcolor(gs8) lpattern(dash)) ///
+>     title("Women", size(huge) color(black)) ///
+>     xtitle("Years Relative to Casino Opening", size(large)) ///
+>     ytitle("Effect on Number of Children", size(large)) ///
+>     ylabel(-0.20(0.05)0.05, format(%4.2f) labsize(large)) ///
+>     xlabel(, labsize(large)) ///
+>     xscale(range(0.5 11.5)) ///
+>     legend(off) ///
+>     name(women_panel, replace) ///
+>     scheme(s1mono)
+r; t=18.14 17:54:54
+
+. 
+. * Men panel - match women's formatting exactly
+. coefplot (m_longterm, ///
+>             ciopts(lcolor(navy) lwidth(thick)) ///
+>             mcolor(navy) msymbol(O) msize(large) ///
+>             label("Long-term Residents")) ///
+>          (m_recent, ///
+>             ciopts(lcolor(maroon) lwidth(thick)) ///
+>             mcolor(maroon) msymbol(D) msize(large) ///
+>             label("Recent Movers")), ///
+>     keep(lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext) /
+> //
+>     vertical ///
+>     coeflabels(lag3_ext = "-3" lag2_ext = "-2" lead0_ext = "0" lead1_ext = "1" lead2_ext = "2" ///
+>               lead3_ext = "3" lead4_ext = "4" lead5_ext = "5" lead6_ext = "6" ///
+>               lead7_ext = "7" lead8plus_ext = "8+") ///
+>     yline(0, lcolor(gs8) lpattern(dash)) ///
+>     xline(2.5, lcolor(gs8) lpattern(dash)) ///
+>     title("Men", size(huge) color(black)) ///
+>     xtitle("Years Relative to Casino Opening", size(large)) ///
+>     ytitle("Effect on Number of Children", size(large)) ///
+>     ylabel(-0.20(0.05)0.05, format(%4.2f) labsize(large)) ///
+>     xlabel(, labsize(large)) ///
+>     xscale(range(0.5 11.5)) ///
+>     legend(off) ///
+>     name(men_panel, replace) ///
+>     scheme(s1mono)
+r; t=15.94 17:55:10
+
+. 
+. * Combine with minimal margins and tight spacing
+. graph combine women_panel men_panel, ///
+>     title("Mechanism Test: Fertility Effects by Residence Duration", size(vlarge)) ///
+>     subtitle("Behavioral Change vs Selection", size(large)) ///
+>     note("● Long-term Residents (5+ years)     ♦ Recent Movers (<5 years)" ///
+>          "Stronger effects for long-term residents suggest behavioral change rather than selection." ///
+>          "Donut sample excludes nearby counties.", ///
+>          size(medium)) ///
+>     cols(2) ///
+>     ycommon xcommon ///
+>     imargin(zero) ///
+>     graphregion(margin(zero)) ///
+>     plotregion(margin(zero)) ///
+>     scheme(s1mono)
+r; t=3.25 17:55:13
+
+.     
+. graph export "$output/figure3_mechanism_test.png", replace width(1400) height(700)
+file C:\Users\jsoriano\Dropbox\2025 Student Adv Metrics Research\Marriage and Divorce\Output/figure3_mechanism_test.png
+    saved as PNG format
+r; t=0.26 17:55:13
+
+. graph export "$output/figure3_mechanism_test.pdf", replace
+file C:\Users\jsoriano\Dropbox\2025 Student Adv Metrics Research\Marriage and Divorce\Output/figure3_mechanism_test.pdf
+    saved as PDF format
+r; t=0.05 17:55:13
+
+. 
+end of do-file
+
+r; t=37.67 17:55:13
+. do "C:\Users\jsoriano\AppData\Local\Temp\STD3718_000059.tmp"
+
+. /*==============================================================================
+> FIGURE 3: MECHANISM TEST EVENT STUDIES
+> ==============================================================================*/
+. 
+. display ""
+
+r; t=0.00 18:01:25
+
+. display "=== FIGURE 3: MECHANISM EVENT STUDIES ==="
+=== FIGURE 3: MECHANISM EVENT STUDIES ===
+r; t=0.00 18:01:25
+
+. 
+. * Create clean individual panels first
+. * Women panel
+. coefplot (w_longterm, ///
+>             ciopts(lcolor(navy) lwidth(thick)) ///
+>             mcolor(navy) msymbol(O) msize(large) ///
+>             label("Long-term Residents")) ///
+>          (w_recent, ///
+>             ciopts(lcolor(maroon) lwidth(thick)) ///
+>             mcolor(maroon) msymbol(D) msize(large) ///
+>             label("Recent Movers")), ///
+>     keep(lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext) /
+> //
+>     vertical ///
+>     coeflabels(lag3_ext = "-3" lag2_ext = "-2" lead0_ext = "0" lead1_ext = "1" lead2_ext = "2" ///
+>               lead3_ext = "3" lead4_ext = "4" lead5_ext = "5" lead6_ext = "6" ///
+>               lead7_ext = "7" lead8plus_ext = "8+") ///
+>     yline(0, lcolor(gs8) lpattern(dash)) ///
+>     xline(2.5, lcolor(gs8) lpattern(dash)) ///
+>     title("Women", size(huge) color(black)) ///
+>     xtitle("Years Relative to Casino Opening", size(large)) ///
+>     ytitle("Effect on Number of Children", size(large)) ///
+>     ylabel(-0.20(0.05)0.05, format(%4.2f) labsize(large)) ///
+>     xlabel(, labsize(large)) ///
+>     plotregion(margin(l=0 r=0 t=3 b=3)) ///
+>     graphregion(margin(l=3 r=3 t=3 b=3)) ///
+>     legend(off) ///
+>     name(women_panel, replace) ///
+>     scheme(s1mono)
+r; t=17.97 18:01:43
+
+. 
+. * Men panel - match women's formatting exactly
+. coefplot (m_longterm, ///
+>             ciopts(lcolor(navy) lwidth(thick)) ///
+>             mcolor(navy) msymbol(O) msize(large) ///
+>             label("Long-term Residents")) ///
+>          (m_recent, ///
+>             ciopts(lcolor(maroon) lwidth(thick)) ///
+>             mcolor(maroon) msymbol(D) msize(large) ///
+>             label("Recent Movers")), ///
+>     keep(lag3_ext lag2_ext lead0_ext lead1_ext lead2_ext lead3_ext lead4_ext lead5_ext lead6_ext lead7_ext lead8plus_ext) /
+> //
+>     vertical ///
+>     coeflabels(lag3_ext = "-3" lag2_ext = "-2" lead0_ext = "0" lead1_ext = "1" lead2_ext = "2" ///
+>               lead3_ext = "3" lead4_ext = "4" lead5_ext = "5" lead6_ext = "6" ///
+>               lead7_ext = "7" lead8plus_ext = "8+") ///
+>     yline(0, lcolor(gs8) lpattern(dash)) ///
+>     xline(2.5, lcolor(gs8) lpattern(dash)) ///
+>     title("Men", size(huge) color(black)) ///
+>     xtitle("Years Relative to Casino Opening", size(large)) ///
+>     ytitle("Effect on Number of Children", size(large)) ///
+>     ylabel(-0.20(0.05)0.05, format(%4.2f) labsize(large)) ///
+>     xlabel(, labsize(large)) ///
+>     plotregion(margin(l=0 r=0 t=3 b=3)) ///
+>     graphregion(margin(l=3 r=3 t=3 b=3)) ///
+>     legend(off) ///
+>     name(men_panel, replace) ///
+>     scheme(s1mono)
+r; t=15.80 18:01:59
+
+. 
+. * Combine with reasonable spacing
+. graph combine women_panel men_panel, ///
+>     title("Mechanism Test: Fertility Effects by Residence Duration", size(vlarge)) ///
+>     subtitle("Behavioral Change vs Selection", size(large)) ///
+>     note("● Long-term Residents (5+ years)     ♦ Recent Movers (<5 years)" ///
+>          "Stronger effects for long-term residents suggest behavioral change rather than selection." ///
+>          "Donut sample excludes nearby counties.", ///
+>          size(medium)) ///
+>     cols(2) ///
+>     ycommon xcommon ///
+>     imargin(small) ///
+>     scheme(s1mono)
+r; t=3.41 18:02:02
+
+.     
+. graph export "$output/figure3_mechanism_test.png", replace width(1400) height(700)
+file C:\Users\jsoriano\Dropbox\2025 Student Adv Metrics Research\Marriage and Divorce\Output/figure3_mechanism_test.png
+    saved as PNG format
+r; t=0.27 18:02:02
+
+. graph export "$output/figure3_mechanism_test.pdf", replace
+file C:\Users\jsoriano\Dropbox\2025 Student Adv Metrics Research\Marriage and Divorce\Output/figure3_mechanism_test.pdf
+    saved as PDF format
+r; t=0.10 18:02:03
+
+. 
+end of do-file
+
+r; t=37.57 18:02:03

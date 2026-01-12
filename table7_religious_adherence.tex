@@ -1,0 +1,22 @@
+\begin{table}[h]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Religious Adherence Effects}
+\begin{tabular}{l*{4}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+            &\multicolumn{1}{c}{Baseline}&\multicolumn{1}{c}{Medium Religious}&\multicolumn{1}{c}{State-Year FE}&\multicolumn{1}{c}{Differenced}\\
+\hline
+post\_treatment&     -11.952         &     -37.364\sym{***}&     -34.850\sym{**} &                     \\
+            &    (17.322)         &    (11.626)         &    (15.172)         &                     \\
+\hline
+Observations&       9,418         &       3,139         &       9,415         &       6,275         \\
+R-squared   &       0.932         &       0.975         &       0.960         &       0.826         \\
+\hline\hline
+\multicolumn{5}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{5}{l}{\footnotesize Standard errors clustered at county level in parentheses.}\\
+\multicolumn{5}{l}{\footnotesize Dependent variable: religious adherents per 1,000 population.}\\
+\multicolumn{5}{l}{\footnotesize Medium Religious = counties in middle tercile of 2000 adherence.}\\
+\multicolumn{5}{l}{\footnotesize State-Year FE preferred specification. *** p<0.01, ** p<0.05, * p<0.1.}\\
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}

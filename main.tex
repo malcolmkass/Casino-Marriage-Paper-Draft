@@ -1,0 +1,232 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{pdflscape}
+\usepackage{rotating}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{setspace}
+\usepackage{natbib}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{threeparttable}
+\usepackage{rotating}
+\usepackage{comment}
+\usepackage[backend=biber, style=authoryear, natbib]{biblatex}
+\usepackage{booktabs}
+\usepackage{setspace}
+\addbibresource{casino.bib} 
+\renewcommand*{\nameyeardelim}{\addcomma\addspace}
+
+% Custom commands for better table formatting
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+\title{The Destruction of Social Capital and Family Flight: Evidence from Casino Openings}
+\author{Malcolm Kass\thanks{University of Dallas, Department of Economics. Email: mkass@udallas.edu} \and John Soriano\thanks{University of Dallas, Department of Economics. Email: jsoriano@udallas.edu}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Casino development is often promoted as an engine of local economic growth, but its broader social consequences remain less understood. This paper investigates how casino openings reshape demographic patterns and family-supporting institutions in U.S. counties from 2003 to 2023. Exploiting staggered treatment timing in a difference-in-differences framework, we document consistent evidence that casinos erode community structures. We estimate a 1.28 percentage point decline in fertility rates for women, tied to an estimated drop of 55 children per 1000 women and 26 children per 1000 men. These effects are not a result of new movers to the community where a new casino opened. These demographic shifts are mirrored in weakened religious institutions: religious adherence declines by an estimated 9.5 percentage points, particularly in Catholic communities. The results demonstrate that casinos generate possible social capital losses alongside their economic activity, altering the composition of local populations and undermining religious institutions historically central to family and community life.
+\end{abstract}
+
+\begin{comment}
+This paper examines the effects of casino openings on family formation and community institutions using a differences-in-differences design with staggered casino openings across U.S. counties from 2000-2023. We find that casinos systematically reduce fertility and disrupt family-supporting institutions through both behavioral change among long-term residents and selective migration. Population declines are concentrated among children and child-rearing age adults, while religious adherence and school enrollment also decline significantly.
+\end{comment}
+\newpage
+
+\section{Introduction}
+
+\doublespacing
+{
+Casinos represent a significant change to local communities, yet their effects on family formation and community institutions remain understudied. This paper provides the first comprehensive analysis of how casino openings affect marriage, fertility, population composition, and family-supporting institutions using quasi-experimental variation from staggered casino openings across U.S. counties. \parencite{grinols2006casinos}
+
+Our analysis reveals three key findings. First, casinos reduce fertility by approximately 5.5\% for women and 2.6\% for men while having minimal effects on marriage rates. Second, the effects operate through selective out-migration of family-oriented residents, with long-term residents showing immediate fertility declines of 5.5-7.3\% at casino opening, suggesting that established families with more children leave casino counties. Third, casinos weaken family-supporting institutions, reducing school enrollment by up to 6.4\% and religious adherence by 35-37 adherents per 1,000 population in medium-religiosity counties.
+}
+
+\section{Data and Summary Statistics}
+\subsection{Dependent variables of interest: Demographics and Family formation}
+
+Our analysis combines several datasets to examine casino effects across multiple domains. We use American Community Survey (ACS) microdata from 2000-2023 for family formation outcomes, Religious Congregations \& Membership Studies data from 2000, 2010, and 2020 for religious adherence, and casino opening data covering 68 casino counties with staggered treatment timing.
+
+Table \ref{tab:summary} presents summary statistics by county type. Notable differences emerge: casino counties have lower marriage rates (31.3\% vs 37.9\% in control counties), fewer children per person (0.70 vs 0.82), and different demographic composition with higher Hispanic representation (28.7\% vs 17.8\%) and lower white representation (57.5\% vs 70.7\%), supporting the need for our difference-in-differences identification strategy.
+
+\subsection{Staggered Treatment Variable: New casino startups}
+
+Central to this work was constructing a dataset of casino openings, including the state and county fips codes to merge with our larger ACS dataset. There were multiple sources for this data, many of which involved scouring, including a website called World Casino News, which was the initial source of information. \parencite{WorldCasinoNews_CasinoOpenings} \footnote{\url{https://news.worldcasinodirectory.com/in-the-news/casino-news/casino-openings}}  With this info, we denoted the state and county as well as the adjacent counties, to give our data a doughnut structure where the treatment is the casino county and when it happened and where near counties are identified, and other, further-out counties will be our control.  In this 2003-2023 time span, there were 286 casino openings during that time. 
+
+Running out analysis with the current form of this treatment variable would not be in accordance with our main research question.  We want to estimated the average population-weighted effect of a singular casino entering a new community.  Therefore, we do not want contamination from counties with previously existing casinos or near counties with previous casinos in relatively close proximity.\footnote{As an example, Clark county in Nevada opened 16 casinos due that time frame}  This limits our data to xxx observations. 
+
+
+
+the state and  and tied this information to the year of casino openings from 2003 - 2023.\footnote{Special thanks to Kim Burch, Grace Bason, and Luke Gonzales for their assistance in creating this dataset}  
+
+% Table 1: Summary Statistics - Input directly without wrapper
+\input{table1_summary_stats.tex}
+
+\section{Empirical Strategy}
+
+
+
+\subsection{Two-Way Fixed Effects}
+
+We begin with a standard two-way fixed effects (TWFE) specification:
+
+\begin{equation}
+Y_{ct} = \alpha + \beta \cdot \text{Post}_{ct} + \mathbf{X}_{ct}'\gamma + \mu_c + \lambda_t + \varepsilon_{ct}
+\end{equation}
+
+\noindent where $Y_{ct}$ is the average number of children for women in county $c$ and year $t$, $\text{Post}_{ct}$ is an indicator equal to one if county $c$ has an operating casino in year $t$, $\mathbf{X}_{ct}$ includes demographic controls (average age and age squared), $\mu_c$ are county fixed effects, $\lambda_t$ are year fixed effects, and $\varepsilon_{ct}$ is the error term. We cluster standard errors at the county level and weight by population.
+
+\subsection{Callaway and Sant'Anna Method}
+
+Given concerns about treatment effect heterogeneity and staggered treatment timing, we implement the \parencite{callaway2021difference} approach. This method addresses potential bias in TWFE estimators when treatment effects vary across units or over time.
+
+The CS estimator constructs group-time specific treatment effects $ATT(g,t)$ for cohort $g$ (year of first treatment) in period $t$:
+
+\begin{equation}
+ATT(g,t) = E[Y_t(g) - Y_t(0) | G = g]
+\end{equation}
+
+\noindent where $Y_t(g)$ is the potential outcome under treatment and $Y_t(0)$ is the potential outcome under control. The method aggregates these group-time effects into an overall average treatment effect on the treated (ATT):
+
+\begin{equation}
+ATT = \sum_{g} \sum_{t} w(g,t) \cdot ATT(g,t)
+\end{equation}
+
+\noindent where $w(g,t)$ are weights based on group sizes.
+
+We implement the doubly robust (DRIPW) estimator, which combines inverse probability weighting with outcome regression to improve efficiency and robustness. Counties that opened casinos before 2005 are excluded from the CS analysis as ``always treated'' units.
+
+\subsection{Robustness Checks}
+
+To address potential confounding from county-specific trends, we estimate specifications with county-specific linear time trends:
+
+\begin{equation}
+Y_{ct} = \alpha + \beta \cdot \text{Post}_{ct} + \mathbf{X}_{ct}'\gamma + \delta_c \cdot t + \mu_c + \lambda_t + \varepsilon_{ct}
+\end{equation}
+
+\noindent where $\delta_c \cdot t$ captures county-specific linear trends.
+
+For the CS approach, we include county-specific trends as additional covariates in the outcome regression, allowing the method to condition on these trends when constructing treatment effect estimates.
+
+\subsection{Identification Strategy}
+
+Our identification relies on the assumption that, conditional on controls and fixed effects, the timing of casino openings is quasi-random with respect to fertility trends. While casino placement is endogenous to economic conditions, we argue that the specific timing of openings—often determined by lengthy regulatory processes, ballot initiatives, and legal challenges—provides plausibly exogenous variation in treatment timing.
+
+The key identifying assumption is parallel trends: absent casino openings, treated and control counties would have experienced similar fertility trajectories. We assess this assumption through event study analyses and examine robustness to alternative control group definitions and trend specifications.
+
+\section{Population Effects}
+We begin by documenting population effects across age groups. Table \ref{tab:population} shows event study results for log population by age group using our 8-year specification. The effects are substantial and persistent: by 8+ years post-opening, total population declines by 4.4\%, child-rearing age population (18-40) shows minimal decline of 1.4\%, children (≤17) decline by 5.7\%, and school-age population (5-17) falls by 6.6\%. The stronger effects on children relative to adults suggests that family formation rather than general population decline is the primary mechanism.
+
+% Table 2: Population Effects - Input directly without wrapper
+\input{table2_population_effects.tex}
+
+Figure \ref{fig:population} visualizes these population dynamics. The event study plots reveal that population declines begin immediately after casino opening and persist throughout the 8+ year observation window. The strongest effects are observed for children (≤17) and school-age populations (5-17).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figure1_population_effects.png}
+\caption{Population Effects by Age Group}
+\label{fig:population}
+\end{figure}
+
+\section{Family Formation Effects}
+
+Having established population declines concentrated among children, we examine direct effects on family formation. Table \ref{tab:family} presents difference-in-differences results for marriage, childbearing, and fertility by gender.
+
+% Table 3: Family Formation Effects - Input directly without wrapper
+\input{table3_family_formation.tex}
+
+The results reveal no significant effects on marriage rates for either gender (coefficients of 0.0046 for women and 0.0048 for men), but substantial negative effects on fertility. Women experience a 5.51\% decline in number of children while men show a 2.62\% decline. Women also show a 1.28 percentage point decline in having any children. The larger fertility effects for women are consistent with women having greater control over reproductive decisions. Figure \ref{fig:fertility} shows these fertility effects emerge immediately after casino opening and persist throughout our observation window.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figure2_fertility_effects.png}
+\caption{Fertility Effects by Gender}
+\label{fig:fertility}
+\end{figure}
+
+\section{Selection vs Behavioral Mechanisms}
+
+A key question is whether casino effects reflect behavioral change among existing residents or selective migration of family-oriented individuals. We test this using residence duration, reasoning that if effects were purely due to new migration patterns, recent movers should show stronger effects than established residents.
+
+Table \ref{tab:mechanism} presents event study results comparing long-term residents (5+ years in residence) with recent movers (<5 years). Surprisingly, we find that long-term residents show immediate and larger fertility declines. However, the timing pattern provides crucial insights: long-term resident women show an immediate 5.5\% fertility decline at casino opening (t=0), while recent movers show minimal immediate effects.
+
+% Table 4: Effects by Residence Duration - Input directly without wrapper
+\input{table4_residence_duration.tex}
+
+Figure \ref{fig:mechanism} reveals the key insight: the immediate drop in fertility for long-term residents at casino opening. Since people cannot instantly reduce their number of children, this pattern suggests selective out-migration of family-oriented long-term residents rather than behavioral change. Established families with more children appear to leave casino counties immediately upon casino opening, while recent movers (who may have fewer established family ties) are less affected. The persistence and growth of effects over time likely reflects continued selective migration patterns.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figure3_mechanism_test.png}
+\caption{Mechanism Test: Fertility Effects by Residence Duration}
+\label{fig:mechanism}
+\end{figure}
+
+To further validate our interpretation, Table \ref{tab:composition} tests whether casinos change the population composition by residence duration. We find no systematic evidence that casinos attract or repel long-term versus short-term residents, supporting our behavioral interpretation.
+
+% Table 5: Population Composition Tests - Input directly without wrapper
+\input{table5_population_composition.tex}
+
+\section{Family-Adjacent Institutions}
+
+Casinos may also affect family formation indirectly by weakening institutions that support family life. We examine two key institutions: schools and religious organizations.
+
+\subsection{School Effects}
+
+Table \ref{tab:schools} examines effects on school-age population and enrollment. The results show that enrollment declines exceed population declines, suggesting additional strain on educational resources. By 8+ years post-opening, school-age population declines by 6.6\%, total enrollment falls by 6.4\%, and public enrollment drops by 3.8\%. The fact that enrollment effects are similar to population effects suggests most of the decline comes from demographic changes rather than families switching to private schools or homeschooling.
+
+% Table 6: School Population and Enrollment Effects - Input directly without wrapper
+\input{table6_school_effects.tex}
+
+\subsection{Religious Effects}
+
+Table \ref{tab:religious} examines effects on religious adherence using four specifications. Our preferred specification with state-year fixed effects reveals a 9.5\% decline in religious adherence, suggesting casinos weaken an important family-supporting institution.
+
+% Table 7: Religious Adherence Effects - Input directly without wrapper
+\input{table7_religious_adherence.tex}
+
+Table \ref{tab:denominations} shows that these effects vary dramatically by denomination. Catholic adherence declines sharply (82.76 adherents per 1,000 in the baseline specification, 54.47 with state-year fixed effects), while Protestant denominations show increases: evangelical (57.46 baseline, 18.72 state-year FE), mainline Protestant (25.51 baseline, 14.32 state-year FE), and Southern Baptist (44.19 baseline, 5.36 state-year FE) adherence all increase. This pattern suggests denominational switching rather than wholesale secularization, with potential movement from Catholic to Protestant denominations.
+
+% Table 8: Religious Effects by Denomination - Input directly without wrapper
+\input{table8_denominational_effects.tex}
+
+Figure \ref{fig:religious} shows the relationship between religious adherence and years since casino opening, revealing a clear negative correlation consistent with our regression results.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{figure4_religious_exposure.png}
+\caption{Religious Adherence and Casino Exposure}
+\label{fig:religious}
+\end{figure}
+
+\section{Robustness: Spillover Effects}
+
+Our main analysis uses a "donut" design that excludes nearby counties from the control group. Table \ref{tab:spillover} validates this choice by showing significant spillover effects to nearby counties for fertility outcomes. Casino counties show fertility declines of 4.33\% for women and 2.05\% for men, while nearby counties show intermediate effects (2.56\% for women, 1.06\% for men, though not statistically significant). The lack of spillover effects for religious adherence (coefficient of -42.13, not significant) suggests the donut design is particularly important for family formation outcomes.
+
+% Table 9: Spillover Effects - Input directly without wrapper
+\input{table9_spillover_effects.tex}
+
+\section{Conclusion}
+
+This paper provides the first comprehensive evidence that casinos systematically disrupt family formation and weaken family-supporting institutions. The effects operate through both behavioral change among long-term residents and selective out-migration of family-oriented individuals. Our findings document previously unquantified social costs of casino development that should be considered in policy discussions about gambling expansion.
+
+The magnitude of these effects is substantial: fertility declines by 3-6\%, child populations fall by 5-6\%, and religious adherence drops by 9\%. These changes represent a fundamental shift in community character that persists and intensifies over our 8+ year observation window.
+
+\singlespacing
+
+\bibliographystyle{aer}
+\printbibliography
+
+\end{document}

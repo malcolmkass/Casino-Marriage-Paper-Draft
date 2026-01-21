@@ -9,7 +9,6 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{setspace}
-\usepackage{natbib}
 \usepackage{hyperref}
 \usepackage{float}
 \usepackage{array}
@@ -64,11 +63,9 @@ Table \ref{tab:summary} presents summary statistics by county type. Notable diff
 
 Central to this work was constructing a dataset of casino openings, including the state and county fips codes to merge with our larger ACS dataset. There were multiple sources for this data, many of which involved scouring, including a website called World Casino News, which was the initial source of information. \parencite{WorldCasinoNews_CasinoOpenings} \footnote{\url{https://news.worldcasinodirectory.com/in-the-news/casino-news/casino-openings}}  With this information, we denoted the state and county as well as the adjacent counties to give our data a donut structure, where the treatment is the casino county and when it happened, and where nearby counties are identified, while other, further-out counties will be our control.  In this 2003-2023 time span, there were 103 casino openings in that span for a total of 727 observations of casino and near counties 
 
-Running out analysis with the current form of this treatment variable would not be in accordance with our main research question.  We want to estimated the average population-weighted effect of a singular casino entering a new community.  Therefore, we do not want contamination from counties with previously existing casinos or near counties with previous casinos in relatively close proximity.\footnote{As an example, Clark county in Nevada opened 16 casinos due that time frame}  This limits our data to xxx observations. 
+However, the current form of our treatment variable would not be in accordance with our main research question. Our central research questions concern a casino location in a tabla rasa situtation, the estimated average population-weighted effect of a singular casino entering a new community.  Therefore, we do not want contamination from new casino counties with previously existing casinos or near counties with previous casinos in relatively close proximity.\footnote{As an example, Clark county in Nevada opened 16 casinos due that time frame}  Hence this reduce our viable new casinos to 58 new openings and 298 casino and near casino counties from 2003 - 2023.\footnote{Special thanks to Kim Burch, Grace Bason, and Luke Gonzales for their assistance in creating this dataset} 
 
 
-
-the state and  and tied this information to the year of casino openings from 2003 - 2023.\footnote{Special thanks to Kim Burch, Grace Bason, and Luke Gonzales for their assistance in creating this dataset}  
 
 % Table 1: Summary Statistics - Input directly without wrapper
 \input{table1_summary_stats.tex}
@@ -126,12 +123,12 @@ Our identification relies on the assumption that, conditional on controls and fi
 The key identifying assumption is parallel trends: absent casino openings, treated and control counties would have experienced similar fertility trajectories. We assess this assumption through event study analyses and examine robustness to alternative control group definitions and trend specifications.
 
 \section{Population Effects}
-We begin by documenting population effects across age groups. Table \ref{tab:population} shows event study results for log population by age group using our 8-year specification. The effects are substantial and persistent: by 8+ years post-opening, total population declines by 4.4\%, child-rearing age population (18-40) shows minimal decline of 1.4\%, children (≤17) decline by 5.7\%, and school-age population (5-17) falls by 6.6\%. The stronger effects on children relative to adults suggests that family formation rather than general population decline is the primary mechanism.
+We begin by documenting population effects across age groups. Table \ref{tab:population} shows event study results for log population by age group using our 8-year specification. The effects are substantial and persistent: by 8+ years post-opening, total population declines by 4.4\%, child-rearing age population (18-40) shows minimal decline of 1.4\%, children ($\le$17) decline by 5.7\%, and school-age population (5-17) falls by 6.6\%. The stronger effects on children relative to adults suggests that family formation rather than general population decline is the primary mechanism.
 
 % Table 2: Population Effects - Input directly without wrapper
 \input{table2_population_effects.tex}
 
-Figure \ref{fig:population} visualizes these population dynamics. The event study plots reveal that population declines begin immediately after casino opening and persist throughout the 8+ year observation window. The strongest effects are observed for children (≤17) and school-age populations (5-17).
+Figure \ref{fig:population} visualizes these population dynamics. The event study plots reveal that population declines begin immediately after casino opening and persist throughout the 8+ year observation window. The strongest effects are observed for children ($\le$17) and school-age populations (5-17).
 
 \begin{figure}[H]
 \centering
@@ -226,7 +223,6 @@ The magnitude of these effects is substantial: fertility declines by 3-6\%, chil
 
 \singlespacing
 
-\bibliographystyle{aer}
 \printbibliography
 
 \end{document}

@@ -1,4 +1,4 @@
-\begin{sidewaystable}[htbp]\centering
+\begin{table}[htbp]\centering
 \def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
 \caption{Religious Effects by Denomination}
 \begin{tabular}{l*{8}{c}}
@@ -7,11 +7,11 @@
             &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}&\multicolumn{1}{c}{(7)}&\multicolumn{1}{c}{(8)}\\
             &\multicolumn{1}{c}{Baseline}&\multicolumn{1}{c}{State-Yr FE}&\multicolumn{1}{c}{Baseline}&\multicolumn{1}{c}{State-Yr FE}&\multicolumn{1}{c}{Baseline}&\multicolumn{1}{c}{State-Yr FE}&\multicolumn{1}{c}{Baseline}&\multicolumn{1}{c}{State-Yr FE}\\
 \hline
-post\_treatment&     -82.761\sym{***}&     -54.470\sym{***}&      57.459\sym{***}&      18.721\sym{***}&      25.508\sym{***}&      14.319\sym{***}&      44.186\sym{***}&       5.357\sym{**} \\
-            &    (25.189)         &    (13.616)         &     (7.239)         &     (4.589)         &     (6.028)         &     (4.115)         &     (5.070)         &     (2.281)         \\
+post\_treatment&     -53.287\sym{*}  &     -42.786\sym{***}&      45.537\sym{***}&      11.859\sym{***}&      21.537\sym{***}&       5.461\sym{*}  &      37.226\sym{***}&       4.720\sym{*}  \\
+            &    (31.095)         &    (16.527)         &     (9.787)         &     (3.981)         &     (7.982)         &     (3.082)         &     (6.754)         &     (2.460)         \\
 \hline
 Observations&       9,232         &       9,229         &       9,398         &       9,395         &       9,387         &       9,384         &       8,105         &       8,102         \\
-R-squared   &       0.813         &       0.922         &       0.797         &       0.926         &       0.811         &       0.917         &       0.743         &       0.914         \\
+R-squared   &       0.806         &       0.920         &       0.793         &       0.925         &       0.809         &       0.916         &       0.739         &       0.914         \\
 \hline\hline
 \multicolumn{9}{l}{\footnotesize Standard errors in parentheses}\\
 \multicolumn{9}{l}{\footnotesize Standard errors clustered at county level in parentheses.}\\
@@ -20,4 +20,4 @@ R-squared   &       0.813         &       0.922         &       0.797         & 
 \multicolumn{9}{l}{\footnotesize *** p<0.01, ** p<0.05, * p<0.1.}\\
 \multicolumn{9}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
 \end{tabular}
-\end{sidewaystable}
+\end{table}

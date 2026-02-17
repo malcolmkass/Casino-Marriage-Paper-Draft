@@ -1,0 +1,146 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{pdflscape}
+\usepackage{rotating}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{threeparttable}
+\usepackage{rotating}
+\usepackage{comment}
+\usepackage[backend=biber, style=authoryear, natbib]{biblatex}
+\usepackage{booktabs}
+\usepackage{setspace}
+\addbibresource{casino.bib} 
+\renewcommand*{\nameyeardelim}{\addcomma\addspace}
+
+% Custom commands for better table formatting
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+\title{The Destruction of Social Capital and Family Flight: Evidence from Casino Openings}
+\author{Malcolm Kass\thanks{University of Dallas, Department of Economics. Email: mkass@udallas.edu} \and John Soriano\thanks{University of Dallas, Department of Economics. Email: jsoriano@udallas.edu}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Casino development is often promoted as an engine of local economic growth, but its broader social consequences remain less understood. This paper investigates how casino openings reshape demographic patterns and family-supporting institutions in U.S. counties from 2003 to 2023. Exploiting staggered treatment timing in a difference-in-differences framework, we document consistent evidence that casinos erode community structures. We estimate a 1.28 percentage point decline in fertility rates for women, tied to an estimated drop of 55 children per 1000 women and 26 children per 1000 men. These effects are not a result of new movers to the community where a new casino opened. These demographic shifts are mirrored in weakened religious institutions: religious adherence declines by an estimated 9.5 percentage points, particularly in Catholic communities. The results demonstrate that casinos generate possible social capital losses alongside their economic activity, altering the composition of local populations and undermining religious institutions historically central to family and community life.
+\end{abstract}
+
+\begin{comment}
+This paper examines the effects of casino openings on family formation and community institutions using a differences-in-differences design with staggered casino openings across U.S. counties from 2000-2023. We find that casinos systematically reduce fertility and disrupt family-supporting institutions through both behavioral change among long-term residents and selective migration. Population declines are concentrated among children and child-rearing age adults, while religious adherence and school enrollment also decline significantly.
+\end{comment}
+\newpage
+
+\section{Introduction}
+
+Table \ref{tab:summary} 
+
+% Table 1: Summary Statistics - Input directly without wrapper
+\input{table1_summary_stats.tex}
+
+\section{Population Effects}
+We begin by documenting population effects across age groups. Table \ref{tab:population} 
+
+% Table 2: Population Effects - Input directly without wrapper
+\input{table2_population_effects.tex}
+
+Figure \ref{fig:population} 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figure1_population_effects.png}
+\caption{Population Effects by Age Group}
+\label{fig:population}
+\end{figure}
+ Table \ref{tab:family} presents difference-in-differences results for marriage, childbearing, and fertility by gender.
+
+% Table 3: Family Formation Effects - Input directly without wrapper
+\input{table3_family_formation.tex}
+ Figure \ref{fig:fertility} shows these fertility effects emerge immediately after casino opening and persist throughout our observation window.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figure2_fertility_effects.png}
+\caption{Fertility Effects by Gender}
+\label{fig:fertility}
+\end{figure}
+
+
+Table \ref{tab:mechanism} 
+
+% Table 4: Effects by Residence Duration - Input directly without wrapper
+\input{table4_residence_duration.tex}
+
+Figure \ref{fig:mechanism} 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figure3_mechanism_test.png}
+\caption{Mechanism Test: Fertility Effects by Residence Duration}
+\label{fig:mechanism}
+\end{figure}
+
+
+To further validate our interpretation, Table \ref{tab:composition} 
+
+% Table 5: Population Composition Tests - Input directly without wrapper
+\input{table5_population_composition.tex}
+
+
+\subsection{School Effects}
+
+Table \ref{tab:schools} 
+
+% Table 6: School Population and Enrollment Effects - Input directly without wrapper
+\input{table6_school_effects.tex}
+
+\subsection{Religious Effects}
+
+Table \ref{tab:religious} examines effects on religious adherence using four specifications. Our preferred specification with state-year fixed effects reveals a 9.5\% decline in religious adherence, suggesting casinos weaken an important family-supporting institution.
+
+% Table 7: Religious Adherence Effects - Input directly without wrapper
+\input{table7_religious_adherence.tex}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figure4_religious_exposure.png}
+\caption{Mechanism Test: religious exposure}
+\label{fig:relig}
+\end{figure}
+
+Table \ref{tab:denominations} 
+
+% Table 8: Religious Effects by Denomination - Input directly without wrapper
+\input{table8_denominational_effects.tex}
+
+
+Figure \ref{fig:religious} shows the relationship between religious adherence and years since casino opening, revealing a clear negative correlation consistent with our regression results.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{figure4_religious_exposure.png}
+\caption{Religious Adherence and Casino Exposure}
+\label{fig:religious}
+\end{figure}
+
+\section{Robustness: Spillover Effects}
+
+Table \ref{tab:spillover} 
+
+% Table 9: Spillover Effects - Input directly without wrapper
+\input{table9_spillover_effects.tex}
+
+
+\end{document}

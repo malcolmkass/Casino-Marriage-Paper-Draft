@@ -57,6 +57,62 @@
       \field{pages}{200\bibrangedash 230}
       \range{pages}{31}
     \endentry
+    \entry{chetty2026opportunity}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=7a853740afbc544905334cf607b3cd51}{%
+           family={Chetty},
+           familyi={C\bibinitperiod},
+           given={Raj},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fb2eb6a3bea93fb3238fb8e1de2cf006}{%
+           family={Friedman},
+           familyi={F\bibinitperiod},
+           given={John\bibnamedelima N},
+           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8dddc1bd4014bf50f037b3b8772994dd}{%
+           family={Hendren},
+           familyi={H\bibinitperiod},
+           given={Nathaniel},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=229a1ce3cd3de5c577d260fad8077dfd}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Maggie\bibnamedelima R},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2222abe277b80e00ef366c6b4775419c}{%
+           family={Porter},
+           familyi={P\bibinitperiod},
+           given={Sonya\bibnamedelima R},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Economic Association 2014 Broadway, Suite 305, Nashville, TN 37203}%
+      }
+      \strng{namehash}{de9f176c59c95a4d2de134921515d461}
+      \strng{fullhash}{e3fa546baf0cba3574fb219c82759ea1}
+      \strng{bibnamehash}{de9f176c59c95a4d2de134921515d461}
+      \strng{authorbibnamehash}{de9f176c59c95a4d2de134921515d461}
+      \strng{authornamehash}{de9f176c59c95a4d2de134921515d461}
+      \strng{authorfullhash}{e3fa546baf0cba3574fb219c82759ea1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Economic Review}
+      \field{number}{1}
+      \field{title}{The opportunity atlas: Mapping the childhood roots of social mobility}
+      \field{volume}{116}
+      \field{year}{2026}
+      \field{pages}{1\bibrangedash 51}
+      \range{pages}{51}
+    \endentry
     \entry{Clark2024LegalizedGambling}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=c0e3c92c9877076296dbb5c3d45c7ea4}{%
@@ -302,6 +358,34 @@
       \field{year}{2013}
       \field{pages}{151\bibrangedash 160}
       \range{pages}{10}
+    \endentry
+    \entry{kearney2023two}{incollection}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bce5a9459b39b421788d318f09fb7bb9}{%
+           family={Kearney},
+           familyi={K\bibinitperiod},
+           given={Melissa\bibnamedelima S},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press}%
+      }
+      \strng{namehash}{bce5a9459b39b421788d318f09fb7bb9}
+      \strng{fullhash}{bce5a9459b39b421788d318f09fb7bb9}
+      \strng{bibnamehash}{bce5a9459b39b421788d318f09fb7bb9}
+      \strng{authorbibnamehash}{bce5a9459b39b421788d318f09fb7bb9}
+      \strng{authornamehash}{bce5a9459b39b421788d318f09fb7bb9}
+      \strng{authorfullhash}{bce5a9459b39b421788d318f09fb7bb9}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The Two-Parent Privilege}
+      \field{title}{The two-parent privilege: How Americans stopped getting married and started falling behind}
+      \field{year}{2023}
     \endentry
     \entry{kearney2018male}{article}{}
       \name{author}{2}{}{%
@@ -700,7 +784,6 @@
       \range{pages}{16}
     \endentry
   \enddatalist
-  \missing{scavette2022casinos}
 \endrefsection
 \endinput
 

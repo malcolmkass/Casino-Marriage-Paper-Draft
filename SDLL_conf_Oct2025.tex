@@ -65,13 +65,15 @@
 \captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
 \usefonttheme{professionalfonts}
 \usepackage[style=authoryear, backend=bibtex]{biblatex}
+\DeclareDelimFormat{finalnamedelim}{\addspace{\normalfont\bibstring{and}}\space}
+\AtEveryCite{\normalfont}
 \addbibresource{casino.bib} 
 \renewcommand*{\nameyeardelim}{\addcomma\addspace}
 \let\oldparencite\parencite
-\renewcommand{\parencite}[1]{{\mdseries\oldparencite{#1}}}
+\renewcommand{\parencite}[1]{{\normalfont\oldparencite{#1}}}
 
 \title{The Destruction of Social Capital and Family Flight: Evidence from Casino Openings}
-\subtitle{South Dakota Land and Lending Conference Presentation}
+\subtitle{American Real Estate Society Conference}
 \author{
 	Malcolm Kass \& 
 	John Soriano \\
@@ -91,17 +93,36 @@
 
 
 \section{Introduction}
+
+
+
+
 \begin{frame} \frametitle{Effect of new casino development on Population and Family Dynamics}
 	\begin{itemize}
-		\item Possibility of Resort style Casino Gambling in Texas: \href{https://www.dallasnews.com/news/politics/2025/06/30/what-to-know-about-las-vegas-sands-the-casino-giant-betting-big-on-north-texas/}{\color{blue}Proposed Sands Casino in Irving, Texas}  
-        \item Proposed Irving location close to University of Dallas \begin{itemize}
+		\item Local officials using new casinos to enrich local economies via economic inflows.
+		\begin{itemize}
+        \item Evidence of some short term benefits of employment and tax revenues. \parencite{humphreys2013new,wiley2011casino}
+        \item Significant evidence of long term negative spillovers on the social strata. \parencite{grinols2006casinos}
+        \end{itemize}
+        \item []
+        \item In addition, communities may wish to promote population growth. 
+        \item Effects of casinos on population and family formation are not well understood.
+        \item Only event analysis studies \parencite{moellman2013indian}
+     \end{itemize}
+    \end{frame}
+
+\begin{frame} \frametitle{Possibility of Resort style Casino Gambling in Texas: }
+    \begin{itemize}
+        \item \href{https://www.dallasnews.com/news/politics/2025/06/30/what-to-know-about-las-vegas-sands-the-casino-giant-betting-big-on-north-texas/}{\color{blue}Proposed Sands Casino in Irving, Texas}  
+        \item Proposed Irving location close to University of Dallas 
+        \begin{itemize}
             \item Irving, TX: Pop: 260k, Inner-ring suburb
             \item Lower Median Income for DFW (79k), but similar to the rest of Texas/US
             \item Highly Diverse: Demographics and Income
         \end{itemize}
         \item Why Irving?
         \begin{itemize}
-        \item First mover, but not a current destination area. 
+        \item First mover casino, but not a current destination area. 
         \item Location is a self-contained, large empty plot: Little to no economic spillovers. Akin to a \textit{walled medieval European city }
         \item[] \href{https://maps.app.goo.gl/6p2Zy9oHBkHnfjDT7}%
 {\beamergotobutton{Open Interactive Map}}
@@ -110,14 +131,18 @@
 \end{frame}
 
 
+\begin{frame}\frametitle{Related Work: Economic Activity and Family Formation}
+    \begin{itemize}
+      \item Family and community structures build social capital and improve outcomes for children from low-income families \parencite{chetty2026opportunity}
+      \item Fertility as consumption: Positive income shocks increase fertility \parencite{kearney2023two, gallego2023baby}
+      \item Fertility as investment: Positive income shocks increase savings; parents may view children as a way to smooth future consumption \parencite{goldin2021career,doepke2023economics}
+    \end{itemize}
+    \end{frame}
 
-
-\begin{frame} \frametitle{Related Previous Work}
+\begin{frame} \frametitle{Related Previous Work: Casinos and Economic and Social Outcomes}
 	\begin{itemize}
 		\item Increased Crime: Casinos caused increases in aggravated assault, rape, robbery, larceny, burglary, auto theft \parencite{grinols2006casinos}
         \begin{itemize}
-        \item All 3,165 U.S. counties from 1977 to 1996
-        \item Initially small, growing significantly after 3-5 years
         \item Magnitude: 8.6\% of property crime and 12.6\% of violent crime in casino counties attributable to casinos 
         \end{itemize}
         \item Increases in Economic Outcomes
@@ -125,7 +150,7 @@
             \item Retail Property values \parencite{wiley2011casino} 
             \item Increases in Hospitality Industry employment \parencite{humphreys2013new}
         \end{itemize}
-        \item Unique for this project: destination areas not included \& no preexisting casino presence
+        \item Unique for this project: no preexisting casino presence
     \end{itemize}
 \end{frame}
 
@@ -135,8 +160,9 @@
         \item Unclear direction: Crime increases (-) vs. Employment gains (+)
         \item []
         \item [] Initial Results
-        \item Casino $\rightarrow$ County level population drops, long-time resident families moving out
-        \item Casino $\rightarrow$ 1.28 percentage point decline in fertility rates for women
+        \item Casino $\rightarrow$ County level children population drops
+        \item Casino $\rightarrow$ 2.01 percentage point decline in fertility rates for women, 3.17 drop for men
+        \item Casino $\rightarrow$ drop in School enrollment and school age population, around 6 percentage point drop 3 years after opening
     \end{itemize}
 \end{frame}
 
@@ -144,28 +170,34 @@
 \section{Data and Methods}
 \begin{frame} \frametitle{Explanatory variable of interest: 2003-2023 US county-level casino openings}
 	\begin{itemize}
-    \item Students in UD's 2025 Advanced Econometrics created a database of new casino openings by county and adjacent counties from 2003 to 2023 (to match timeframe of ATUS data)
-    \item Denoted counties with preexisting casinos before 2003. 
-    \item Research Design aligned with UD's Sands situation. 
+    \item Created a database of new casino openings by county and adjacent counties from 2003 to 2023 (to match timeframe of ACS data)
+    \item Previous research finds increased economic activity for 1-2 yearsbefore the casino opening. 
+    \begin{itemize}
+    \item Time of treatment effect is two years before casino opening. 
+    \item Event Study Analysis: Base outcome is the 3rd lag before opening.
+    \end{itemize} 
 \item []
-        \item [] \textbf{Treatment:} New casino counties. Only includes new casino counties in the data time frame, no previous casinos or additional casinos. (66 total) 
-        \item [] \textbf{Control:} No Casino or casino adjacent counties to prevent spillovers clouding effects
-	\end{itemize}
+        \item [] \textbf{Treatment:} New casino counties. Only includes new casino counties in the data time frame, no previous casinos or additional casinos. (19 total) 
+        \item [] \textbf{Control:} No Casino or casino adjacent counties or previous existing nearby casino to prevent spillovers clouding effects (Akin to a Donut Diff in Diff design.)
+\end{itemize}
+
 \end{frame}
 
-\begin{frame} \frametitle{Explanatory variable of interest: 2003-2023 US county-level casino openings}
+
+\begin{frame} \frametitle{2003-2023 US county-level casino openings}
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{shot_casino.png}
+\includegraphics[width=9cm]{shot_casino.png}
 \end{figure}
 \end{frame}
 
 \begin{frame} \frametitle{Dependent Variables: population and family formation measures}
 	\begin{itemize}
     \item ACS micro data from 2000-2023 
-	\item Adult and Child Population data: 
+	\item Adult and Child Population data
     \begin{itemize}
         \item Total, Child Rearing (18 to 40), Children ($\le$ 17), School age (5-17)
+        \item Residence duration: Broken down by gender
     \end{itemize}
     \item Family and fertility data: 
     \begin{itemize}
@@ -173,20 +205,41 @@
         \item has children
         \item number of children
     \end{itemize}
-    		\item Notable aggregate differences between treatment casino counties vs. control counties
-        \begin{itemize}
-            \item 31.3\% vs 37.9\% marriage rates
-            \item 0.70 vs 0.82 children per person
-            \item 28.7\% vs 17.8\% Hispanic representation
-        \end{itemize}
+    \item School age populations and enrollments
+    \item To tease out treatment effects, we use two methods: Event Study and Staggered Difference and Differences (DiD).
 	\end{itemize}
 \end{frame}
 
-\begin{frame} \frametitle{Methods}
+
+\begin{frame} \frametitle{Treatment vs. Control county level differences}
+	\begin{itemize}
+    \item Notable aggregate differences between treatment casino counties vs. control counties
+        \begin{itemize}
+            \item 32.0\% vs 38.0\% married, 36.2\% vs. 41.0\% has children, 71 vs. 82 children per 100 ppl. 
+            \item 63.1\% vs 70.8\% White 
+            \item Treated counties skew more rural than control counties. 
+        \end{itemize}
+        \item Gender and Age are similar
+    \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Method 1: Event Study}
+    \begin{itemize}
+    \item Compares outcomes \emph{before vs. after} an event (e.g., casino opening) using never-treated places as a benchmark.
+    \item Lines up each county by \textbf{event time} (years relative to opening), then estimate the average difference at each event year.
+    \item What you look for:
+    \begin{itemize}
+    \item No clear pre-trend / ``parallel trends''.
+    \item Coefficients show the size and timing of the effect (immediate, gradual, temporary, persistent).
+    \end{itemize}
+    \end{itemize}
+    \end{frame}
+
+\begin{frame} \frametitle{Method 2: Staggered Difference and Differences (DiD)}
 		\begin{itemize}
 	\item Staggered Difference and Differences estimated with two-way fixed effects (FE) specification:
     \item [] \begin{equation}
-Y_{ct} = \alpha + \beta \cdot \text{Post}_{ct} + \mathbf{X}_{ct}'\gamma + \mu_c + \lambda_t + \varepsilon_{ct}
+Y_{ct} = \alpha + \beta \cdot \text{Post}_{ct} + \mathbf{X}_{ct}'\gamma +    \mu_c + \lambda_t + \varepsilon_{ct}
 \end{equation}
     \begin{itemize}
         \item $Y_{ct}$ is the DV in county $c$ and year $t$ 
@@ -213,44 +266,57 @@ Y_{ct} = \alpha + \beta \cdot \text{Post}_{ct} + \mathbf{X}_{ct}'\gamma + \mu_c 
 \end{itemize}
 \end{frame}
 
-\section{Results, Mechanisms, Conclusion}
+\section{Results, Mechanisms, and Next Steps}
 \begin{frame} \frametitle{Results for log population by age group}
 \begin{figure}[H]
 \centering
-\includegraphics[width=10cm]{figure1_population_effects.png}
+\includegraphics[width=10cm]{figure1_population_effects_baselag2.png}
 \end{figure}
 Stronger effects on children relative to adults suggest family formation vs. general population decline \\
 \end{frame}
 
-\begin{frame} \frametitle{Diff and Diff results on Fertility}
-\input{table3_family_formation_kassprez}
-Larger fertility effects for women are consistent with greater control over reproductive decisions.  \\
+\begin{frame} \frametitle{Diff in Diff results on Fertility}
+\input{table3_family_formation_back2}
 \end{frame}
 
-\begin{frame} \frametitle{Fertility}
+\begin{frame} \frametitle{Fertility: Event-Study Plot}
 \begin{figure}[H]
 \centering
-\includegraphics[width=10cm]{figure2_fertility_effects.png}
+\includegraphics[width=12cm]{figure2_fertility_effects_back2.png}
 \end{figure}
-Fertility effects emerge immediately after casino opening and persist throughout our observation window. \\
+Fertility effects emerge immediately after casino opening and generally persist throughout our observation window. \\
 \end{frame}
 
-\begin{frame} \frametitle{Fertility Mechanism}
+\begin{frame} \frametitle{Fertility Mechanism: DiD Effects by Residence Duration}
+    \input{table4_didResDuration}
+    \end{frame}
+
+\begin{frame} \frametitle{Fertility Mechanism: Event-Study Plots}
 \begin{figure}[H]
 \centering
-\includegraphics[width=10cm]{figure3_mechanism_test.png}
+\includegraphics[width=12cm]{figure3_mechanism_test_back2.png}
 \end{figure}
-Drop in fertility for long-term residents at casino opening. Suggests selective out-migration of family-oriented long-term residents rather than behavioral change.\\
+Drop in fertility for long-term male residents at casino announcement. \\
 \end{frame}
 
-\begin{frame} \frametitle{Conclusion}
+    
+\begin{frame} \frametitle{School Effects}
+    \input{table6_school_effects_kassaresprez}
+    \end{frame}
+
+
+\begin{frame} \frametitle{Next Steps}
 	\begin{itemize}
-    \item Evidence that casinos systematically disrupt populations and family formation
-    \item Family disruption operates via selective out-migration of family-oriented long-term residents, not necessarily behavior change. 
-    \item The magnitude of these effects is substantial: fertility declines by 3-6\% and child populations fall by 5-6\%. These changes persist and intensify over our 8+ year observation window.
-    \item Moving forward: It is unclear whether out-migration is due to the presence of the casino or the character makeup of transplants. Alter the form of our DV to inflows. 
-	\end{itemize}
+    \item Needs a more robust parallel trends analysis, including placebo tests.
+    \item Need to employ staggered Diff in Diff corrections, specifically Calloway and Sant'Anna method. 
+    \begin{itemize}
+    \item Propensity score matching to create a control group that is more similar to the treatment group. 
+    \item A key concern given the "ruralness" of the treatment counties. 
+    \end{itemize}	
+\end{itemize}
 \end{frame}
+
+
 
 
 \begin{frame} \frametitle{Thank you.}
@@ -267,6 +333,54 @@ Click to open the interactive map:
 {\beamergotobutton{Open Interactive Map}}
 \end{frame}
 
+
+\begin{frame} \frametitle{Summary Stats}
+    \input{table1_summary_stats}
+    \end{frame}
+
+
+\begin{frame} \frametitle{Results for log population by age group (standard Event Study)}
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=10cm]{figure1_population_effects.png}
+    \end{figure}
+    Stronger effects on children relative to adults suggest family formation vs. general population decline \\
+    \end{frame}
+
+\begin{frame} \frametitle{Fertility}
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=10cm]{figure2_fertility_effects.png}
+    \end{figure}
+    Fertility effects emerge immediately after casino opening and persist throughout our observation window. \\
+    \end{frame}
+
+
+\begin{frame} \frametitle{Diff and Diff results on Fertility (Standard Treatment timing)}
+    \input{table3_family_formation_kassprez}
+    \end{frame}
+
+    \begin{frame} \frametitle{Fertility Mechanism (Standard Treatment timing)}
+        \begin{figure}[H]
+        \centering
+        \includegraphics[width=12cm]{figure3_mechanism_test.png}
+        \end{figure}
+        Possible drop in fertility for female long-term residents at casino opening. \\
+        \end{frame}
+
+    \begin{frame} \frametitle{Fertility Mechanism}
+        \begin{figure}[H]
+        \centering
+        \includegraphics[width=10cm]{figure3_mechanism_test.png}
+        \end{figure}
+        Drop in fertility for long-term residents at casino opening. Suggests selective out-migration of family-oriented long-term residents rather than behavioral change.\\
+        \end{frame}
+
+
+\begin{frame} \frametitle{School Pop \& Enrollment — Diff in Diff}
+    \input{table6_school_did}
+    \end{frame}
+
 \begin{frame} \frametitle{School Pop \& Enrollment — Event-Study Summary}
 \input{table6_school_effects_kassprez}
 \end{frame}
@@ -279,6 +393,10 @@ Click to open the interactive map:
 \begin{frame} \frametitle{Spillover effects on nearby counties}
 \input{table9_spillover_effects_kassprez}
 Casino county fertility declines of 4.33\% for women and 2.05\% for men. Nearby county effects 2.56\% for women and 1.06\% for men, though not statistically significant.
+\end{frame}
+
+\begin{frame}[allowframebreaks]{References}
+  \printbibliography
 \end{frame}
 
 \end{document}

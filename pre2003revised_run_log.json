@@ -1,0 +1,22 @@
+﻿{
+    "started_utc":  "2026-02-16T16:53:22.0534588+00:00",
+    "input_csv":  ".\\counties_enriched_v2.csv",
+    "output_csv":  ".\\counties_enriched_v2_pre2003revised.csv",
+    "sources":  {
+                    "census_adjacency_url":  "https://www2.census.gov/geo/docs/reference/county_adjacency.txt"
+                },
+    "counts":  {
+                   "rows_total":  702,
+                   "casino_groups":  103,
+                   "bad_base_groups":  0,
+                   "rows_updated_tot1":  230,
+                   "rows_forced_totgt1":  459,
+                   "pre2003Vegas_geoids":  17
+               },
+    "notes":  [
+                  "Rules: if tot_casino_no \u003e 1 =\u003e force both indicators to 1.",
+                  "For tot_casino_no = 1: pre2003casino_cas_co_only is group-level (base county) indicator; pre2003_casino_near_co is county-level (self or any neighbor in pre2003Vegas).",
+                  "pre2003Vegas list is curated; extend as needed."
+              ],
+    "finished_utc":  "2026-02-16T16:53:24.0854241+00:00"
+}

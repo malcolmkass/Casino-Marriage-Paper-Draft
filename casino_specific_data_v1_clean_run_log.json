@@ -1,0 +1,25 @@
+﻿{
+    "started_utc":  "2026-01-26T22:51:11.3981647+00:00",
+    "input_csv":  ".\\casino_specific_data_v1.csv",
+    "outputs":  {
+                    "cleaned_csv":  "casino_specific_data_v1_cleaned.csv",
+                    "dropped_rows_csv":  "casino_specific_data_v1_dropped_rows.csv",
+                    "manual_review_csv":  "casino_specific_data_v1_needs_manual_review.csv",
+                    "run_log_json":  "casino_specific_data_v1_clean_run_log.json"
+                },
+    "sources":  {
+                    "census_adjacency_url":  "https://www2.census.gov/geo/docs/reference/county_adjacency.txt"
+                },
+    "counts":  {
+                   "input_rows":  297,
+                   "output_rows":  269,
+                   "dropped_rows":  28,
+                   "casinos_total":  103,
+                   "casinos_with_base":  103,
+                   "manual_review_rows":  0
+               },
+    "errors":  [
+
+               ],
+    "finished_utc":  "2026-01-26T22:51:14.4012720+00:00"
+}

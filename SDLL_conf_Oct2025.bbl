@@ -1,0 +1,300 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nyt/global//global/global}
+  \entry{chetty2026opportunity}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CRea}{%
+         family={Chetty},
+         familyi={C\bibinitperiod},
+         given={Raj et\bibnamedelima al.},
+         giveni={R\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim
+  a\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Economic Association}%
+    }
+    \strng{namehash}{CRea1}
+    \strng{fullhash}{CRea1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2026}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 51}
+    \field{title}{The opportunity atlas: Mapping the childhood roots of social
+  mobility}
+    \field{volume}{116}
+    \field{journaltitle}{American Economic Review}
+    \field{year}{2026}
+  \endentry
+
+  \entry{doepke2023economics}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=DMea}{%
+         family={Doepke},
+         familyi={D\bibinitperiod},
+         given={Matthias et\bibnamedelima al.},
+         giveni={M\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim
+  a\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{DMea1}
+    \strng{fullhash}{DMea1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2023}
+    \field{labeldatesource}{}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{booktitle}{Handbook of the Economics of the Family}
+    \field{number}{1}
+    \field{pages}{151\bibrangedash 254}
+    \field{title}{The economics of fertility: A new era}
+    \field{volume}{1}
+    \field{year}{2023}
+  \endentry
+
+  \entry{gallego2023baby}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GF}{%
+         family={Gallego},
+         familyi={G\bibinitperiod},
+         given={Francisco},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Lafortune},
+         familyi={L\bibinitperiod},
+         given={Jeanne},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{GFLJ1}
+    \strng{fullhash}{GFLJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2023}
+    \field{labeldatesource}{}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{number}{1}
+    \field{pages}{295\bibrangedash 320}
+    \field{title}{Baby commodity booms? The impact of commodity shocks on
+  fertility decisions and outcomes}
+    \field{volume}{36}
+    \field{journaltitle}{Journal of Population Economics}
+    \field{year}{2023}
+  \endentry
+
+  \entry{goldin2021career}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GC}{%
+         family={Goldin},
+         familyi={G\bibinitperiod},
+         given={Claudia},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Princeton University Press}%
+    }
+    \strng{namehash}{GC1}
+    \strng{fullhash}{GC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2021}
+    \field{labeldatesource}{}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Career and family: Women's century-long journey toward
+  equity}
+    \field{year}{2021}
+  \endentry
+
+  \entry{grinols2006casinos}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GEL}{%
+         family={Grinols},
+         familyi={G\bibinitperiod},
+         given={Earl\bibnamedelima L},
+         giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=MDB}{%
+         family={Mustard},
+         familyi={M\bibinitperiod},
+         given={David\bibnamedelima B},
+         giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MIT Press}%
+    }
+    \strng{namehash}{GELMDB1}
+    \strng{fullhash}{GELMDB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{number}{1}
+    \field{pages}{28\bibrangedash 45}
+    \field{title}{Casinos, crime, and community costs}
+    \field{volume}{88}
+    \field{journaltitle}{Review of Economics and Statistics}
+    \field{year}{2006}
+  \endentry
+
+  \entry{humphreys2013new}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HBR}{%
+         family={Humphreys},
+         familyi={H\bibinitperiod},
+         given={Brad\bibnamedelima R},
+         giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Marchand},
+         familyi={M\bibinitperiod},
+         given={Joseph},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{HBRMJ1}
+    \strng{fullhash}{HBRMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{labeldatesource}{}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{pages}{151\bibrangedash 160}
+    \field{title}{New casinos and local labor markets: Evidence from Canada}
+    \field{volume}{24}
+    \field{journaltitle}{Labour Economics}
+    \field{year}{2013}
+  \endentry
+
+  \entry{kearney2023two}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=KMS}{%
+         family={Kearney},
+         familyi={K\bibinitperiod},
+         given={Melissa\bibnamedelima S},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {University of Chicago Press}%
+    }
+    \strng{namehash}{KMS1}
+    \strng{fullhash}{KMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2023}
+    \field{labeldatesource}{}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{booktitle}{The Two-Parent Privilege}
+    \field{title}{The two-parent privilege: How Americans stopped getting
+  married and started falling behind}
+    \field{year}{2023}
+  \endentry
+
+  \entry{moellman2013indian}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MN}{%
+         family={Moellman},
+         familyi={M\bibinitperiod},
+         given={Nicholas},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Mitra},
+         familyi={M\bibinitperiod},
+         given={Aparna},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{MNMA1}
+    \strng{fullhash}{MNMA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{labeldatesource}{}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{pages}{64\bibrangedash 70}
+    \field{title}{Indian gaming in Oklahoma: Implications for community
+  welfare}
+    \field{volume}{45}
+    \field{journaltitle}{The Journal of Socio-Economics}
+    \field{year}{2013}
+  \endentry
+
+  \entry{wiley2011casino}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WJA}{%
+         family={Wiley},
+         familyi={W\bibinitperiod},
+         given={Jonathan\bibnamedelima A},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=WDM}{%
+         family={Walker},
+         familyi={W\bibinitperiod},
+         given={Douglas\bibnamedelima M},
+         giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{WJAWDM1}
+    \strng{fullhash}{WJAWDM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{labeldatesource}{}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{number}{1}
+    \field{pages}{99\bibrangedash 114}
+    \field{title}{Casino revenues and retail property values: The Detroit case}
+    \field{volume}{42}
+    \field{journaltitle}{The Journal of Real Estate Finance and Economics}
+    \field{year}{2011}
+  \endentry
+\enddatalist
+\endinput

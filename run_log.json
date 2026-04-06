@@ -1,0 +1,32 @@
+﻿{
+    "started_utc":  "2026-01-26T23:06:45.9122711+00:00",
+    "input_csv":  ".\\counties_enriched.csv",
+    "outputs":  {
+                    "counties_enriched.csv":  "counties_enriched.csv",
+                    "needs_manual_review.csv":  "needs_manual_review.csv",
+                    "run_log.json":  "run_log.json"
+                },
+    "sources":  {
+                    "fcc_fips_url":  "https://transition.fcc.gov/oet/info/maps/census/fips/fips.txt",
+                    "census_adjacency_url":  "https://www2.census.gov/geo/docs/reference/county_adjacency.txt"
+                },
+    "counts":  {
+                   "fcc_states_parsed":  51,
+                   "fcc_counties_parsed":  3144,
+                   "adjacency_geoids":  3234,
+                   "adjacency_pairs_total_degree":  22211,
+                   "duplicate_rows_removed":  2,
+                   "input_rows":  704,
+                   "casinos_processed":  103,
+                   "casinos_without_base_row":  0,
+                   "casinos_missing_adjacency_for_base":  0,
+                   "new_adjacent_rows_created":  0,
+                   "dropped_not_adjacent_rows":  0,
+                   "qc_issue_count":  0,
+                   "manual_review_count":  0
+               },
+    "errors":  [
+
+               ],
+    "finished_utc":  "2026-01-26T23:06:53.3507242+00:00"
+}

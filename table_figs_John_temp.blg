@@ -1,0 +1,9 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'table_figs_John_temp.blg'
+[366] biber-MSWIN64:340> INFO - === 
+[527] Biber.pm:419> INFO - Reading 'table_figs_John_temp.bcf'
+[770] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[808] bbl.pm:660> INFO - Writing 'table_figs_John_temp.bbl' with encoding 'UTF-8'
+[809] bbl.pm:763> INFO - Output to table_figs_John_temp.bbl
+[810] Biber.pm:131> WARN - The file 'table_figs_John_temp.bcf' does not contain any citations!
+[811] Biber.pm:133> INFO - WARNINGS: 1

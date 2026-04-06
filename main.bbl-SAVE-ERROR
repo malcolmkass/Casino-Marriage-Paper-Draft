@@ -1,0 +1,747 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{callaway2021difference}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=4a5a67b3788b4a3653a14d9ab03fba0e}{%
+           family={Callaway},
+           familyi={C\bibinitperiod},
+           given={Brantly},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7767820037a369ec59519519e44c7e9a}{%
+           family={Sant’Anna},
+           familyi={S\bibinitperiod},
+           given={Pedro\bibnamedelima HC},
+           giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{81e94baa528cefc8bb56e5c1a70471e2}
+      \strng{fullhash}{81e94baa528cefc8bb56e5c1a70471e2}
+      \strng{bibnamehash}{81e94baa528cefc8bb56e5c1a70471e2}
+      \strng{authorbibnamehash}{81e94baa528cefc8bb56e5c1a70471e2}
+      \strng{authornamehash}{81e94baa528cefc8bb56e5c1a70471e2}
+      \strng{authorfullhash}{81e94baa528cefc8bb56e5c1a70471e2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of econometrics}
+      \field{number}{2}
+      \field{title}{Difference-in-differences with multiple time periods}
+      \field{volume}{225}
+      \field{year}{2021}
+      \field{pages}{200\bibrangedash 230}
+      \range{pages}{31}
+    \endentry
+    \entry{chetty2026opportunity}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=deaa1305c24902426f9a9ca6e883ca1b}{%
+           family={Chetty},
+           familyi={C\bibinitperiod},
+           given={Raj\bibnamedelimb et\bibnamedelima al.},
+           giveni={R\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim a\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Economic Association}%
+      }
+      \strng{namehash}{deaa1305c24902426f9a9ca6e883ca1b}
+      \strng{fullhash}{deaa1305c24902426f9a9ca6e883ca1b}
+      \strng{bibnamehash}{deaa1305c24902426f9a9ca6e883ca1b}
+      \strng{authorbibnamehash}{deaa1305c24902426f9a9ca6e883ca1b}
+      \strng{authornamehash}{deaa1305c24902426f9a9ca6e883ca1b}
+      \strng{authorfullhash}{deaa1305c24902426f9a9ca6e883ca1b}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Economic Review}
+      \field{number}{1}
+      \field{title}{The opportunity atlas: Mapping the childhood roots of social mobility}
+      \field{volume}{116}
+      \field{year}{2026}
+      \field{pages}{1\bibrangedash 51}
+      \range{pages}{51}
+    \endentry
+    \entry{Clark2024LegalizedGambling}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c0e3c92c9877076296dbb5c3d45c7ea4}{%
+           family={Clark},
+           familyi={C\bibinitperiod},
+           given={Christine},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c0e3c92c9877076296dbb5c3d45c7ea4}
+      \strng{fullhash}{c0e3c92c9877076296dbb5c3d45c7ea4}
+      \strng{bibnamehash}{c0e3c92c9877076296dbb5c3d45c7ea4}
+      \strng{authorbibnamehash}{c0e3c92c9877076296dbb5c3d45c7ea4}
+      \strng{authornamehash}{c0e3c92c9877076296dbb5c3d45c7ea4}
+      \strng{authorfullhash}{c0e3c92c9877076296dbb5c3d45c7ea4}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://today.ucsd.edu/story/legalized-gambling-increases-irresponsible-betting-behavior-especially-among-low-income-populations}}
+      \field{month}{7}
+      \field{note}{Accessed: 26 September 2025}
+      \field{title}{Legalized Gambling Increases Irresponsible Betting Behavior, Especially Among Low-Income Populations}
+      \field{year}{2024}
+    \endentry
+    \entry{cotti2008effect}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f67735ed2fa1324001d4a7cb16b3513c}{%
+           family={Cotti},
+           familyi={C\bibinitperiod},
+           given={Chad},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f67735ed2fa1324001d4a7cb16b3513c}
+      \strng{fullhash}{f67735ed2fa1324001d4a7cb16b3513c}
+      \strng{bibnamehash}{f67735ed2fa1324001d4a7cb16b3513c}
+      \strng{authorbibnamehash}{f67735ed2fa1324001d4a7cb16b3513c}
+      \strng{authornamehash}{f67735ed2fa1324001d4a7cb16b3513c}
+      \strng{authorfullhash}{f67735ed2fa1324001d4a7cb16b3513c}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Gambling Business and Economics}
+      \field{number}{2}
+      \field{title}{The effect of casinos on local labor markets: A county level analysis}
+      \field{volume}{2}
+      \field{year}{2008}
+      \field{pages}{17\bibrangedash 41}
+      \range{pages}{25}
+    \endentry
+    \entry{doepke2023economics}{incollection}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fc2a3fa2f02232e393a8065f363ca80e}{%
+           family={Doepke},
+           familyi={D\bibinitperiod},
+           given={Matthias\bibnamedelimb et\bibnamedelima al.},
+           giveni={M\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim a\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{fc2a3fa2f02232e393a8065f363ca80e}
+      \strng{fullhash}{fc2a3fa2f02232e393a8065f363ca80e}
+      \strng{bibnamehash}{fc2a3fa2f02232e393a8065f363ca80e}
+      \strng{authorbibnamehash}{fc2a3fa2f02232e393a8065f363ca80e}
+      \strng{authornamehash}{fc2a3fa2f02232e393a8065f363ca80e}
+      \strng{authorfullhash}{fc2a3fa2f02232e393a8065f363ca80e}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Handbook of the Economics of the Family}
+      \field{number}{1}
+      \field{title}{The economics of fertility: A new era}
+      \field{volume}{1}
+      \field{year}{2023}
+      \field{pages}{151\bibrangedash 254}
+      \range{pages}{104}
+    \endentry
+    \entry{gallego2023baby}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=08515c2cb5b70d0433e0fce9670fd101}{%
+           family={Gallego},
+           familyi={G\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dc526bd1d11681fb64acfb499d94d5a2}{%
+           family={Lafortune},
+           familyi={L\bibinitperiod},
+           given={Jeanne},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{0490010e0a108e39857a76be9d42314e}
+      \strng{fullhash}{0490010e0a108e39857a76be9d42314e}
+      \strng{bibnamehash}{0490010e0a108e39857a76be9d42314e}
+      \strng{authorbibnamehash}{0490010e0a108e39857a76be9d42314e}
+      \strng{authornamehash}{0490010e0a108e39857a76be9d42314e}
+      \strng{authorfullhash}{0490010e0a108e39857a76be9d42314e}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Population Economics}
+      \field{number}{1}
+      \field{title}{Baby commodity booms? The impact of commodity shocks on fertility decisions and outcomes}
+      \field{volume}{36}
+      \field{year}{2023}
+      \field{pages}{295\bibrangedash 320}
+      \range{pages}{26}
+    \endentry
+    \entry{goldin2021career}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a18c02f3c78d81d8178faf1ae63981ee}{%
+           family={Goldin},
+           familyi={G\bibinitperiod},
+           given={Claudia},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{a18c02f3c78d81d8178faf1ae63981ee}
+      \strng{fullhash}{a18c02f3c78d81d8178faf1ae63981ee}
+      \strng{bibnamehash}{a18c02f3c78d81d8178faf1ae63981ee}
+      \strng{authorbibnamehash}{a18c02f3c78d81d8178faf1ae63981ee}
+      \strng{authornamehash}{a18c02f3c78d81d8178faf1ae63981ee}
+      \strng{authorfullhash}{a18c02f3c78d81d8178faf1ae63981ee}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Career and family: Women's century-long journey toward equity}
+      \field{year}{2021}
+    \endentry
+    \entry{grinols2006casinos}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2cfab4d5498bd6c428ac32ebcc20e299}{%
+           family={Grinols},
+           familyi={G\bibinitperiod},
+           given={Earl\bibnamedelima L},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8a77c9406bfa33ce224e8b6c221a4030}{%
+           family={Mustard},
+           familyi={M\bibinitperiod},
+           given={David\bibnamedelima B},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{c7b864b51081c5a08945bc64d17bf087}
+      \strng{fullhash}{c7b864b51081c5a08945bc64d17bf087}
+      \strng{bibnamehash}{c7b864b51081c5a08945bc64d17bf087}
+      \strng{authorbibnamehash}{c7b864b51081c5a08945bc64d17bf087}
+      \strng{authornamehash}{c7b864b51081c5a08945bc64d17bf087}
+      \strng{authorfullhash}{c7b864b51081c5a08945bc64d17bf087}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Review of Economics and Statistics}
+      \field{number}{1}
+      \field{title}{Casinos, crime, and community costs}
+      \field{volume}{88}
+      \field{year}{2006}
+      \field{pages}{28\bibrangedash 45}
+      \range{pages}{18}
+    \endentry
+    \entry{humphreys2013new}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=c8564ecea7e06c6fefee8ab446f4f350}{%
+           family={Humphreys},
+           familyi={H\bibinitperiod},
+           given={Brad\bibnamedelima R},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b08ac4f9e81029fe94b0c3bb9b518c1}{%
+           family={Marchand},
+           familyi={M\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{c8276c420ee913af74cfb898dc8ce0e4}
+      \strng{fullhash}{c8276c420ee913af74cfb898dc8ce0e4}
+      \strng{bibnamehash}{c8276c420ee913af74cfb898dc8ce0e4}
+      \strng{authorbibnamehash}{c8276c420ee913af74cfb898dc8ce0e4}
+      \strng{authornamehash}{c8276c420ee913af74cfb898dc8ce0e4}
+      \strng{authorfullhash}{c8276c420ee913af74cfb898dc8ce0e4}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Labour Economics}
+      \field{title}{New casinos and local labor markets: Evidence from Canada}
+      \field{volume}{24}
+      \field{year}{2013}
+      \field{pages}{151\bibrangedash 160}
+      \range{pages}{10}
+    \endentry
+    \entry{kearney2023two}{incollection}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bce5a9459b39b421788d318f09fb7bb9}{%
+           family={Kearney},
+           familyi={K\bibinitperiod},
+           given={Melissa\bibnamedelima S},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press}%
+      }
+      \strng{namehash}{bce5a9459b39b421788d318f09fb7bb9}
+      \strng{fullhash}{bce5a9459b39b421788d318f09fb7bb9}
+      \strng{bibnamehash}{bce5a9459b39b421788d318f09fb7bb9}
+      \strng{authorbibnamehash}{bce5a9459b39b421788d318f09fb7bb9}
+      \strng{authornamehash}{bce5a9459b39b421788d318f09fb7bb9}
+      \strng{authorfullhash}{bce5a9459b39b421788d318f09fb7bb9}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The Two-Parent Privilege}
+      \field{title}{The two-parent privilege: How Americans stopped getting married and started falling behind}
+      \field{year}{2023}
+    \endentry
+    \entry{kearney2018male}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=bce5a9459b39b421788d318f09fb7bb9}{%
+           family={Kearney},
+           familyi={K\bibinitperiod},
+           given={Melissa\bibnamedelima S},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2d5afac61f818e946ace0b3f8170348d}{%
+           family={Wilson},
+           familyi={W\bibinitperiod},
+           given={Riley},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press One Rogers Street, Cambridge, MA 02142-1209, USA journals-info~…}%
+      }
+      \strng{namehash}{ccc4ef224fe39c0515a2707ef998704e}
+      \strng{fullhash}{ccc4ef224fe39c0515a2707ef998704e}
+      \strng{bibnamehash}{ccc4ef224fe39c0515a2707ef998704e}
+      \strng{authorbibnamehash}{ccc4ef224fe39c0515a2707ef998704e}
+      \strng{authornamehash}{ccc4ef224fe39c0515a2707ef998704e}
+      \strng{authorfullhash}{ccc4ef224fe39c0515a2707ef998704e}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Review of Economics and Statistics}
+      \field{number}{4}
+      \field{title}{Male earnings, marriageable men, and nonmarital fertility: Evidence from the fracking boom}
+      \field{volume}{100}
+      \field{year}{2018}
+      \field{pages}{678\bibrangedash 690}
+      \range{pages}{13}
+    \endentry
+    \entry{Krutz2022Casinos}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6342e3f9940d5ce2996a3a4e20a9a8a6}{%
+           family={Krutz},
+           familyi={K\bibinitperiod},
+           given={Jonathan\bibnamedelima Lawrence},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Boise State University}%
+      }
+      \list{location}{1}{%
+        {Boise, Idaho}%
+      }
+      \strng{namehash}{6342e3f9940d5ce2996a3a4e20a9a8a6}
+      \strng{fullhash}{6342e3f9940d5ce2996a3a4e20a9a8a6}
+      \strng{bibnamehash}{6342e3f9940d5ce2996a3a4e20a9a8a6}
+      \strng{authorbibnamehash}{6342e3f9940d5ce2996a3a4e20a9a8a6}
+      \strng{authornamehash}{6342e3f9940d5ce2996a3a4e20a9a8a6}
+      \strng{authorfullhash}{6342e3f9940d5ce2996a3a4e20a9a8a6}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Doctor of Philosophy in Public Policy and Administration}
+      \field{title}{Do Casinos Create Economic Development?: A 15-Year National Analysis of Local Retail Sales and Employment Growth}
+      \field{type}{Ph.D. dissertation}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb <provide local or institutional repository link if available>
+      \endverb
+      \verb{url}
+      \verb provide%20local%20or%20institutional%20repository%20link%20if%20available
+      \endverb
+    \endentry
+    \entry{moellman2013indian}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=15f763612f4866923b22e2f1a872d09b}{%
+           family={Moellman},
+           familyi={M\bibinitperiod},
+           given={Nicholas},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9ada401eaa1110aae822b1af81a5bd99}{%
+           family={Mitra},
+           familyi={M\bibinitperiod},
+           given={Aparna},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{1ae02cefa4edc4a03d0dd31b3a8f468e}
+      \strng{fullhash}{1ae02cefa4edc4a03d0dd31b3a8f468e}
+      \strng{bibnamehash}{1ae02cefa4edc4a03d0dd31b3a8f468e}
+      \strng{authorbibnamehash}{1ae02cefa4edc4a03d0dd31b3a8f468e}
+      \strng{authornamehash}{1ae02cefa4edc4a03d0dd31b3a8f468e}
+      \strng{authorfullhash}{1ae02cefa4edc4a03d0dd31b3a8f468e}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Socio-Economics}
+      \field{title}{Indian gaming in Oklahoma: Implications for community welfare}
+      \field{volume}{45}
+      \field{year}{2013}
+      \field{pages}{64\bibrangedash 70}
+      \range{pages}{7}
+    \endentry
+    \entry{muller2022illusion}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=29f8e837c222ee775423fe1a53d35c59}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Maximilian\bibnamedelima W},
+           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3413b59b7a58f33d3f6578014f77d186}{%
+           family={Hamory},
+           familyi={H\bibinitperiod},
+           given={Joan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6c607d0e937f398449bee024ad3bd69f}{%
+           family={Johnson-Hanks},
+           familyi={J\bibinithyphendelim H\bibinitperiod},
+           given={Jennifer},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=14378045148a3551d5999a9b70b40ffe}{%
+           family={Miguel},
+           familyi={M\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{d1c754449b63d6310fb378f9a7e6e5a7}
+      \strng{fullhash}{ce3a4feb002773f727e32c84b816fab7}
+      \strng{bibnamehash}{d1c754449b63d6310fb378f9a7e6e5a7}
+      \strng{authorbibnamehash}{d1c754449b63d6310fb378f9a7e6e5a7}
+      \strng{authornamehash}{d1c754449b63d6310fb378f9a7e6e5a7}
+      \strng{authorfullhash}{ce3a4feb002773f727e32c84b816fab7}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Population Studies}
+      \field{number}{2}
+      \field{title}{The illusion of stable fertility preferences}
+      \field{volume}{76}
+      \field{year}{2022}
+      \field{pages}{169\bibrangedash 189}
+      \range{pages}{21}
+    \endentry
+    \entry{keranews2025irvingcasino}{online}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=e6ae77fd6206ff068ecd33d5a7446999}{%
+           family={News},
+           familyi={N\bibinitperiod},
+           given={KERA},
+           giveni={K\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{e6ae77fd6206ff068ecd33d5a7446999}
+      \strng{fullhash}{e6ae77fd6206ff068ecd33d5a7446999}
+      \strng{bibnamehash}{e6ae77fd6206ff068ecd33d5a7446999}
+      \strng{authorbibnamehash}{e6ae77fd6206ff068ecd33d5a7446999}
+      \strng{authornamehash}{e6ae77fd6206ff068ecd33d5a7446999}
+      \strng{authorfullhash}{e6ae77fd6206ff068ecd33d5a7446999}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{note}{Accessed: 2026-01-21}
+      \field{title}{Irving casino explainer: What’s happening with Las Vegas Sands and Miriam Adelson?}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.keranews.org/government/2025-03-20/irving-texas-casino-explainer-las-vegas-sands-miriam-adelson
+      \endverb
+      \verb{url}
+      \verb https://www.keranews.org/government/2025-03-20/irving-texas-casino-explainer-las-vegas-sands-miriam-adelson
+      \endverb
+    \endentry
+    \entry{WorldCasinoNews_CasinoOpenings}{misc}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=def5ab1a86b59450ee1a794bfc7374d0}{%
+           family={News},
+           familyi={N\bibinitperiod},
+           given={World\bibnamedelimb Casino\bibnamedelimb Directory\bibnamedelimb /\bibnamedelimb World\bibnamedelima Casino},
+           giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim /\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{def5ab1a86b59450ee1a794bfc7374d0}
+      \strng{fullhash}{def5ab1a86b59450ee1a794bfc7374d0}
+      \strng{bibnamehash}{def5ab1a86b59450ee1a794bfc7374d0}
+      \strng{authorbibnamehash}{def5ab1a86b59450ee1a794bfc7374d0}
+      \strng{authornamehash}{def5ab1a86b59450ee1a794bfc7374d0}
+      \strng{authorfullhash}{def5ab1a86b59450ee1a794bfc7374d0}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://news.worldcasinodirectory.com/in-the-news/casino-news/casino-openings}}
+      \field{note}{Accessed: 26 September 2025}
+      \field{title}{Casino Openings}
+    \endentry
+    \entry{Scavette2022Casinos}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=82b81976a780604d54750261b807f309}{%
+           family={Scavette},
+           familyi={S\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Federal Reserve Bank of Richmond}%
+      }
+      \strng{namehash}{82b81976a780604d54750261b807f309}
+      \strng{fullhash}{82b81976a780604d54750261b807f309}
+      \strng{bibnamehash}{82b81976a780604d54750261b807f309}
+      \strng{authorbibnamehash}{82b81976a780604d54750261b807f309}
+      \strng{authornamehash}{82b81976a780604d54750261b807f309}
+      \strng{authorfullhash}{82b81976a780604d54750261b807f309}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{7}
+      \field{note}{Accessed: 26 September 2025}
+      \field{title}{Casinos and Regional Economies: Has the Game Changed?}
+      \field{type}{Economic Brief No.\ 22-28}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.richmondfed.org/publications/research/economic_brief/2022/eb_22-28
+      \endverb
+      \verb{url}
+      \verb https://www.richmondfed.org/publications/research/economic_brief/2022/eb_22-28
+      \endverb
+    \endentry
+    \entry{sen1973behaviour}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=18688d43042a810cb6ae6bb19c167f1b}{%
+           family={Sen},
+           familyi={S\bibinitperiod},
+           given={Amartya},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{18688d43042a810cb6ae6bb19c167f1b}
+      \strng{fullhash}{18688d43042a810cb6ae6bb19c167f1b}
+      \strng{bibnamehash}{18688d43042a810cb6ae6bb19c167f1b}
+      \strng{authorbibnamehash}{18688d43042a810cb6ae6bb19c167f1b}
+      \strng{authornamehash}{18688d43042a810cb6ae6bb19c167f1b}
+      \strng{authorfullhash}{18688d43042a810cb6ae6bb19c167f1b}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Economica}
+      \field{number}{159}
+      \field{title}{Behaviour and the Concept of Preference}
+      \field{volume}{40}
+      \field{year}{1973}
+      \field{pages}{241\bibrangedash 259}
+      \range{pages}{19}
+    \endentry
+    \entry{Soriano2025Why}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6a71734661787aee64a8b1f91ca1c8a0}{%
+           family={Soriano},
+           familyi={S\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6a71734661787aee64a8b1f91ca1c8a0}
+      \strng{fullhash}{6a71734661787aee64a8b1f91ca1c8a0}
+      \strng{bibnamehash}{6a71734661787aee64a8b1f91ca1c8a0}
+      \strng{authorbibnamehash}{6a71734661787aee64a8b1f91ca1c8a0}
+      \strng{authornamehash}{6a71734661787aee64a8b1f91ca1c8a0}
+      \strng{authorfullhash}{6a71734661787aee64a8b1f91ca1c8a0}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Why Irving must say no to casino plan}
+      \field{year}{2025}
+      \verb{file}
+      \verb Why Irving must say no to sands.pdf
+      \endverb
+    \endentry
+    \entry{stitt2003does}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=de7c5c6947ae199cb6b7f00a1b483236}{%
+           family={Stitt},
+           familyi={S\bibinitperiod},
+           given={B\bibnamedelima Grant},
+           giveni={B\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=864ae9c953500fdec0fafdbcf19b659d}{%
+           family={Nichols},
+           familyi={N\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3bb22298dbb79eb6b620223e3ec3a32f}{%
+           family={Giacopassi},
+           familyi={G\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Sage Publications}%
+      }
+      \strng{namehash}{ed67503805f78e013be7ab7391e71120}
+      \strng{fullhash}{ed67503805f78e013be7ab7391e71120}
+      \strng{bibnamehash}{ed67503805f78e013be7ab7391e71120}
+      \strng{authorbibnamehash}{ed67503805f78e013be7ab7391e71120}
+      \strng{authornamehash}{ed67503805f78e013be7ab7391e71120}
+      \strng{authorfullhash}{ed67503805f78e013be7ab7391e71120}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Crime \& Delinquency}
+      \field{number}{2}
+      \field{title}{Does the presence of casinos increase crime? An examination of casino and control communities}
+      \field{volume}{49}
+      \field{year}{2003}
+      \field{pages}{253\bibrangedash 284}
+      \range{pages}{32}
+    \endentry
+    \entry{wiley2011casino}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=19b8d38952ecc257c763daf7623f8e79}{%
+           family={Wiley},
+           familyi={W\bibinitperiod},
+           given={Jonathan\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cbdf3ffaedcb84b09ad7908daacea75e}{%
+           family={Walker},
+           familyi={W\bibinitperiod},
+           given={Douglas\bibnamedelima M},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{0175d602e51071c1eacc2f1c5c2adddd}
+      \strng{fullhash}{0175d602e51071c1eacc2f1c5c2adddd}
+      \strng{bibnamehash}{0175d602e51071c1eacc2f1c5c2adddd}
+      \strng{authorbibnamehash}{0175d602e51071c1eacc2f1c5c2adddd}
+      \strng{authornamehash}{0175d602e51071c1eacc2f1c5c2adddd}
+      \strng{authorfullhash}{0175d602e51071c1eacc2f1c5c2adddd}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Real Estate Finance and Economics}
+      \field{number}{1}
+      \field{title}{Casino revenues and retail property values: The Detroit case}
+      \field{volume}{42}
+      \field{year}{2011}
+      \field{pages}{99\bibrangedash 114}
+      \range{pages}{16}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

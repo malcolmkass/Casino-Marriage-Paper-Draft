@@ -1,51 +1,20 @@
-\begin{table}[htbp]\centering
-\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
-\caption{School Population and Enrollment Effects}
-\begin{tabular}{l*{3}{c}}
-\hline\hline
-            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
-            &\multicolumn{1}{c}{School-Age Pop}&\multicolumn{1}{c}{Total Enrollment}&\multicolumn{1}{c}{Public Enrollment}\\
-\hline
-t-3         &      -0.059\sym{***}&      -0.058\sym{**} &      -0.043\sym{*}  \\
-            &     (0.022)         &     (0.023)         &     (0.023)         \\
-[1em]
-t-2         &       0.017\sym{*}  &       0.015         &       0.029\sym{***}\\
-            &     (0.010)         &     (0.009)         &     (0.011)         \\
-[1em]
-t           &      -0.009         &      -0.006         &      -0.001         \\
-            &     (0.009)         &     (0.010)         &     (0.012)         \\
-[1em]
-t+1         &      -0.014         &      -0.009         &       0.005         \\
-            &     (0.012)         &     (0.013)         &     (0.015)         \\
-[1em]
-t+2         &      -0.025\sym{*}  &      -0.023         &      -0.004         \\
-            &     (0.014)         &     (0.015)         &     (0.018)         \\
-[1em]
-t+3         &      -0.033\sym{**} &      -0.032\sym{*}  &      -0.013         \\
-            &     (0.016)         &     (0.017)         &     (0.019)         \\
-[1em]
-t+4         &      -0.038\sym{**} &      -0.041\sym{**} &      -0.018         \\
-            &     (0.017)         &     (0.018)         &     (0.020)         \\
-[1em]
-t+5         &      -0.043\sym{**} &      -0.044\sym{**} &      -0.021         \\
-            &     (0.018)         &     (0.018)         &     (0.021)         \\
-[1em]
-t+6         &      -0.051\sym{**} &      -0.048\sym{**} &      -0.019         \\
-            &     (0.020)         &     (0.021)         &     (0.022)         \\
-[1em]
-t+7         &      -0.052\sym{**} &      -0.049\sym{**} &      -0.032         \\
-            &     (0.021)         &     (0.022)         &     (0.024)         \\
-[1em]
-t+8+        &      -0.046\sym{*}  &      -0.046\sym{*}  &      -0.019         \\
-            &     (0.026)         &     (0.027)         &     (0.026)         \\
-\hline
-Observations&       6,686         &       6,686         &       6,686         \\
-R-squared   &       0.991         &       0.991         &       0.990         \\
-\hline\hline
-\multicolumn{4}{l}{\footnotesize Standard errors in parentheses}\\
-\multicolumn{4}{l}{\footnotesize Standard errors clustered at county level in parentheses.}\\
-\multicolumn{4}{l}{\footnotesize All variables in logs. School-age = 5-17 years.}\\
-\multicolumn{4}{l}{\footnotesize Donut sample excludes nearby counties. *** p<0.01, ** p<0.05, * p<0.1.}\\
-\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
-\end{tabular}
-\end{table}
+\begingroup
+% This file is referenced by main.tex. Prefer the event-study version if present.
+\IfFileExists{table6_school_effects_kassaresprez.tex}{%
+  \input{table6_school_effects_kassaresprez.tex}%
+}{%
+  \IfFileExists{table6_school_did.tex}{%
+    \input{table6_school_did.tex}%
+  }{%
+    \begin{table}[htbp]\centering
+      \caption{School Effects (missing table file)}
+      \begin{tabular}{l}
+        \hline
+        Missing: table6\_school\_effects\_kassaresprez.tex and table6\_school\_did.tex \\
+        \hline
+      \end{tabular}
+    \end{table}
+  }%
+}%
+\endgroup
+

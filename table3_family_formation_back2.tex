@@ -1,0 +1,20 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\scriptsize
+\begin{tabular}{l*{6}{c}}
+\hline\hline
+            &\multicolumn{3}{c}{Women}                                        &\multicolumn{3}{c}{Men}                                          \\\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}\\
+            &\multicolumn{1}{c}{Marriage}&\multicolumn{1}{c}{Child}&\multicolumn{1}{c}{Num Kids}&\multicolumn{1}{c}{Marriage}&\multicolumn{1}{c}{Child}&\multicolumn{1}{c}{Num Kids}\\
+\hline
+Back2&      0.0077         &     -0.0049         &     -0.0201\sym{**} &     -0.0007         &     -0.0104\sym{**} &     -0.0317\sym{***}\\
+            &    (0.0050)         &    (0.0056)         &    (0.0084)         &    (0.0052)         &    (0.0051)         &    (0.0079)         \\
+\hline
+Obs&   7,414,164         &   7,414,164         &   7,414,164         &   7,506,358         &   7,506,358         &   7,506,358         \\
+R-sq  &       0.208         &       0.272         &       0.243         &       0.220         &       0.229         &       0.206         \\
+\hline\hline
+\multicolumn{7}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{7}{l}{\footnotesize All regressions include county and year fixed effects, age and age squared.}\\
+\multicolumn{7}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}

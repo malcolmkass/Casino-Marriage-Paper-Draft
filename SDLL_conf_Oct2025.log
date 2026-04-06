@@ -1,0 +1,1930 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.10)  26 MAR 2026 07:40
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"c:/Users/mkass/IT (30) Advanced Dropbox/Malcolm Kass/Casino Talk/Casino-Marriage-Paper-Draft/SDLL_conf_Oct2025.tex"
+(c:/Users/mkass/IT (30) Advanced Dropbox/Malcolm Kass/Casino Talk/Casino-Marriage-Paper-Draft/SDLL_conf_Oct2025.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-05-04> (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer.cls
+Document Class: beamer 2023/05/15 v3.70 A class for typesetting presentations
+(C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasemodes.sty (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count185
+)
+\beamer@tempbox=\box50
+\beamer@tempcount=\count186
+\c@beamerpauses=\count187
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasedecode.sty
+\beamer@slideinframe=\count188
+\beamer@minimum=\count189
+\beamer@decode@box=\box51
+)
+\beamer@commentbox=\box52
+\beamer@modecount=\count190
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+\headdp=\dimen138
+\footheight=\dimen139
+\sidebarheight=\dimen140
+\beamer@tempdim=\dimen141
+\beamer@finalheight=\dimen142
+\beamer@animht=\dimen143
+\beamer@animdp=\dimen144
+\beamer@animwd=\dimen145
+\beamer@leftmargin=\dimen146
+\beamer@rightmargin=\dimen147
+\beamer@leftsidebar=\dimen148
+\beamer@rightsidebar=\dimen149
+\beamer@boxsize=\dimen150
+\beamer@vboxoffset=\dimen151
+\beamer@descdefault=\dimen152
+\beamer@descriptionwidth=\dimen153
+\beamer@lastskip=\skip47
+\beamer@areabox=\box53
+\beamer@animcurrent=\box54
+\beamer@animshowbox=\box55
+\beamer@sectionbox=\box56
+\beamer@logobox=\box57
+\beamer@linebox=\box58
+\beamer@sectioncount=\count191
+\beamer@subsubsectionmax=\count192
+\beamer@subsectionmax=\count193
+\beamer@sectionmax=\count194
+\beamer@totalheads=\count195
+\beamer@headcounter=\count196
+\beamer@partstartpage=\count197
+\beamer@sectionstartpage=\count198
+\beamer@subsectionstartpage=\count199
+\beamer@animationtempa=\count266
+\beamer@animationtempb=\count267
+\beamer@xpos=\count268
+\beamer@ypos=\count269
+\beamer@ypos@offset=\count270
+\beamer@showpartnumber=\count271
+\beamer@currentsubsection=\count272
+\beamer@coveringdepth=\count273
+\beamer@sectionadjust=\count274
+\beamer@toclastsection=\count275
+\beamer@tocsectionnumber=\count276
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseoptions.sty (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+))
+\beamer@paperwidth=\skip48
+\beamer@paperheight=\skip49
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count277
+\Gm@cntv=\count278
+\c@Gm@tempcnt=\count279
+\Gm@bindingoffset=\dimen154
+\Gm@wd@mp=\dimen155
+\Gm@odd@mp=\dimen156
+\Gm@even@mp=\dimen157
+\Gm@layoutwidth=\dimen158
+\Gm@layoutheight=\dimen159
+\Gm@layouthoffset=\dimen160
+\Gm@layoutvoffset=\dimen161
+\Gm@dimlist=\toks17
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks18
+\pgfutil@tempdima=\dimen162
+\pgfutil@tempdimb=\dimen163
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common-lists.tex)) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+\pgfutil@abb=\box59
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+)) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks19
+\pgfkeys@temptoks=\toks20
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks21
+))) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex
+\pgf@x=\dimen164
+\pgf@xa=\dimen165
+\pgf@xb=\dimen166
+\pgf@xc=\dimen167
+\pgf@y=\dimen168
+\pgf@ya=\dimen169
+\pgf@yb=\dimen170
+\pgf@yc=\dimen171
+\c@pgf@counta=\count280
+\c@pgf@countb=\count281
+\c@pgf@countc=\count282
+\c@pgf@countd=\count283
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen172
+\pgfmath@count=\count284
+\pgfmath@box=\box60
+\pgfmath@toks=\toks22
+\pgfmath@stack@operand=\toks23
+\pgfmath@stack@operation=\toks24
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex))) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count285
+))) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen173
+\Gin@req@width=\dimen174
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)
+\pgf@x=\dimen175
+\pgf@y=\dimen176
+\pgf@xa=\dimen177
+\pgf@ya=\dimen178
+\pgf@xb=\dimen179
+\pgf@yb=\dimen180
+\pgf@xc=\dimen181
+\pgf@yc=\dimen182
+\pgf@xd=\dimen183
+\pgf@yd=\dimen184
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count286
+\c@pgf@countb=\count287
+\c@pgf@countc=\count288
+\c@pgf@countd=\count289
+\t@pgf@toka=\toks25
+\t@pgf@tokb=\toks26
+\t@pgf@tokc=\toks27
+\pgf@sys@id@count=\count290
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+))) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count291
+\pgfsyssoftpath@bigbuffer@items=\count292
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen185
+\pgf@picmaxx=\dimen186
+\pgf@picminy=\dimen187
+\pgf@picmaxy=\dimen188
+\pgf@pathminx=\dimen189
+\pgf@pathmaxx=\dimen190
+\pgf@pathminy=\dimen191
+\pgf@pathmaxy=\dimen192
+\pgf@xx=\dimen193
+\pgf@xy=\dimen194
+\pgf@yx=\dimen195
+\pgf@yy=\dimen196
+\pgf@zx=\dimen197
+\pgf@zy=\dimen198
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen199
+\pgf@path@lasty=\dimen256
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen257
+\pgf@shorten@start@additional=\dimen258
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box61
+\pgf@hbox=\box62
+\pgf@layerbox@main=\box63
+\pgf@picture@serial@count=\count293
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen259
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen260
+\pgf@pt@y=\dimen261
+\pgf@pt@temp=\dimen262
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen263
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen264
+\pgf@sys@shading@range@num=\count294
+\pgf@shadingcount=\count295
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box64
+)) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\xxcolor.sty
+Package: xxcolor 2003/10/24 ver 0.1
+\XC@nummixins=\count296
+\XC@countmixins=\count297
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2022-05-13 v7.00o Hypertext links for LaTeX
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen265
+\Hy@linkcounter=\count298
+\Hy@pagecounter=\count299
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2022-05-13 v7.00o Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count300
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2022-05-13 v7.00o Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `bookmarks' set `true' on input line 4023.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4023.
+Package hyperref Info: Option `implicit' set `false' on input line 4023.
+Package hyperref Info: Hyper figures OFF on input line 4142.
+Package hyperref Info: Link nesting OFF on input line 4147.
+Package hyperref Info: Hyper index ON on input line 4150.
+Package hyperref Info: Plain pages OFF on input line 4157.
+Package hyperref Info: Backreferencing OFF on input line 4162.
+Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
+Package hyperref Info: Bookmarks ON on input line 4395.
+\c@Hy@tempcnt=\count301
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4742.
+\XeTeXLinkMargin=\dimen266
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count302
+\Field@Width=\dimen267
+\Fld@charsize=\dimen268
+Package hyperref Info: Hyper figures OFF on input line 6020.
+Package hyperref Info: Link nesting OFF on input line 6025.
+Package hyperref Info: Hyper index ON on input line 6028.
+Package hyperref Info: backreferencing OFF on input line 6035.
+Package hyperref Info: Link coloring OFF on input line 6040.
+Package hyperref Info: Link coloring with OCG OFF on input line 6045.
+Package hyperref Info: PDF/A mode OFF on input line 6050.
+LaTeX Info: Redefining \ref on input line 6097.
+LaTeX Info: Redefining \pageref on input line 6097.
+\Hy@abspage=\count303
+
+
+Package hyperref Message: Stopped early.
+
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2022-05-13 v7.00o Hyperref driver for pdfTeX
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\Fld@listcount=\count304
+\c@bookmark@seq@number=\count305
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
+)) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaserequires.sty (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasecompatibility.sty) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasefont.sty (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks28
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/sansmathaccent\sansmathaccent.sty
+Package: sansmathaccent 2020/01/31
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile.sty
+Package: scrlfile 2022/05/01 v3.36 KOMA-Script package (file load hooks)
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile-hook.sty
+Package: scrlfile-hook 2022/05/01 v3.36 KOMA-Script package (using LaTeX hooks)
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlogo.sty
+Package: scrlogo 2022/05/01 v3.36 KOMA-Script package (logo)
+))))) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetranslator.sty (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator.sty
+Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
+)) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasemisc.sty) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetwoscreens.sty) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseoverlay.sty
+\beamer@argscount=\count306
+\beamer@lastskipcover=\skip50
+\beamer@trivlistdepth=\count307
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetitle.sty) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasesection.sty
+\c@lecture=\count308
+\c@part=\count309
+\c@section=\count310
+\c@subsection=\count311
+\c@subsubsection=\count312
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseframe.sty
+\beamer@framebox=\box65
+\beamer@frametitlebox=\box66
+\beamer@zoombox=\box67
+\beamer@zoomcount=\count313
+\beamer@zoomframecount=\count314
+\beamer@frametextheight=\dimen269
+\c@subsectionslide=\count315
+\beamer@frametopskip=\skip51
+\beamer@framebottomskip=\skip52
+\beamer@frametopskipautobreak=\skip53
+\beamer@framebottomskipautobreak=\skip54
+\beamer@envbody=\toks29
+\framewidth=\dimen270
+\c@framenumber=\count316
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseverbatim.sty
+\beamer@verbatimfileout=\write4
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseframesize.sty
+\beamer@splitbox=\box68
+\beamer@autobreakcount=\count317
+\beamer@autobreaklastheight=\dimen271
+\beamer@frametitletoks=\toks30
+\beamer@framesubtitletoks=\toks31
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseframecomponents.sty
+\beamer@footins=\box69
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasecolor.sty) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasenotes.sty
+\beamer@frameboxcopy=\box70
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetoc.sty) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetemplates.sty
+\beamer@sbttoks=\toks32
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseauxtemplates.sty (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseboxes.sty
+\bmb@box=\box71
+\bmb@colorbox=\box72
+\bmb@boxwidth=\dimen272
+\bmb@boxheight=\dimen273
+\bmb@prevheight=\dimen274
+\bmb@temp=\dimen275
+\bmb@dima=\dimen276
+\bmb@dimb=\dimen277
+\bmb@prevheight=\dimen278
+)
+\beamer@blockheadheight=\dimen279
+)) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaselocalstructure.sty (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/tools\enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks33
+)
+\beamer@bibiconwidth=\skip55
+\c@figure=\count318
+\c@table=\count319
+\abovecaptionskip=\skip56
+\belowcaptionskip=\skip57
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasenavigation.sty (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasenavigationsymbols.tex)
+\beamer@section@min@dim=\dimen280
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetheorems.sty (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip58
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks34
+\ex@=\dimen281
+)) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen282
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count320
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count321
+\leftroot@=\count322
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count323
+\DOTSCASE@=\count324
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box73
+\strutbox@=\box74
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen283
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count325
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count326
+\dotsspace@=\muskip17
+\c@parentequation=\count327
+\dspbrk@lvl=\count328
+\tag@help=\toks35
+\row@=\count329
+\column@=\count330
+\maxfields@=\count331
+\andhelp@=\toks36
+\eqnshift@=\dimen284
+\alignsep@=\dimen285
+\tagshift@=\dimen286
+\tagwidth@=\dimen287
+\totwidth@=\dimen288
+\lineht@=\dimen289
+\@envbody=\toks37
+\multlinegap=\skip59
+\multlinetaggap=\skip60
+\mathdisplay@stack=\toks38
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks39
+\thm@bodyfont=\toks40
+\thm@headfont=\toks41
+\thm@notefont=\toks42
+\thm@headpunct=\toks43
+\thm@preskip=\skip61
+\thm@postskip=\skip62
+\thm@headsep=\skip63
+\dth@everypar=\toks44
+)
+\c@theorem=\count332
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasethemes.sty)) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerthemedefault.sty (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerfontthemedefault.sty) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemedefault.sty) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerinnerthemedefault.sty
+\beamer@dima=\dimen290
+\beamer@dimb=\dimen291
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerouterthemedefault.sty))) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerthemeMadrid.sty (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemewhale.sty) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemeorchid.sty) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerinnerthemerounded.sty) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerouterthemeinfolines.sty)) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerouterthememiniframes.sty) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemelily.sty) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box75
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen292
+\pgf@nodesepend=\dimen293
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+)) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)
+\pgffor@iter=\dimen294
+\pgffor@skip=\dimen295
+\pgffor@stack=\toks45
+\pgffor@toks=\toks46
+)) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count333
+\pgfplotmarksize=\dimen296
+)
+\tikz@lastx=\dimen297
+\tikz@lasty=\dimen298
+\tikz@lastxsaved=\dimen299
+\tikz@lastysaved=\dimen300
+\tikz@lastmovetox=\dimen301
+\tikz@lastmovetoy=\dimen302
+\tikzleveldistance=\dimen303
+\tikzsiblingdistance=\dimen304
+\tikz@figbox=\box76
+\tikz@figbox@bg=\box77
+\tikz@tempbox=\box78
+\tikz@tempbox@bg=\box79
+\tikztreelevel=\count334
+\tikznumberofchildren=\count335
+\tikznumberofcurrentchild=\count336
+\tikz@fig@count=\count337
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count338
+\pgfmatrixcurrentcolumn=\count339
+\pgf@matrix@numberofcolumns=\count340
+)
+\tikz@expandcount=\count341
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.code.tex (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscore.code.tex
+\t@pgfplots@toka=\toks47
+\t@pgfplots@tokb=\toks48
+\t@pgfplots@tokc=\toks49
+\pgfplots@tmpa=\dimen305
+\c@pgfplots@coordindex=\count342
+\c@pgfplots@scanlineindex=\count343
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplotssysgeneric.code.tex)) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgfplotslibrary.code.tex) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_loader.code.tex (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryfpu.code.tex)) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.code.tex (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructure.code.tex) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructureext.code.tex) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count344
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsmatrix.code.tex) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count345
+\t@pgfplotstable@a=\toks50
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsdeque.code.tex) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.code.tex (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.data.code.tex)) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.verb.code.tex) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count346
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolormap.code.tex (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolor.code.tex)) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsstackedplots.code.tex) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsplothandlers.code.tex (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplothandler.code.tex (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplotimage.code.tex))) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.scaling.code.tex) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscoordprocessing.code.tex) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.errorbars.code.tex) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.markers.code.tex) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsticks.code.tex) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.paths.code.tex) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen306
+\pgfdecoratedremainingdistance=\dimen307
+\pgfdecoratedinputsegmentcompleteddistance=\dimen308
+\pgfdecoratedinputsegmentremainingdistance=\dimen309
+\pgf@decorate@distancetomove=\dimen310
+\pgf@decorate@repeatstate=\count347
+\pgfdecorationsegmentamplitude=\dimen311
+\pgfdecorationsegmentlength=\dimen312
+)
+\tikz@lib@dec@box=\box80
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathmorphing.code.tex)) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathreplacing.code.tex)) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count348
+\pgfplots@xmin@reg=\dimen313
+\pgfplots@xmax@reg=\dimen314
+\pgfplots@ymin@reg=\dimen315
+\pgfplots@ymax@reg=\dimen316
+\pgfplots@zmin@reg=\dimen317
+\pgfplots@zmax@reg=\dimen318
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen319
+\lightrulewidth=\dimen320
+\cmidrulewidth=\dimen321
+\belowrulesep=\dimen322
+\belowbottomsep=\dimen323
+\aboverulesep=\dimen324
+\abovetopsep=\dimen325
+\cmidrulesep=\dimen326
+\cmidrulekern=\dimen327
+\defaultaddspace=\dimen328
+\@cmidla=\count349
+\@cmidlb=\count350
+\@aboverulesep=\dimen329
+\@belowrulesep=\dimen330
+\@thisruleclass=\count351
+\@lastruleclass=\count352
+\@thisrulewidth=\dimen331
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen332
+\captionmargin=\dimen333
+\caption@leftmargin=\dimen334
+\caption@rightmargin=\dimen335
+\caption@width=\dimen336
+\caption@indent=\dimen337
+\caption@parindent=\dimen338
+\caption@hangindent=\dimen339
+Package caption Info: beamer document class detected.
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption-beamer.sto
+File: caption-beamer.sto 2022/01/06 v2.0c Adaption of the caption package to the beamer document classes (AR)
+))
+\c@caption@flags=\count353
+\c@continuedfloat=\count354
+Package caption Info: hyperref package is loaded.
+Package caption Info: Hyperref support is turned off
+(caption)             because hyperref has stopped early.
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count355
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count356
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2022/01/29 v0.5u Insert pages of external PDF documents (AM)
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count357
+\calc@Bcount=\count358
+\calc@Adimen=\dimen340
+\calc@Bdimen=\dimen341
+\calc@Askip=\skip64
+\calc@Bskip=\skip65
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count359
+\calc@Cskip=\skip66
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen342
+\ESO@tempdimb=\dimen343
+)
+\AM@pagewidth=\dimen344
+\AM@pageheight=\dimen345
+\AM@fboxrule=\dimen346
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
+File: pppdftex.def 2022/01/29 v0.5u Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count360
+\AM@pagebox=\box81
+\AM@global@opts=\toks51
+\AM@pagecnt=\count361
+\AM@toc@title=\toks52
+\c@AM@survey=\count362
+\AM@templatesizebox=\box82
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/appendixnumberbeamer\appendixnumberbeamer.sty) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2023/09/29 v3.95 The Babel package
+\babel@savecnt=\count363
+\U@D=\dimen347
+\l@unhyphenated=\language79
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read3
+LaTeX Info: Redefining \textlatin on input line 3947.
+\bbl@dirlevel=\count364
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+)
+Package babel Info: You haven't specified a language as a class or package
+(babel)             option. I'll load 'nil'. Reported on input line 4295.
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/babel\nil.ldf
+Language: nil 2023/09/29 v3.95 Nil language
+\l@nil=\language80
+)) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/blindtext\blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count365
+\c@Blindtext=\count366
+\c@blind@countparstart=\count367
+\blind@countxx=\count368
+\blindtext@numBlindtext=\count369
+\blind@countyy=\count370
+\c@blindlist=\count371
+\c@blindlistlevel=\count372
+\c@blindlist@level=\count373
+\blind@listitem=\count374
+\c@blind@listcount=\count375
+\c@blind@levelcount=\count376
+\blind@mathformula=\count377
+\blind@Mathformula=\count378
+\c@blind@randomcount=\count379
+\c@blind@randommax=\count380
+\c@blind@pangramcount=\count381
+\c@blind@pangrammax=\count382
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerfontthemeprofessionalfonts.sty) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
+Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count383
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+\c@tabx@nest=\count384
+\c@listtotal=\count385
+\c@listcount=\count386
+\c@liststart=\count387
+\c@liststop=\count388
+\c@citecount=\count389
+\c@citetotal=\count390
+\c@multicitecount=\count391
+\c@multicitetotal=\count392
+\c@instcount=\count393
+\c@maxnames=\count394
+\c@minnames=\count395
+\c@maxitems=\count396
+\c@minitems=\count397
+\c@citecounter=\count398
+\c@maxcitecounter=\count399
+\c@savedcitecounter=\count400
+\c@uniquelist=\count401
+\c@uniquename=\count402
+\c@refsection=\count403
+\c@refsegment=\count404
+\c@maxextratitle=\count405
+\c@maxextratitleyear=\count406
+\c@maxextraname=\count407
+\c@maxextradate=\count408
+\c@maxextraalpha=\count409
+\c@abbrvpenalty=\count410
+\c@highnamepenalty=\count411
+\c@lownamepenalty=\count412
+\c@maxparens=\count413
+\c@parenlevel=\count414
+\blx@tempcnta=\count415
+\blx@tempcntb=\count416
+\blx@tempcntc=\count417
+\c@blx@maxsection=\count418
+\blx@maxsegment@0=\count419
+\blx@notetype=\count420
+\blx@parenlevel@text=\count421
+\blx@parenlevel@foot=\count422
+\blx@sectionciteorder@0=\count423
+\blx@sectionciteorderinternal@0=\count424
+\blx@entrysetcounter=\count425
+\blx@biblioinstance=\count426
+\labelnumberwidth=\skip67
+\labelalphawidth=\skip68
+\biblabelsep=\skip69
+\bibitemsep=\skip70
+\bibnamesep=\skip71
+\bibinitsep=\skip72
+\bibparsep=\skip73
+\bibhang=\skip74
+\blx@bcfin=\read4
+\blx@bcfout=\write5
+\blx@langwohyphens=\language81
+\c@mincomprange=\count427
+\c@maxcomprange=\count428
+\c@mincompwidth=\count429
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
+File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'authoryear.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count430
+\c@savedafterword=\count431
+\c@annotator=\count432
+\c@savedannotator=\count433
+\c@author=\count434
+\c@savedauthor=\count435
+\c@bookauthor=\count436
+\c@savedbookauthor=\count437
+\c@commentator=\count438
+\c@savedcommentator=\count439
+\c@editor=\count440
+\c@savededitor=\count441
+\c@editora=\count442
+\c@savededitora=\count443
+\c@editorb=\count444
+\c@savededitorb=\count445
+\c@editorc=\count446
+\c@savededitorc=\count447
+\c@foreword=\count448
+\c@savedforeword=\count449
+\c@holder=\count450
+\c@savedholder=\count451
+\c@introduction=\count452
+\c@savedintroduction=\count453
+\c@namea=\count454
+\c@savednamea=\count455
+\c@nameb=\count456
+\c@savednameb=\count457
+\c@namec=\count458
+\c@savednamec=\count459
+\c@translator=\count460
+\c@savedtranslator=\count461
+\c@shortauthor=\count462
+\c@savedshortauthor=\count463
+\c@shorteditor=\count464
+\c@savedshorteditor=\count465
+\c@labelname=\count466
+\c@savedlabelname=\count467
+\c@institution=\count468
+\c@savedinstitution=\count469
+\c@lista=\count470
+\c@savedlista=\count471
+\c@listb=\count472
+\c@savedlistb=\count473
+\c@listc=\count474
+\c@savedlistc=\count475
+\c@listd=\count476
+\c@savedlistd=\count477
+\c@liste=\count478
+\c@savedliste=\count479
+\c@listf=\count480
+\c@savedlistf=\count481
+\c@location=\count482
+\c@savedlocation=\count483
+\c@organization=\count484
+\c@savedorganization=\count485
+\c@origlocation=\count486
+\c@savedoriglocation=\count487
+\c@origpublisher=\count488
+\c@savedorigpublisher=\count489
+\c@publisher=\count490
+\c@savedpublisher=\count491
+\c@language=\count492
+\c@savedlanguage=\count493
+\c@origlanguage=\count494
+\c@savedoriglanguage=\count495
+\c@pageref=\count496
+\c@savedpageref=\count497
+\shorthandwidth=\skip75
+\shortjournalwidth=\skip76
+\shortserieswidth=\skip77
+\shorttitlewidth=\skip78
+\shortauthorwidth=\skip79
+\shorteditorwidth=\skip80
+\locallabelnumberwidth=\skip81
+\locallabelalphawidth=\skip82
+\localshorthandwidth=\skip83
+\localshortjournalwidth=\skip84
+\localshortserieswidth=\skip85
+\localshorttitlewidth=\skip86
+\localshortauthorwidth=\skip87
+\localshorteditorwidth=\skip88
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
+File: blx-compat.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load BibTeX backend compatibility...
+Package biblatex Info: ... file 'blx-bibtex.def' found.
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-bibtex.def
+File: blx-bibtex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+
+
+Package biblatex Warning: Using fall-back bibtex backend:
+(biblatex)                functionality may be reduced/unavailable.
+
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
+File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+\c@textcitecount=\count498
+\c@textcitetotal=\count499
+\c@textcitemaxnames=\count500
+\c@biburlbigbreakpenalty=\count501
+\c@biburlbreakpenalty=\count502
+\c@biburlnumpenalty=\count503
+\c@biburlucpenalty=\count504
+\c@biburllcpenalty=\count505
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count506
+)
+Package biblatex Info: Trying to load bibliography style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.bbx' found.
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\authoryear.bbx
+File: authoryear.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
+File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count507
+\c@bbx:relatedtotal=\count508
+))
+Package biblatex Info: Trying to load citation style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.cbx' found.
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\authoryear.cbx
+File: authoryear.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2022-05-04 L3 programming layer (loader) 
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-04-20 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count509
+\l__pdf_internal_box=\box83
+))
+Package biblatex Info: ... and expl3
+(biblatex)             2022-05-04 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
+Package: xparse 2022-01-12 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
+))
+Package biblatex Info: Delimiter 'finalnamedelim' in context '' already defined, overwriting on input line 68.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 83.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 83.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 83.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 83.
+
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count510
+\@quotereset=\count511
+(SDLL_conf_Oct2025.aux)
+\openout1 = `SDLL_conf_Oct2025.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(10.95003pt, 342.2953pt, 10.95003pt)
+* v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
+* \paperwidth=364.19536pt
+* \paperheight=273.14662pt
+* \textwidth=342.2953pt
+* \textheight=244.6939pt
+* \oddsidemargin=-61.31996pt
+* \evensidemargin=-61.31996pt
+* \topmargin=-72.26999pt
+* \headheight=14.22636pt
+* \headsep=0.0pt
+* \topskip=11.0pt
+* \footskip=14.22636pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count512
+\scratchdimen=\dimen348
+\scratchbox=\box84
+\nofMPsegments=\count513
+\nofMParguments=\count514
+\everyMPshowfont=\toks53
+\MPscratchCnt=\count515
+\MPscratchDim=\dimen349
+\MPnumerator=\count516
+\makeMPintoPDFobject=\count517
+\everyMPtoPDFconversion=\toks54
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package hyperref Info: Link coloring OFF on input line 88.
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2022-05-13 v2.48 Cross-referencing by name of section
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count518
+) (SDLL_conf_Oct2025.out) (SDLL_conf_Oct2025.out)
+\@outlinefile=\write6
+\openout6 = `SDLL_conf_Oct2025.out'.
+
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-bibliography-dictionary-English.dict
+Dictionary: translator-bibliography-dictionary, Language: English 
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-environment-dictionary-English.dict
+Dictionary: translator-environment-dictionary, Language: English 
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-months-dictionary-English.dict
+Dictionary: translator-months-dictionary, Language: English 
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-numbers-dictionary-English.dict
+Dictionary: translator-numbers-dictionary, Language: English 
+) (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-theorem-dictionary-English.dict
+Dictionary: translator-theorem-dictionary, Language: English 
+)
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into your preamble.
+ on input line 88.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+(C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+Package biblatex Info: Trying to load language 'nil'...
+Package biblatex Info: ... file 'nil.lbx' not found.
+
+
+Package biblatex Warning: Language 'nil' not supported.
+(biblatex)                Using dummy definitions on input line 88.
+
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Data encoding 'utf8' specified.
+(biblatex)             No need to reencode data.
+\openout5 = `SDLL_conf_Oct2025-blx.bib'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'SDLL_conf_Oct2025.bbl' found.
+(SDLL_conf_Oct2025.bbl)
+Package biblatex Info: Reference section=0 on input line 88.
+Package biblatex Info: Reference segment=0 on input line 88.
+ (SDLL_conf_Oct2025.nav)
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 88--88
+[][]  
+ []
+
+
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 92--92
+[][]  
+ []
+
+
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[1{C:/Users/mkass/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+
+]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 112--112
+[][]  
+ []
+
+
+Package biblatex Warning: Bibliography string 'and' untranslated
+(biblatex)                at entry 'humphreys2013new' on input line 112.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdateshort.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdateshort.
+
+
+Package biblatex Warning: Bibliography string 'and' untranslated
+(biblatex)                at entry 'wiley2011casino' on input line 112.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdateshort.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdateshort.
+
+
+Package biblatex Warning: Bibliography string 'and' untranslated
+(biblatex)                at entry 'grinols2006casinos' on input line 112.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdateshort.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdateshort.
+
+
+Package biblatex Warning: Bibliography string 'and' untranslated
+(biblatex)                at entry 'moellman2013indian' on input line 112.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdateshort.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdateshort.
+
+
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[2
+
+]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 131--131
+[][]  
+ []
+
+
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[3
+
+]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 140--140
+[][]  
+ []
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdateshort.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdateshort.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdateshort.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdateshort.
+
+
+Package biblatex Warning: Bibliography string 'and' untranslated
+(biblatex)                at entry 'gallego2023baby' on input line 140.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdateshort.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdateshort.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdateshort.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdateshort.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdateshort.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdateshort.
+
+
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[4
+
+]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 155--155
+[][]  
+ []
+
+
+Package biblatex Warning: Bibliography string 'and' untranslated
+(biblatex)                at entry 'grinols2006casinos' on input line 155.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdateshort.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdateshort.
+
+
+Package biblatex Warning: Bibliography string 'and' untranslated
+(biblatex)                at entry 'wiley2011casino' on input line 155.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdateshort.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdateshort.
+
+
+Package biblatex Warning: Bibliography string 'and' untranslated
+(biblatex)                at entry 'humphreys2013new' on input line 155.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdateshort.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdateshort.
+
+
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[5
+
+]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 167--167
+[][]  
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 167.
+(C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 167.
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[6
+
+]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 184--184
+[][]  
+ []
+
+
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[7
+
+]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 192--192
+[][]  
+ []
+
+<shot_casino.png, id=642, 599.99156pt x 444.91219pt>
+File: shot_casino.png Graphic file (type png)
+<use shot_casino.png>
+Package pdftex.def Info: shot_casino.png  used on input line 192.
+(pdftex.def)             Requested size: 256.0748pt x 189.88965pt.
+
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[8
+
+ <./shot_casino.png>]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 211--211
+[][]  
+ []
+
+
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[9
+
+]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 224--224
+[][]  
+ []
+
+
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[10
+
+]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 236--236
+[][]  
+ []
+
+
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[11
+
+]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 253--253
+[][]  
+ []
+
+
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[12
+
+]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 267--267
+[][]  
+ []
+
+
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[13
+
+]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 276--276
+[][]  
+ []
+
+<figure1_population_effects_baselag2.png, id=1084, 1405.25pt x 903.375pt>
+File: figure1_population_effects_baselag2.png Graphic file (type png)
+<use figure1_population_effects_baselag2.png>
+Package pdftex.def Info: figure1_population_effects_baselag2.png  used on input line 276.
+(pdftex.def)             Requested size: 284.52756pt x 182.90486pt.
+
+Overfull \vbox (0.41594pt too high) detected at line 276
+ []
+
+
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[14
+
+ <./figure1_population_effects_baselag2.png (PNG copy)>]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 280--280
+[][]  
+ []
+
+(table3_family_formation_back2.tex)
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[15
+
+]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 288--288
+[][]  
+ []
+
+<figure2_fertility_effects_back2.png, id=1233, 1405.25pt x 903.375pt>
+File: figure2_fertility_effects_back2.png Graphic file (type png)
+<use figure2_fertility_effects_back2.png>
+Package pdftex.def Info: figure2_fertility_effects_back2.png  used on input line 288.
+(pdftex.def)             Requested size: 341.43306pt x 219.4886pt.
+
+Overfull \vbox (36.99968pt too high) detected at line 288
+ []
+
+
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[16
+
+ <./figure2_fertility_effects_back2.png (PNG copy)>]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 292--292
+[][]  
+ []
+
+(table4_didResDuration.tex)
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[17
+
+]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 300--300
+[][]  
+ []
+
+<figure3_mechanism_test_back2.png, id=1378, 1405.25pt x 702.625pt>
+File: figure3_mechanism_test_back2.png Graphic file (type png)
+<use figure3_mechanism_test_back2.png>
+Package pdftex.def Info: figure3_mechanism_test_back2.png  used on input line 300.
+(pdftex.def)             Requested size: 341.43306pt x 170.71335pt.
+
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[18
+
+ <./figure3_mechanism_test_back2.png (PNG copy)>]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 305--305
+[][]  
+ []
+
+(table6_school_effects_kassaresprez.tex
+Overfull \hbox (5.45619pt too wide) in paragraph at lines 4--25
+ [] 
+ []
+
+)
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[19
+
+]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 317--317
+[][]  
+ []
+
+
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[20
+
+]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 327--327
+[][]  
+ []
+
+<ud.png, id=1596, 741.77126pt x 416.55624pt>
+File: ud.png Graphic file (type png)
+<use ud.png>
+Package pdftex.def Info: ud.png  used on input line 327.
+(pdftex.def)             Requested size: 341.43306pt x 191.73895pt.
+
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[21
+
+ <./ud.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\translate ' on input line 329.
+
+
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 334--334
+[][]  
+ []
+
+[22
+
+]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 339--339
+[][]  
+ []
+
+(table1_summary_stats.tex)
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[23
+
+]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 348--348
+[][]  
+ []
+
+<figure1_population_effects.png, id=1760, 1405.25pt x 903.375pt>
+File: figure1_population_effects.png Graphic file (type png)
+<use figure1_population_effects.png>
+Package pdftex.def Info: figure1_population_effects.png  used on input line 348.
+(pdftex.def)             Requested size: 284.52756pt x 182.90486pt.
+
+Overfull \vbox (18.41594pt too high) detected at line 348
+ []
+
+
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[24
+
+ <./figure1_population_effects.png (PNG copy)>]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 356--356
+[][]  
+ []
+
+<figure2_fertility_effects.png, id=1811, 1405.25pt x 903.375pt>
+File: figure2_fertility_effects.png Graphic file (type png)
+<use figure2_fertility_effects.png>
+Package pdftex.def Info: figure2_fertility_effects.png  used on input line 356.
+(pdftex.def)             Requested size: 284.52756pt x 182.90486pt.
+
+Overfull \vbox (0.41594pt too high) detected at line 356
+ []
+
+
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[25
+
+ <./figure2_fertility_effects.png (PNG copy)>]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 361--361
+[][]  
+ []
+
+(table3_family_formation_kassprez.tex)
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[26
+
+]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 369--369
+[][]  
+ []
+
+<figure3_mechanism_test.png, id=1914, 1405.25pt x 702.625pt>
+File: figure3_mechanism_test.png Graphic file (type png)
+<use figure3_mechanism_test.png>
+Package pdftex.def Info: figure3_mechanism_test.png  used on input line 369.
+(pdftex.def)             Requested size: 341.43306pt x 170.71335pt.
+
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[27
+
+ <./figure3_mechanism_test.png (PNG copy)>]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 377--377
+[][]  
+ []
+
+File: figure3_mechanism_test.png Graphic file (type png)
+<use figure3_mechanism_test.png>
+Package pdftex.def Info: figure3_mechanism_test.png  used on input line 377.
+(pdftex.def)             Requested size: 284.52756pt x 142.25934pt.
+
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[28
+
+]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 382--382
+[][]  
+ []
+
+(table6_school_did.tex)
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[29
+
+]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 386--386
+[][]  
+ []
+
+(table6_school_effects_kassprez.tex)
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[30
+
+]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 391--391
+[][]  
+ []
+
+(table9_spillover_effects_kassprez.tex
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 10.
+ (C:\Users\mkass\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
+File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+))
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[31
+
+]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 396--396
+[][]  
+ []
+
+(table9_spillover_effects_kassprez.tex)
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[32
+
+]
+Overfull \hbox (21.85083pt too wide) in paragraph at lines 400--400
+[][]  
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\translate ' on input line 400.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Bibliography string 'in' untranslated
+(biblatex)                at entry 'chetty2026opportunity' on input line 400.
+
+
+Package biblatex Warning: Bibliography string 'pages' untranslated
+(biblatex)                at entry 'chetty2026opportunity' on input line 400.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Bibliography string 'in' untranslated
+(biblatex)                at entry 'doepke2023economics' on input line 400.
+
+
+Package biblatex Warning: Bibliography string 'volume' untranslated
+(biblatex)                at entry 'doepke2023economics' on input line 400.
+
+
+Package biblatex Warning: Bibliography string 'pages' untranslated
+(biblatex)                at entry 'doepke2023economics' on input line 400.
+
+
+Package biblatex Warning: Bibliography string 'and' untranslated
+(biblatex)                at entry 'gallego2023baby' on input line 400.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Bibliography string 'in' untranslated
+(biblatex)                at entry 'gallego2023baby' on input line 400.
+
+
+Package biblatex Warning: Bibliography string 'pages' untranslated
+(biblatex)                at entry 'gallego2023baby' on input line 400.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Bibliography string 'in' untranslated
+(biblatex)                at entry 'goldin2021career' on input line 400.
+
+
+Package biblatex Warning: Bibliography string 'and' untranslated
+(biblatex)                at entry 'grinols2006casinos' on input line 400.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Bibliography string 'in' untranslated
+(biblatex)                at entry 'grinols2006casinos' on input line 400.
+
+
+Package biblatex Warning: Bibliography string 'pages' untranslated
+(biblatex)                at entry 'grinols2006casinos' on input line 400.
+
+
+Package biblatex Warning: Bibliography string 'and' untranslated
+(biblatex)                at entry 'humphreys2013new' on input line 400.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Bibliography string 'in' untranslated
+(biblatex)                at entry 'humphreys2013new' on input line 400.
+
+
+Package biblatex Warning: Bibliography string 'pages' untranslated
+(biblatex)                at entry 'humphreys2013new' on input line 400.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Bibliography string 'in' untranslated
+(biblatex)                at entry 'kearney2023two' on input line 400.
+
+
+Package biblatex Warning: Bibliography string 'and' untranslated
+(biblatex)                at entry 'moellman2013indian' on input line 400.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Bibliography string 'in' untranslated
+(biblatex)                at entry 'moellman2013indian' on input line 400.
+
+
+Package biblatex Warning: Bibliography string 'pages' untranslated
+(biblatex)                at entry 'moellman2013indian' on input line 400.
+
+
+Package biblatex Warning: Bibliography string 'and' untranslated
+(biblatex)                at entry 'wiley2011casino' on input line 400.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Bibliography string 'in' untranslated
+(biblatex)                at entry 'wiley2011casino' on input line 400.
+
+
+Package biblatex Warning: Bibliography string 'pages' untranslated
+(biblatex)                at entry 'wiley2011casino' on input line 400.
+
+
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[33
+
+ <C:/Users/mkass/AppData/Local/Programs/MiKTeX/tex/latex/beamer/beamericonarticle.pdf>]
+Overfull \hbox (21.85083pt too wide) has occurred while \output is active
+[][] 
+ []
+
+[34
+
+
+]
+\tf@nav=\write7
+\openout7 = `SDLL_conf_Oct2025.nav'.
+
+\tf@toc=\write8
+\openout8 = `SDLL_conf_Oct2025.toc'.
+
+\tf@snm=\write9
+\openout9 = `SDLL_conf_Oct2025.snm'.
+
+ (SDLL_conf_Oct2025.aux)
+Package rerunfilecheck Info: File `SDLL_conf_Oct2025.out' has not changed.
+(rerunfilecheck)             Checksum: 5D788A9462C4C207903F1EC53E1CB649;644.
+Package logreq Info: Writing requests to 'SDLL_conf_Oct2025.run.xml'.
+\openout1 = `SDLL_conf_Oct2025.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 45339 strings out of 478615
+ 1061539 string characters out of 5843120
+ 1571984 words of memory out of 5000000
+ 62592 multiletter control sequences out of 15000+600000
+ 483678 words of font info for 81 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 128i,19n,122p,2038b,1863s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\mkass\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss0800.pk><C:/Users/mkass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/mkass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/mkass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/mkass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/mkass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/mkass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/mkass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/mkass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/mkass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/mkass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/mkass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/mkass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users/mkass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/mkass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/mkass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/mkass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/mkass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on SDLL_conf_Oct2025.pdf (34 pages, 1229254 bytes).
+PDF statistics:
+ 2395 PDF objects out of 2487 (max. 8388607)
+ 85 named destinations out of 1000 (max. 500000)
+ 135 words of extra memory for PDF output out of 10000 (max. 10000000)
+

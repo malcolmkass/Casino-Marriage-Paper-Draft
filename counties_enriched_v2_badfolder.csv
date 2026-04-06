@@ -1,0 +1,703 @@
+﻿casino_name,tuyear,Location,pre2003casino_cas_co_only,pre2003_casino_near_co,gestfips,gtco,casino_id,casino_co,near_county,county_area,casino_no,tot_casino_no,county_geoid,added_by_agent,source_base_geoid
+Ahern Hotel,2016,"Las Vegas, NV",1,1,32,3,3203,1,0,1,11,16,32003,0,32003
+Ahern Hotel,2016,"Las Vegas, NV",1,1,4,15,415,0,1,1,11,16,4015,1,32003
+Ahern Hotel,2016,"Las Vegas, NV",1,1,6,27,627,0,1,1,11,16,6027,1,32003
+Ahern Hotel,2016,"Las Vegas, NV",1,1,32,17,3217,0,1,1,11,16,32017,1,32003
+Ahern Hotel,2016,"Las Vegas, NV",1,1,32,23,3223,0,1,1,11,16,32023,1,32003
+Ahern Hotel,2016,"Las Vegas, NV",1,1,6,71,671,0,1,1,13,19,6071,0,32003
+Angel of the Winds Casino Resort,2004,"Arlington, WA",1,1,53,29,5329,0,1,1,2,2,53029,1,53061
+Angel of the Winds Casino Resort,2004,"Arlington, WA",1,1,53,57,5357,0,1,1,2,2,53057,1,53061
+Angel of the Winds Casino Resort,2004,"Arlington, WA",1,1,53,61,5361,1,0,1,2,3,53061,0,53061
+Angel of the Winds Casino Resort,2004,"Arlington, WA",1,1,53,7,5307,0,1,1,2,3,53007,1,53061
+Angel of the Winds Casino Resort,2004,"Arlington, WA",1,1,53,33,5333,0,1,1,2,3,53033,0,53061
+Angel of the Winds Casino Resort,2004,"Arlington, WA",1,1,53,35,5335,0,1,1,2,3,53035,0,53061
+Apache Nugget Casino,2004,"Cuba, NM",1,1,35,49,3549,1,0,1,1,1,35049,0,35049
+Apache Nugget Casino,2004,"Cuba, NM",1,1,35,1,3501,0,1,1,1,1,35001,0,35049
+Apache Nugget Casino,2004,"Cuba, NM",1,1,35,28,3528,0,1,1,1,1,35028,1,35049
+Apache Nugget Casino,2004,"Cuba, NM",1,1,35,33,3533,0,1,1,1,1,35033,1,35049
+Apache Nugget Casino,2004,"Cuba, NM",1,1,35,39,3539,0,1,1,1,1,35039,1,35049
+Apache Nugget Casino,2004,"Cuba, NM",1,1,35,47,3547,0,1,1,1,1,35047,1,35049
+Apache Nugget Casino,2004,"Cuba, NM",1,1,35,57,3557,0,1,1,1,1,35057,1,35049
+Apache Nugget Casino,2004,"Cuba, NM",1,1,35,43,3543,0,1,1,1,2,35043,1,35049
+Aria Resort and Casino,2009,"Las Vegas, NV",1,1,32,3,3203,1,0,1,9,16,32003,0,32003
+Aria Resort and Casino,2009,"Las Vegas, NV",1,1,4,15,415,0,1,1,9,16,4015,1,32003
+Aria Resort and Casino,2009,"Las Vegas, NV",1,1,6,27,627,0,1,1,9,16,6027,1,32003
+Aria Resort and Casino,2009,"Las Vegas, NV",1,1,32,17,3217,0,1,1,9,16,32017,1,32003
+Aria Resort and Casino,2009,"Las Vegas, NV",1,1,32,23,3223,0,1,1,9,16,32023,1,32003
+Aria Resort and Casino,2009,"Las Vegas, NV",1,1,6,71,671,0,1,1,11,19,6071,1,32003
+Bally's Quad Cities,2008,"Rock Island, IL",1,1,17,73,1773,0,1,1,1,1,17073,1,17161
+Bally's Quad Cities,2008,"Rock Island, IL",1,1,17,131,1831,0,1,1,1,1,17131,1,17161
+Bally's Quad Cities,2008,"Rock Island, IL",1,1,17,195,1895,0,1,1,1,1,17195,1,17161
+Bally's Quad Cities,2008,"Rock Island, IL",1,1,19,115,2015,0,1,1,1,1,19115,1,17161
+Bally's Quad Cities,2008,"Rock Island, IL",1,1,17,161,1861,1,0,1,1,2,17161,0,17161
+Bally's Quad Cities,2008,"Rock Island, IL",1,1,19,45,1945,0,1,1,1,2,19045,1,17161
+Bally's Quad Cities,2008,"Rock Island, IL",1,1,19,139,2039,0,1,1,1,2,19139,1,17161
+Bally's Quad Cities,2008,"Rock Island, IL",1,1,19,163,2063,0,1,1,1,2,19163,0,17161
+Borgata,2003,"Atlantic City, NJ",1,1,34,1,3401,1,0,1,1,2,34001,0,34001
+Borgata,2003,"Atlantic City, NJ",1,1,34,9,3409,0,1,1,1,2,34009,0,34001
+Borgata,2003,"Atlantic City, NJ",1,1,34,11,3411,0,1,1,1,2,34011,1,34001
+Borgata,2003,"Atlantic City, NJ",1,1,34,29,3429,0,1,1,1,3,34029,1,34001
+Borgata,2003,"Atlantic City, NJ",1,1,34,5,3405,0,1,1,1,5,34005,0,34001
+Borgata,2003,"Atlantic City, NJ",1,1,34,7,3407,0,1,1,1,5,34007,1,34001
+Borgata,2003,"Atlantic City, NJ",1,1,34,15,3415,0,1,1,1,5,34015,1,34001
+Cannery Casino and Hotel,2003,"North Las Vegas, NV",1,1,32,3,3203,1,0,1,1,16,32003,0,32003
+Cannery Casino and Hotel,2003,"North Las Vegas, NV",1,1,4,15,415,0,1,1,1,16,4015,1,32003
+Cannery Casino and Hotel,2003,"North Las Vegas, NV",1,1,6,27,627,0,1,1,1,16,6027,1,32003
+Cannery Casino and Hotel,2003,"North Las Vegas, NV",1,1,32,17,3217,0,1,1,1,16,32017,1,32003
+Cannery Casino and Hotel,2003,"North Las Vegas, NV",1,1,32,23,3223,0,1,1,1,16,32023,1,32003
+Cannery Casino and Hotel,2003,"North Las Vegas, NV",1,1,6,71,671,0,1,1,1,19,6071,1,32003
+Casino Fandango,2003,"Carson City, NV",1,1,32,5,3205,0,1,1,1,1,32005,1,32510
+Casino Fandango,2003,"Carson City, NV",1,1,32,510,3710,1,0,1,1,2,32510,0,32510
+Casino Fandango,2003,"Carson City, NV",1,1,6,61,661,0,1,1,1,2,6061,1,32510
+Casino Fandango,2003,"Carson City, NV",1,1,32,19,3219,0,1,1,1,2,32019,1,32510
+Casino Fandango,2003,"Carson City, NV",1,1,32,29,3229,0,1,1,1,2,32029,1,32510
+Casino Fandango,2003,"Carson City, NV",1,1,32,31,3231,0,1,1,1,2,32031,0,32510
+Century Casino Cape Girardeau,2012,"Cape Girardeau, MO",0,0,29,31,2931,1,0,1,1,1,29031,0,29031
+Century Casino Cape Girardeau,2012,"Cape Girardeau, MO",0,0,17,3,1703,0,1,1,1,1,17003,1,29031
+Century Casino Cape Girardeau,2012,"Cape Girardeau, MO",0,0,17,181,1881,0,1,1,1,1,17181,1,29031
+Century Casino Cape Girardeau,2012,"Cape Girardeau, MO",0,0,29,17,2917,0,1,1,1,1,29017,1,29031
+Century Casino Cape Girardeau,2012,"Cape Girardeau, MO",0,0,29,157,3057,0,1,1,1,1,29157,1,29031
+Century Casino Cape Girardeau,2012,"Cape Girardeau, MO",0,0,29,201,3101,0,1,1,1,1,29201,1,29031
+Century Casino Cape Girardeau,2012,"Cape Girardeau, MO",0,0,29,207,3107,0,1,1,1,1,29207,1,29031
+Chukchansi Gold Resort & Casino,2003,"Coarsegold, CA",0,0,6,39,639,1,0,1,1,1,6039,0,6039
+Chukchansi Gold Resort & Casino,2003,"Coarsegold, CA",0,0,6,19,619,0,1,1,1,1,6019,0,6039
+Chukchansi Gold Resort & Casino,2003,"Coarsegold, CA",0,0,6,43,643,0,1,1,1,1,6043,1,6039
+Chukchansi Gold Resort & Casino,2003,"Coarsegold, CA",0,0,6,47,647,0,1,1,1,1,6047,0,6039
+Chukchansi Gold Resort & Casino,2003,"Coarsegold, CA",0,0,6,51,651,0,1,1,1,1,6051,1,6039
+Chukchansi Gold Resort & Casino,2003,"Coarsegold, CA",0,0,6,109,709,0,1,1,1,1,6109,1,6039
+Circa Resort & Casino,2020,"Las Vegas, NV",1,1,32,3,3203,1,0,1,12,16,32003,0,32003
+Circa Resort & Casino,2020,"Las Vegas, NV",1,1,4,15,415,0,1,1,12,16,4015,1,32003
+Circa Resort & Casino,2020,"Las Vegas, NV",1,1,6,27,627,0,1,1,12,16,6027,1,32003
+Circa Resort & Casino,2020,"Las Vegas, NV",1,1,32,17,3217,0,1,1,12,16,32017,1,32003
+Circa Resort & Casino,2020,"Las Vegas, NV",1,1,32,23,3223,0,1,1,12,16,32023,1,32003
+Circa Resort & Casino,2020,"Las Vegas, NV",1,1,6,71,671,0,1,1,15,19,6071,0,32003
+Comanche Nation Casino,2007,"Lawton, OK",1,1,40,31,4031,1,0,1,1,1,40031,0,40031
+Comanche Nation Casino,2007,"Lawton, OK",1,1,40,15,4015,0,1,1,1,1,40015,1,40031
+Comanche Nation Casino,2007,"Lawton, OK",1,1,40,33,4033,0,1,1,1,1,40033,1,40031
+Comanche Nation Casino,2007,"Lawton, OK",1,1,40,51,4051,0,1,1,1,1,40051,1,40031
+Comanche Nation Casino,2007,"Lawton, OK",1,1,40,75,4075,0,1,1,1,1,40075,1,40031
+Comanche Nation Casino,2007,"Lawton, OK",1,1,40,137,4137,0,1,1,1,1,40137,1,40031
+Comanche Nation Casino,2007,"Lawton, OK",1,1,40,141,4141,0,1,1,1,1,40141,1,40031
+Cosmopolitan of Las Vegas,2010,"Las Vegas, NV",1,1,32,3,3203,1,0,1,10,16,32003,0,32003
+Cosmopolitan of Las Vegas,2010,"Las Vegas, NV",1,1,4,15,415,0,1,1,10,16,4015,1,32003
+Cosmopolitan of Las Vegas,2010,"Las Vegas, NV",1,1,6,27,627,0,1,1,10,16,6027,1,32003
+Cosmopolitan of Las Vegas,2010,"Las Vegas, NV",1,1,32,17,3217,0,1,1,10,16,32017,1,32003
+Cosmopolitan of Las Vegas,2010,"Las Vegas, NV",1,1,32,23,3223,0,1,1,10,16,32023,1,32003
+Cosmopolitan of Las Vegas,2010,"Las Vegas, NV",1,1,6,71,671,0,1,1,12,19,6071,1,32003
+Diamond Jo Casino - Worth,2006,"Worth County, Iowa",0,0,19,195,2095,1,0,1,1,1,19195,0,19195
+Diamond Jo Casino - Worth,2006,"Worth County, Iowa",0,0,19,33,1933,0,1,1,1,1,19033,1,19195
+Diamond Jo Casino - Worth,2006,"Worth County, Iowa",0,0,19,81,1981,0,1,1,1,1,19081,1,19195
+Diamond Jo Casino - Worth,2006,"Worth County, Iowa",0,0,19,131,2031,0,1,1,1,1,19131,1,19195
+Diamond Jo Casino - Worth,2006,"Worth County, Iowa",0,0,19,189,2089,0,1,1,1,1,19189,1,19195
+Diamond Jo Casino - Worth,2006,"Worth County, Iowa",0,0,27,47,2747,0,1,1,1,1,27047,1,19195
+Diamond Jo Casino - Worth,2006,"Worth County, Iowa",0,0,27,99,2799,0,1,1,1,1,27099,1,19195
+Durango Casino and Resort,2023,"Spring Valley, NV",1,1,32,3,3203,1,0,1,15,16,32003,0,32003
+Durango Casino and Resort,2023,"Spring Valley, NV",1,1,4,15,415,0,1,1,15,16,4015,1,32003
+Durango Casino and Resort,2023,"Spring Valley, NV",1,1,6,27,627,0,1,1,15,16,6027,1,32003
+Durango Casino and Resort,2023,"Spring Valley, NV",1,1,32,17,3217,0,1,1,15,16,32017,1,32003
+Durango Casino and Resort,2023,"Spring Valley, NV",1,1,32,23,3223,0,1,1,15,16,32023,1,32003
+Durango Casino and Resort,2023,"Spring Valley, NV",1,1,6,71,671,0,1,1,18,19,6071,0,32003
+Eastside Cannery,2008,"Sunrise Manor, NV",1,1,32,3,3203,1,0,1,7,16,32003,0,32003
+Eastside Cannery,2008,"Sunrise Manor, NV",1,1,4,15,415,0,1,1,7,16,4015,1,32003
+Eastside Cannery,2008,"Sunrise Manor, NV",1,1,6,27,627,0,1,1,7,16,6027,1,32003
+Eastside Cannery,2008,"Sunrise Manor, NV",1,1,32,17,3217,0,1,1,7,16,32017,1,32003
+Eastside Cannery,2008,"Sunrise Manor, NV",1,1,32,23,3223,0,1,1,7,16,32023,1,32003
+Eastside Cannery,2008,"Sunrise Manor, NV",1,1,6,71,671,0,1,1,9,19,6071,1,32003
+Encore Boston Harbor,2019,"Everett, MA",1,1,25,9,2509,0,1,1,1,1,25009,0,25017
+Encore Boston Harbor,2019,"Everett, MA",1,1,33,11,3311,0,1,1,1,1,33011,1,25017
+Encore Boston Harbor,2019,"Everett, MA",1,1,25,17,2517,1,0,1,2,2,25017,0,25017
+Encore Boston Harbor,2019,"Everett, MA",1,1,25,21,2521,0,1,1,2,2,25021,0,25017
+Encore Boston Harbor,2019,"Everett, MA",1,1,25,25,2525,0,1,1,2,2,25025,0,25017
+Encore Boston Harbor,2019,"Everett, MA",1,1,25,27,2527,0,1,1,2,2,25027,1,25017
+Encore Las Vegas,2008,"Las Vegas, NV",1,1,32,3,3203,1,0,1,8,16,32003,0,32003
+Encore Las Vegas,2008,"Las Vegas, NV",1,1,4,15,415,0,1,1,8,16,4015,1,32003
+Encore Las Vegas,2008,"Las Vegas, NV",1,1,6,27,627,0,1,1,8,16,6027,1,32003
+Encore Las Vegas,2008,"Las Vegas, NV",1,1,32,17,3217,0,1,1,8,16,32017,1,32003
+Encore Las Vegas,2008,"Las Vegas, NV",1,1,32,23,3223,0,1,1,8,16,32023,1,32003
+Encore Las Vegas,2008,"Las Vegas, NV",1,1,6,71,671,0,1,1,10,19,6071,1,32003
+Fire Rock Navajo Casino,2008,"Church Rock, NM",0,0,35,31,3531,1,0,1,1,1,35031,0,35031
+Fire Rock Navajo Casino,2008,"Church Rock, NM",0,0,4,1,401,0,1,1,1,1,4001,1,35031
+Fire Rock Navajo Casino,2008,"Church Rock, NM",0,0,35,6,3506,0,1,1,1,1,35006,1,35031
+Fire Rock Navajo Casino,2008,"Church Rock, NM",1,1,35,43,3543,0,1,1,2,2,35043,1,35031
+Fire Rock Navajo Casino,2008,"Church Rock, NM",1,1,35,45,3545,0,1,1,2,2,35045,1,35031
+FireKeepers Casino Hotel,2009,Emmett Charter Township,0,0,26,25,2625,1,0,1,1,1,26025,0,26025
+FireKeepers Casino Hotel,2009,Emmett Charter Township,0,0,26,15,2615,0,1,1,1,1,26015,1,26025
+FireKeepers Casino Hotel,2009,Emmett Charter Township,0,0,26,23,2623,0,1,1,1,1,26023,1,26025
+FireKeepers Casino Hotel,2009,Emmett Charter Township,0,0,26,45,2645,0,1,1,1,1,26045,1,26025
+FireKeepers Casino Hotel,2009,Emmett Charter Township,0,0,26,59,2659,0,1,1,1,1,26059,1,26025
+FireKeepers Casino Hotel,2009,Emmett Charter Township,0,0,26,75,2675,0,1,1,1,1,26075,1,26025
+FireKeepers Casino Hotel,2009,Emmett Charter Township,0,0,26,77,2677,0,1,1,1,1,26077,0,26025
+FireKeepers Casino Hotel,2009,Emmett Charter Township,0,0,26,149,2749,0,1,1,1,1,26149,1,26025
+Fontainebleau Las Vegas,2023,"Winchester, NV",1,1,32,3,3203,1,0,1,16,16,32003,0,32003
+Fontainebleau Las Vegas,2023,"Winchester, NV",1,1,4,15,415,0,1,1,16,16,4015,1,32003
+Fontainebleau Las Vegas,2023,"Winchester, NV",1,1,6,27,627,0,1,1,16,16,6027,1,32003
+Fontainebleau Las Vegas,2023,"Winchester, NV",1,1,32,17,3217,0,1,1,16,16,32017,1,32003
+Fontainebleau Las Vegas,2023,"Winchester, NV",1,1,32,23,3223,0,1,1,16,16,32023,1,32003
+Fontainebleau Las Vegas,2023,"Winchester, NV",1,1,6,71,671,0,1,1,19,19,6071,0,32003
+Four Winds Dowagiac,2013,"Dowagiac, MI",1,1,18,91,1891,0,1,1,3,3,18091,1,26021
+Four Winds Dowagiac,2013,"Dowagiac, MI",1,1,18,141,1941,0,1,1,3,3,18141,0,26021
+Four Winds Dowagiac,2013,"Dowagiac, MI",1,1,26,27,2627,0,1,1,3,3,26027,1,26021
+Four Winds Dowagiac,2013,"Dowagiac, MI",1,1,26,159,2759,0,1,1,3,3,26159,1,26021
+Four Winds Dowagiac,2013,"Dowagiac, MI",1,1,26,21,2621,1,0,1,4,4,26021,0,26021
+Four Winds Dowagiac,2013,"Dowagiac, MI",1,1,17,31,1731,0,1,1,4,4,17031,1,26021
+Four Winds Dowagiac,2013,"Dowagiac, MI",1,1,17,97,1797,0,1,1,4,4,17097,1,26021
+Four Winds Dowagiac,2013,"Dowagiac, MI",1,1,18,127,1927,0,1,1,4,4,18127,1,26021
+Four Winds Hartford,2011,"Hartford, MI",1,1,18,91,1891,0,1,1,2,3,18091,1,26021
+Four Winds Hartford,2011,"Hartford, MI",1,1,18,141,1941,0,1,1,2,3,18141,1,26021
+Four Winds Hartford,2011,"Hartford, MI",1,1,26,27,2627,0,1,1,2,3,26027,1,26021
+Four Winds Hartford,2011,"Hartford, MI",1,1,26,159,2759,0,1,1,2,3,26159,1,26021
+Four Winds Hartford,2011,"Hartford, MI",1,1,26,21,2621,1,0,1,2,4,26021,0,26021
+Four Winds Hartford,2011,"Hartford, MI",1,1,17,31,1731,0,1,1,3,4,17031,1,26021
+Four Winds Hartford,2011,"Hartford, MI",1,1,17,97,1797,0,1,1,2,4,17097,1,26021
+Four Winds Hartford,2011,"Hartford, MI",1,1,18,127,1927,0,1,1,2,4,18127,1,26021
+Four Winds New Buffalo,2007,"New Buffalo, MI",1,1,18,91,1891,0,1,1,1,3,18091,0,26021
+Four Winds New Buffalo,2007,"New Buffalo, MI",1,1,18,141,1941,0,1,1,1,3,18141,0,26021
+Four Winds New Buffalo,2007,"New Buffalo, MI",1,1,26,27,2627,0,1,1,1,3,26027,1,26021
+Four Winds New Buffalo,2007,"New Buffalo, MI",1,1,26,159,2759,0,1,1,1,3,26159,1,26021
+Four Winds New Buffalo,2007,"New Buffalo, MI",1,1,26,21,2621,1,0,1,1,4,26021,0,26021
+Four Winds New Buffalo,2007,"New Buffalo, MI",1,1,17,31,1731,0,1,1,1,4,17031,1,26021
+Four Winds New Buffalo,2007,"New Buffalo, MI",1,1,17,97,1797,0,1,1,1,4,17097,1,26021
+Four Winds New Buffalo,2007,"New Buffalo, MI",1,1,18,127,1927,0,1,1,1,4,18127,1,26021
+French Lick Resort,2008,"French Lick, IN",0,0,18,177,1977,1,0,1,1,1,18177,0,18177
+French Lick Resort,2008,"French Lick, IN",0,0,18,41,1841,0,1,1,1,1,18041,1,18177
+French Lick Resort,2008,"French Lick, IN",0,0,18,65,1865,0,1,1,1,1,18065,1,18177
+French Lick Resort,2008,"French Lick, IN",0,0,18,135,1935,0,1,1,1,1,18135,1,18177
+French Lick Resort,2008,"French Lick, IN",0,0,18,161,1961,0,1,1,1,1,18161,1,18177
+French Lick Resort,2008,"French Lick, IN",0,0,39,37,3937,0,1,1,1,1,39037,1,18177
+French Lick Resort,2008,"French Lick, IN",0,0,39,135,4035,0,1,1,1,1,39135,1,18177
+Golden Nugget Lake Charles,2014,"Lake Charles, LA",1,1,22,19,2219,1,0,1,2,2,22019,0,22019
+Golden Nugget Lake Charles,2014,"Lake Charles, LA",1,1,22,11,2211,0,1,1,2,2,22011,1,22019
+Golden Nugget Lake Charles,2014,"Lake Charles, LA",1,1,22,23,2223,0,1,1,2,2,22023,1,22019
+Golden Nugget Lake Charles,2014,"Lake Charles, LA",1,1,22,53,2253,0,1,1,2,2,22053,1,22019
+Golden Nugget Lake Charles,2014,"Lake Charles, LA",1,1,48,351,5151,0,1,1,2,2,48351,1,22019
+Golden Nugget Lake Charles,2014,"Lake Charles, LA",1,1,48,361,5161,0,1,1,2,2,48361,1,22019
+Graton Resort & Casino,2013,"Rohnert Park, CA",1,1,6,97,697,1,0,1,1,1,6097,0,6097
+Graton Resort & Casino,2013,"Rohnert Park, CA",1,1,6,13,613,0,1,1,1,1,6013,1,6097
+Graton Resort & Casino,2013,"Rohnert Park, CA",1,1,6,33,633,0,1,1,1,1,6033,1,6097
+Graton Resort & Casino,2013,"Rohnert Park, CA",1,1,6,41,641,0,1,1,1,1,6041,0,6097
+Graton Resort & Casino,2013,"Rohnert Park, CA",1,1,6,45,645,0,1,1,1,1,6045,1,6097
+Graton Resort & Casino,2013,"Rohnert Park, CA",1,1,6,55,655,0,1,1,1,1,6055,0,6097
+Graton Resort & Casino,2013,"Rohnert Park, CA",1,1,6,95,695,0,1,1,1,1,6095,1,6097
+Hard Rock Casino Cincinnati,2013,"Cincinnati, OH",1,1,18,29,1829,0,1,1,1,1,18029,1,39061
+Hard Rock Casino Cincinnati,2013,"Cincinnati, OH",1,1,18,47,1847,0,1,1,1,1,18047,1,39061
+Hard Rock Casino Cincinnati,2013,"Cincinnati, OH",1,1,21,15,2115,0,1,1,1,1,21015,1,39061
+Hard Rock Casino Cincinnati,2013,"Cincinnati, OH",1,1,21,37,2137,0,1,1,1,1,21037,1,39061
+Hard Rock Casino Cincinnati,2013,"Cincinnati, OH",1,1,21,117,2217,0,1,1,1,1,21117,1,39061
+Hard Rock Casino Cincinnati,2013,"Cincinnati, OH",1,1,39,61,3961,1,0,1,1,2,39061,0,39061
+Hard Rock Casino Cincinnati,2013,"Cincinnati, OH",1,1,39,17,3917,0,1,1,1,2,39017,0,39061
+Hard Rock Casino Cincinnati,2013,"Cincinnati, OH",1,1,39,25,3925,0,1,1,1,2,39025,0,39061
+Hard Rock Casino Cincinnati,2013,"Cincinnati, OH",1,1,39,165,4065,0,1,1,2,2,39165,1,39061
+Hard Rock Hotel & Casino Biloxi,2005,"Biloxi, MS",1,1,28,59,2859,0,1,1,1,4,28059,0,28047
+Hard Rock Hotel & Casino Biloxi,2005,"Biloxi, MS",1,1,28,131,2931,0,1,1,1,4,28131,1,28047
+Hard Rock Hotel & Casino Biloxi,2005,"Biloxi, MS",1,1,28,47,2847,1,0,1,1,5,28047,0,28047
+Hard Rock Hotel & Casino Biloxi,2005,"Biloxi, MS",1,1,22,87,2287,0,1,1,1,5,22087,1,28047
+Hard Rock Hotel & Casino Biloxi,2005,"Biloxi, MS",1,1,28,45,2845,0,1,1,1,5,28045,1,28047
+Hard Rock Hotel & Casino Biloxi,2005,"Biloxi, MS",1,1,28,109,2909,0,1,1,1,5,28109,1,28047
+Hard Rock Hotel & Casino Sioux City,2014,"Sioux City, IA",1,1,19,193,2093,1,0,1,1,1,19193,0,19193
+Hard Rock Hotel & Casino Sioux City,2014,"Sioux City, IA",1,1,19,35,1935,0,1,1,1,1,19035,1,19193
+Hard Rock Hotel & Casino Sioux City,2014,"Sioux City, IA",1,1,19,47,1947,0,1,1,1,1,19047,1,19193
+Hard Rock Hotel & Casino Sioux City,2014,"Sioux City, IA",1,1,19,93,1993,0,1,1,1,1,19093,1,19193
+Hard Rock Hotel & Casino Sioux City,2014,"Sioux City, IA",1,1,19,133,2033,0,1,1,1,1,19133,1,19193
+Hard Rock Hotel & Casino Sioux City,2014,"Sioux City, IA",1,1,19,149,2049,0,1,1,1,1,19149,1,19193
+Hard Rock Hotel & Casino Sioux City,2014,"Sioux City, IA",1,1,31,43,3143,0,1,1,1,1,31043,1,19193
+Hard Rock Hotel & Casino Sioux City,2014,"Sioux City, IA",1,1,31,173,3273,0,1,1,1,1,31173,1,19193
+Hard Rock Hotel & Casino Sioux City,2014,"Sioux City, IA",1,1,46,127,4727,0,1,1,1,1,46127,1,19193
+Harlow's Casino Resort & Hotel,2007,"Refuge, MS",0,0,28,151,2951,1,0,1,1,1,28151,0,28151
+Harlow's Casino Resort & Hotel,2007,"Refuge, MS",0,0,5,17,517,0,1,1,1,1,5017,1,28151
+Harlow's Casino Resort & Hotel,2007,"Refuge, MS",0,0,28,11,2811,0,1,1,1,1,28011,1,28151
+Harlow's Casino Resort & Hotel,2007,"Refuge, MS",0,0,28,53,2853,0,1,1,1,1,28053,1,28151
+Harlow's Casino Resort & Hotel,2007,"Refuge, MS",0,0,28,55,2855,0,1,1,1,1,28055,1,28151
+Harlow's Casino Resort & Hotel,2007,"Refuge, MS",0,0,28,125,2925,0,1,1,1,1,28125,1,28151
+Harlow's Casino Resort & Hotel,2007,"Refuge, MS",0,0,28,133,2933,0,1,1,1,1,28133,1,28151
+Harrah's Northern California,2019,"Ione, CA",1,1,6,5,605,1,0,1,1,1,6005,0,6005
+Harrah's Northern California,2019,"Ione, CA",1,1,6,3,603,0,1,1,1,1,6003,1,6005
+Harrah's Northern California,2019,"Ione, CA",1,1,6,9,609,0,1,1,1,1,6009,1,6005
+Harrah's Northern California,2019,"Ione, CA",1,1,6,17,617,0,1,1,1,1,6017,0,6005
+Harrah's Northern California,2019,"Ione, CA",1,1,6,67,667,0,1,1,1,1,6067,0,6005
+Harrah's Northern California,2019,"Ione, CA",1,1,6,77,677,0,1,1,1,1,6077,0,6005
+Harrah's Philadelphia,2007,"Chester, PA",1,1,10,3,1003,0,1,1,1,2,10003,0,42045
+Harrah's Philadelphia,2007,"Chester, PA",1,1,42,29,4229,0,1,1,1,2,42029,1,42045
+Harrah's Philadelphia,2007,"Chester, PA",1,1,42,45,4245,1,0,1,1,4,42045,0,42045
+Harrah's Philadelphia,2007,"Chester, PA",1,1,34,15,3415,0,1,1,2,5,34015,0,42045
+Harrah's Philadelphia,2007,"Chester, PA",1,1,42,91,4291,0,1,1,1,6,42091,1,42045
+Harrah's Philadelphia,2007,"Chester, PA",1,1,42,101,4301,0,1,1,1,6,42101,1,42045
+Harrah's Resort Southern California,2004,"Valley Center, CA",1,1,6,73,673,1,0,1,1,4,6073,0,6073
+Harrah's Resort Southern California,2004,"Valley Center, CA",1,1,6,65,665,0,1,1,1,4,6065,0,6073
+Harrah's Resort Southern California,2004,"Valley Center, CA",1,1,6,59,659,0,1,1,1,5,6059,0,6073
+Harrah's Resort Southern California,2007,"Valley Center, CA",1,1,6,25,625,0,1,1,2,4,6025,0,6073
+Hollywood Casino at Kansas Speedway,2012,"Kansas City, KS",0,1,20,209,2209,1,0,1,1,1,20209,0,20209
+Hollywood Casino at Kansas Speedway,2012,"Kansas City, KS",0,1,20,91,2091,0,1,1,1,1,20091,0,20209
+Hollywood Casino at Kansas Speedway,2012,"Kansas City, KS",0,1,20,103,2103,0,1,1,1,1,20103,1,20209
+Hollywood Casino at Kansas Speedway,2012,"Kansas City, KS",0,1,29,47,2947,0,1,1,1,1,29047,1,20209
+Hollywood Casino at Kansas Speedway,2012,"Kansas City, KS",0,1,29,95,2995,0,1,1,1,1,29095,0,20209
+Hollywood Casino at Kansas Speedway,2012,"Kansas City, KS",0,1,29,165,3065,0,1,1,1,1,29165,1,20209
+Hollywood Casino at Penn National,2008,"Grantville, PA",1,1,42,67,4267,0,1,1,1,1,42067,1,42043
+Hollywood Casino at Penn National,2008,"Grantville, PA",1,1,42,75,4275,0,1,1,1,1,42075,0,42043
+Hollywood Casino at Penn National,2008,"Grantville, PA",1,1,42,97,4297,0,1,1,1,1,42097,1,42043
+Hollywood Casino at Penn National,2008,"Grantville, PA",1,1,42,99,4299,0,1,1,1,1,42099,1,42043
+Hollywood Casino at Penn National,2008,"Grantville, PA",1,1,42,43,4243,1,0,1,1,2,42043,0,42043
+Hollywood Casino at Penn National,2008,"Grantville, PA",1,1,42,41,4241,0,1,1,1,2,42041,1,42043
+Hollywood Casino at Penn National,2008,"Grantville, PA",1,1,42,107,4307,0,1,1,2,2,42107,0,42043
+Hollywood Casino at Penn National,2008,"Grantville, PA",1,1,42,71,4271,0,1,1,1,3,42071,1,42043
+Hollywood Casino at Penn National,2008,"Grantville, PA",1,1,42,133,4333,0,1,1,1,4,42133,1,42043
+Hollywood Casino at the Meadows,2009,"Washington, PA",1,1,42,59,4259,0,1,1,1,1,42059,1,42125
+Hollywood Casino at the Meadows,2009,"Washington, PA",1,1,54,9,5409,0,1,1,1,1,54009,1,42125
+Hollywood Casino at the Meadows,2009,"Washington, PA",1,1,54,29,5429,0,1,1,1,1,54029,1,42125
+Hollywood Casino at the Meadows,2009,"Washington, PA",1,1,54,51,5451,0,1,1,1,1,54051,1,42125
+Hollywood Casino at the Meadows,2009,"Washington, PA",1,1,54,69,5469,0,1,1,1,1,54069,1,42125
+Hollywood Casino at the Meadows,2009,"Washington, PA",1,1,42,7,4207,0,1,1,1,2,42007,1,42125
+Hollywood Casino at the Meadows,2009,"Washington, PA",1,1,42,51,4251,0,1,1,1,2,42051,1,42125
+Hollywood Casino at the Meadows,2009,"Washington, PA",1,1,42,125,4325,1,0,1,1,3,42125,0,42125
+Hollywood Casino at the Meadows,2009,"Washington, PA",1,1,42,3,4203,0,1,1,1,3,42003,0,42125
+Hollywood Casino at the Meadows,2009,"Washington, PA",1,1,42,129,4329,0,1,1,2,3,42129,1,42125
+Hollywood Casino Columbus,2012,"Columbus, OH",0,0,39,49,3949,1,0,1,1,1,39049,0,39049
+Hollywood Casino Columbus,2012,"Columbus, OH",0,0,39,41,3941,0,1,1,1,1,39041,0,39049
+Hollywood Casino Columbus,2012,"Columbus, OH",0,0,39,45,3945,0,1,1,1,1,39045,1,39049
+Hollywood Casino Columbus,2012,"Columbus, OH",0,0,39,89,3989,0,1,1,1,1,39089,1,39049
+Hollywood Casino Columbus,2012,"Columbus, OH",0,0,39,97,3997,0,1,1,1,1,39097,1,39049
+Hollywood Casino Columbus,2012,"Columbus, OH",0,0,39,129,4029,0,1,1,1,1,39129,1,39049
+Hollywood Casino Columbus,2012,"Columbus, OH",0,0,39,159,4059,0,1,1,1,1,39159,1,39049
+Hollywood Casino Toledo,2012,"Toledo, OH",0,0,39,95,3995,1,0,1,1,1,39095,0,39095
+Hollywood Casino Toledo,2012,"Toledo, OH",0,0,26,91,2691,0,1,1,1,1,26091,1,39095
+Hollywood Casino Toledo,2012,"Toledo, OH",0,0,39,51,3951,0,1,1,1,1,39051,1,39095
+Hollywood Casino Toledo,2012,"Toledo, OH",0,0,39,69,3969,0,1,1,1,1,39069,1,39095
+Hollywood Casino Toledo,2012,"Toledo, OH",0,0,39,123,4023,0,1,1,1,1,39123,1,39095
+Hollywood Casino Toledo,2012,"Toledo, OH",0,0,39,173,4073,0,1,1,1,1,39173,0,39095
+Hollywood Casino Toledo,2012,"Toledo, OH",1,1,26,115,2715,0,1,1,2,2,26115,0,39095
+Hollywood Casino York,2021,"York County, PA",0,0,24,13,2413,0,1,1,1,1,24013,0,42133
+Hollywood Casino York,2021,"York County, PA",0,0,42,1,4201,0,1,1,1,1,42001,1,42133
+Hollywood Casino York,2021,"York County, PA",1,1,42,41,4241,0,1,1,2,2,42041,1,42133
+Hollywood Casino York,2021,"York County, PA",1,1,42,43,4243,0,1,1,2,2,42043,0,42133
+Hollywood Casino York,2021,"York County, PA",1,1,24,5,2405,0,1,1,3,3,24005,0,42133
+Hollywood Casino York,2021,"York County, PA",1,1,24,25,2425,0,1,1,3,3,24025,0,42133
+Hollywood Casino York,2021,"York County, PA",1,1,42,71,4271,0,1,1,3,3,42071,0,42133
+Hollywood Casino York,2021,"York County, PA",1,1,42,133,4333,1,0,1,4,4,42133,0,42133
+Hollywood Park Casino,2016,"Inglewood, CA",0,0,6,29,629,0,1,1,1,1,6029,1,6037
+Hollywood Park Casino,2016,"Inglewood, CA",0,0,6,111,711,0,1,1,1,1,6111,1,6037
+Hollywood Park Casino,2016,"Inglewood, CA",1,1,6,37,637,1,0,1,2,2,6037,0,6037
+Hollywood Park Casino,2016,"Inglewood, CA",1,1,6,59,659,0,1,1,4,5,6059,0,6037
+Hollywood Park Casino,2016,"Inglewood, CA",1,1,6,71,671,0,1,1,14,19,6071,1,6037
+Horseshoe Casino Baltimore,2014,"Baltimore, MD",1,1,24,13,2413,0,1,1,2,2,24013,1,24005
+Horseshoe Casino Baltimore,2014,"Baltimore, MD",1,1,24,29,2429,0,1,1,2,2,24029,1,24005
+Horseshoe Casino Baltimore,2014,"Baltimore, MD",1,1,24,510,2910,0,1,1,2,2,24510,0,24005
+Horseshoe Casino Baltimore,2014,"Baltimore, MD",1,1,24,5,2405,1,0,1,2,3,24005,0,24005
+Horseshoe Casino Baltimore,2014,"Baltimore, MD",1,1,24,3,2403,0,1,1,2,3,24003,0,24005
+Horseshoe Casino Baltimore,2014,"Baltimore, MD",1,1,24,25,2425,0,1,1,2,3,24025,1,24005
+Horseshoe Casino Baltimore,2014,"Baltimore, MD",1,1,24,27,2427,0,1,1,2,3,24027,0,24005
+Horseshoe Casino Baltimore,2014,"Baltimore, MD",1,1,42,133,4333,0,1,1,3,4,42133,1,24005
+Horseshoe Indianapolis,2009,"Shelbyville, IN",0,0,18,97,1897,1,0,1,1,1,18097,0,18097
+Horseshoe Indianapolis,2009,"Shelbyville, IN",0,0,18,11,1811,0,1,1,1,1,18011,1,18097
+Horseshoe Indianapolis,2009,"Shelbyville, IN",0,0,18,57,1857,0,1,1,1,1,18057,1,18097
+Horseshoe Indianapolis,2009,"Shelbyville, IN",0,0,18,59,1859,0,1,1,1,1,18059,1,18097
+Horseshoe Indianapolis,2009,"Shelbyville, IN",0,0,18,63,1863,0,1,1,1,1,18063,1,18097
+Horseshoe Indianapolis,2009,"Shelbyville, IN",0,0,18,81,1881,0,1,1,1,1,18081,0,18097
+Horseshoe Indianapolis,2009,"Shelbyville, IN",0,0,18,109,1909,0,1,1,1,1,18109,1,18097
+Horseshoe Indianapolis,2009,"Shelbyville, IN",0,0,18,145,1945,0,1,1,1,1,18145,1,18097
+Horseshoe St. Louis,2007,"St. Louis, MO",1,1,29,189,3089,1,0,1,1,2,29189,0,29189
+Horseshoe St. Louis,2007,"St. Louis, MO",1,1,17,119,1819,0,1,1,1,2,17119,0,29189
+Horseshoe St. Louis,2007,"St. Louis, MO",1,1,17,133,1833,0,1,1,1,2,17133,1,29189
+Horseshoe St. Louis,2007,"St. Louis, MO",1,1,17,163,1863,0,1,1,1,2,17163,0,29189
+Horseshoe St. Louis,2007,"St. Louis, MO",1,1,29,71,2971,0,1,1,1,2,29071,1,29189
+Horseshoe St. Louis,2007,"St. Louis, MO",1,1,29,99,2999,0,1,1,1,2,29099,0,29189
+Horseshoe St. Louis,2007,"St. Louis, MO",1,1,29,183,3083,0,1,1,1,2,29183,1,29189
+Horseshoe St. Louis,2007,"St. Louis, MO",1,1,29,510,3410,0,1,1,1,2,29510,0,29189
+Ilani Casino Resort,2017,"Ridgefield, WA",0,0,53,11,5311,1,0,1,1,1,53011,0,53011
+Ilani Casino Resort,2017,"Ridgefield, WA",0,0,41,9,4109,0,1,1,1,1,41009,1,53011
+Ilani Casino Resort,2017,"Ridgefield, WA",0,0,41,51,4151,0,1,1,1,1,41051,0,53011
+Ilani Casino Resort,2017,"Ridgefield, WA",0,0,53,15,5315,0,1,1,1,1,53015,1,53011
+Ilani Casino Resort,2017,"Ridgefield, WA",0,0,53,59,5359,0,1,1,1,1,53059,1,53011
+Island View Casino,2006,"Gulfport, MS",1,1,28,59,2859,0,1,1,2,4,28059,0,28047
+Island View Casino,2006,"Gulfport, MS",1,1,28,131,2931,0,1,1,2,4,28131,1,28047
+Island View Casino,2006,"Gulfport, MS",1,1,28,47,2847,1,0,1,2,5,28047,0,28047
+Island View Casino,2006,"Gulfport, MS",1,1,22,87,2287,0,1,1,2,5,22087,1,28047
+Island View Casino,2006,"Gulfport, MS",1,1,28,45,2845,0,1,1,2,5,28045,1,28047
+Island View Casino,2006,"Gulfport, MS",1,1,28,109,2909,0,1,1,2,5,28109,1,28047
+Isle Casino Waterloo,2007,"Waterloo, IA",0,0,19,13,1913,1,0,1,1,1,19013,0,19013
+Isle Casino Waterloo,2007,"Waterloo, IA",0,0,19,11,1911,0,1,1,1,1,19011,1,19013
+Isle Casino Waterloo,2007,"Waterloo, IA",0,0,19,17,1917,0,1,1,1,1,19017,1,19013
+Isle Casino Waterloo,2007,"Waterloo, IA",0,0,19,19,1919,0,1,1,1,1,19019,1,19013
+Isle Casino Waterloo,2007,"Waterloo, IA",0,0,19,23,1923,0,1,1,1,1,19023,1,19013
+Isle Casino Waterloo,2007,"Waterloo, IA",0,0,19,65,1965,0,1,1,1,1,19065,1,19013
+Isle Casino Waterloo,2007,"Waterloo, IA",0,0,19,75,1975,0,1,1,1,1,19075,1,19013
+Isle Casino Waterloo,2007,"Waterloo, IA",0,0,19,171,2071,0,1,1,1,1,19171,1,19013
+Jack Cleveland Casino,2012,"Cleveland, OH",1,1,39,85,3985,0,1,1,1,2,39085,0,39035
+Jack Cleveland Casino,2012,"Cleveland, OH",1,1,39,93,3993,0,1,1,1,2,39093,0,39035
+Jack Cleveland Casino,2012,"Cleveland, OH",1,1,39,35,3935,1,0,1,1,3,39035,0,39035
+Jack Cleveland Casino,2012,"Cleveland, OH",1,1,39,55,3955,0,1,1,1,3,39055,1,39035
+Jack Cleveland Casino,2012,"Cleveland, OH",1,1,39,103,4003,0,1,1,1,3,39103,0,39035
+Jack Cleveland Casino,2012,"Cleveland, OH",1,1,39,133,4033,0,1,1,1,3,39133,1,39035
+Jack Cleveland Casino,2012,"Cleveland, OH",1,1,39,153,4053,0,1,1,1,3,39153,0,39035
+Jack Thistledown Racino,2013,"North Randall, OH",1,1,39,85,3985,0,1,1,2,2,39085,1,39035
+Jack Thistledown Racino,2013,"North Randall, OH",1,1,39,93,3993,0,1,1,2,2,39093,1,39035
+Jack Thistledown Racino,2013,"North Randall, OH",1,1,39,35,3935,1,0,1,2,3,39035,0,39035
+Jack Thistledown Racino,2013,"North Randall, OH",1,1,39,55,3955,0,1,1,2,3,39055,1,39035
+Jack Thistledown Racino,2013,"North Randall, OH",1,1,39,103,4003,0,1,1,2,3,39103,0,39035
+Jack Thistledown Racino,2013,"North Randall, OH",1,1,39,133,4033,0,1,1,2,3,39133,0,39035
+Jack Thistledown Racino,2013,"North Randall, OH",1,1,39,153,4053,0,1,1,2,3,39153,0,39035
+Jamul Casino,2016,"Jamul, CA",1,1,6,73,673,1,0,1,4,4,6073,0,6073
+Jamul Casino,2016,"Jamul, CA",1,1,6,25,625,0,1,1,4,4,6025,1,6073
+Jamul Casino,2016,"Jamul, CA",1,1,6,65,665,0,1,1,4,4,6065,1,6073
+Jamul Casino,2016,"Jamul, CA",1,1,6,59,659,0,1,1,5,5,6059,1,6073
+Kansas Crossing Casino,2017,"Pittsburg, KS",0,0,20,37,2037,1,0,1,1,1,20037,0,20037
+Kansas Crossing Casino,2017,"Pittsburg, KS",0,0,20,11,2011,0,1,1,1,1,20011,1,20037
+Kansas Crossing Casino,2017,"Pittsburg, KS",0,0,20,21,2021,0,1,1,1,1,20021,1,20037
+Kansas Crossing Casino,2017,"Pittsburg, KS",0,0,20,99,2099,0,1,1,1,1,20099,1,20037
+Kansas Crossing Casino,2017,"Pittsburg, KS",0,0,20,133,2133,0,1,1,1,1,20133,1,20037
+Kansas Crossing Casino,2017,"Pittsburg, KS",0,0,29,11,2911,0,1,1,1,1,29011,1,20037
+Kansas Crossing Casino,2017,"Pittsburg, KS",0,0,29,97,2997,0,1,1,1,1,29097,1,20037
+Kansas Crossing Casino,2017,"Pittsburg, KS",0,0,29,217,3117,0,1,1,1,1,29217,1,20037
+Kansas Star Casino,2011,"Mulvane, KS",0,0,20,173,2173,1,0,1,1,1,20173,0,20173
+Kansas Star Casino,2011,"Mulvane, KS",0,0,20,15,2015,0,1,1,1,1,20015,1,20173
+Kansas Star Casino,2011,"Mulvane, KS",0,0,20,35,2035,0,1,1,1,1,20035,1,20173
+Kansas Star Casino,2011,"Mulvane, KS",0,0,20,79,2079,0,1,1,1,1,20079,1,20173
+Kansas Star Casino,2011,"Mulvane, KS",0,0,20,95,2095,0,1,1,1,1,20095,1,20173
+Kansas Star Casino,2011,"Mulvane, KS",0,0,20,155,2155,0,1,1,1,1,20155,1,20173
+Kansas Star Casino,2011,"Mulvane, KS",0,0,20,191,2191,0,1,1,1,1,20191,1,20173
+Kla-Mo-Ya Casino,2005,"Chiloqin, OR",0,0,41,29,4129,1,0,1,1,1,41029,0,41029
+Kla-Mo-Ya Casino,2005,"Chiloqin, OR",0,0,6,93,693,0,1,1,1,1,6093,1,41029
+Kla-Mo-Ya Casino,2005,"Chiloqin, OR",0,0,41,33,4133,0,1,1,1,1,41033,1,41029
+Kla-Mo-Ya Casino,2005,"Chiloqin, OR",1,1,41,19,4119,0,1,1,2,2,41019,0,41029
+Kla-Mo-Ya Casino,2005,"Chiloqin, OR",1,1,41,35,4135,0,1,1,2,2,41035,1,41029
+L'Auberge Casino Resort Lake Charles,2005,"Lake Charles, LA",1,1,22,19,2219,1,0,1,1,2,22019,0,22019
+L'Auberge Casino Resort Lake Charles,2005,"Lake Charles, LA",1,1,22,11,2211,0,1,1,1,2,22011,1,22019
+L'Auberge Casino Resort Lake Charles,2005,"Lake Charles, LA",1,1,22,23,2223,0,1,1,1,2,22023,1,22019
+L'Auberge Casino Resort Lake Charles,2005,"Lake Charles, LA",1,1,22,53,2253,0,1,1,1,2,22053,1,22019
+L'Auberge Casino Resort Lake Charles,2005,"Lake Charles, LA",1,1,48,351,5151,0,1,1,1,2,48351,1,22019
+L'Auberge Casino Resort Lake Charles,2005,"Lake Charles, LA",1,1,48,361,5161,0,1,1,1,2,48361,1,22019
+Live! Casino & Hotel,2012,"Hanover, MD",1,1,24,13,2413,0,1,1,1,2,24013,1,24005
+Live! Casino & Hotel,2012,"Hanover, MD",1,1,24,29,2429,0,1,1,1,2,24029,1,24005
+Live! Casino & Hotel,2012,"Hanover, MD",1,1,24,510,2910,0,1,1,1,2,24510,1,24005
+Live! Casino & Hotel,2012,"Hanover, MD",1,1,24,5,2405,1,0,1,1,3,24005,0,24005
+Live! Casino & Hotel,2012,"Hanover, MD",1,1,24,3,2403,0,1,1,1,3,24003,0,24005
+Live! Casino & Hotel,2012,"Hanover, MD",1,1,24,25,2425,0,1,1,1,3,24025,1,24005
+Live! Casino & Hotel,2012,"Hanover, MD",1,1,24,27,2427,0,1,1,1,3,24027,0,24005
+Live! Casino & Hotel,2012,"Hanover, MD",1,1,42,133,4333,0,1,1,2,4,42133,1,24005
+Live! Casino & Hotel Philadelphia,2021,"Philadelphia, PA",1,1,42,45,4245,0,1,1,4,4,42045,0,42101
+Live! Casino & Hotel Philadelphia,2021,"Philadelphia, PA",1,1,34,5,3405,0,1,1,5,5,34005,0,42101
+Live! Casino & Hotel Philadelphia,2021,"Philadelphia, PA",1,1,34,7,3407,0,1,1,5,5,34007,0,42101
+Live! Casino & Hotel Philadelphia,2021,"Philadelphia, PA",1,1,34,15,3415,0,1,1,5,5,34015,0,42101
+Live! Casino & Hotel Philadelphia,2021,"Philadelphia, PA",1,1,42,17,4217,0,1,1,5,5,42017,1,42101
+Live! Casino & Hotel Philadelphia,2021,"Philadelphia, PA",1,1,42,101,4301,1,0,1,6,6,42101,0,42101
+Live! Casino & Hotel Philadelphia,2021,"Philadelphia, PA",1,1,42,91,4291,0,1,1,6,6,42091,0,42101
+Live! Casino Pittsburgh,2020,"Hempfield Township, PA",0,0,42,21,4221,0,1,1,1,1,42021,1,42129
+Live! Casino Pittsburgh,2020,"Hempfield Township, PA",0,0,42,63,4263,0,1,1,1,1,42063,1,42129
+Live! Casino Pittsburgh,2020,"Hempfield Township, PA",0,0,42,111,4311,0,1,1,1,1,42111,1,42129
+Live! Casino Pittsburgh,2020,"Hempfield Township, PA",1,1,42,5,4205,0,1,1,2,2,42005,1,42129
+Live! Casino Pittsburgh,2020,"Hempfield Township, PA",1,1,42,51,4251,0,1,1,2,2,42051,0,42129
+Live! Casino Pittsburgh,2020,"Hempfield Township, PA",1,1,42,129,4329,1,0,1,3,3,42129,0,42129
+Live! Casino Pittsburgh,2020,"Hempfield Township, PA",1,1,42,3,4203,0,1,1,3,3,42003,0,42129
+Live! Casino Pittsburgh,2020,"Hempfield Township, PA",1,1,42,125,4325,0,1,1,3,3,42125,0,42129
+M Resort,2009,"Henderson, NV",1,1,32,31,3231,1,0,1,2,2,32031,0,32031
+M Resort,2009,"Henderson, NV",1,1,6,35,635,0,1,1,2,2,6035,1,32031
+M Resort,2009,"Henderson, NV",1,1,6,49,649,0,1,1,2,2,6049,1,32031
+M Resort,2009,"Henderson, NV",1,1,6,57,657,0,1,1,2,2,6057,1,32031
+M Resort,2009,"Henderson, NV",1,1,6,61,661,0,1,1,2,2,6061,1,32031
+M Resort,2009,"Henderson, NV",1,1,6,91,691,0,1,1,2,2,6091,1,32031
+M Resort,2009,"Henderson, NV",1,1,32,1,3201,0,1,1,2,2,32001,1,32031
+M Resort,2009,"Henderson, NV",1,1,32,13,3213,0,1,1,2,2,32013,1,32031
+M Resort,2009,"Henderson, NV",1,1,32,19,3219,0,1,1,2,2,32019,1,32031
+M Resort,2009,"Henderson, NV",1,1,32,27,3227,0,1,1,2,2,32027,1,32031
+M Resort,2009,"Henderson, NV",1,1,32,29,3229,0,1,1,2,2,32029,1,32031
+M Resort,2009,"Henderson, NV",1,1,32,510,3710,0,1,1,2,2,32510,1,32031
+M Resort,2009,"Henderson, NV",1,1,41,25,4125,0,1,1,2,2,41025,1,32031
+M Resort,2009,"Henderson, NV",1,1,41,37,4137,0,1,1,2,2,41037,1,32031
+Magnolia Bluffs Casino,2012,"Natchez, MS",1,1,28,1,2801,1,0,1,1,1,28001,0,28001
+Magnolia Bluffs Casino,2012,"Natchez, MS",1,1,22,29,2229,0,1,1,1,1,22029,1,28001
+Magnolia Bluffs Casino,2012,"Natchez, MS",1,1,22,107,2307,0,1,1,1,1,22107,1,28001
+Magnolia Bluffs Casino,2012,"Natchez, MS",1,1,28,37,2837,0,1,1,1,1,28037,1,28001
+Magnolia Bluffs Casino,2012,"Natchez, MS",1,1,28,63,2863,0,1,1,1,1,28063,1,28001
+Magnolia Bluffs Casino,2012,"Natchez, MS",1,1,28,157,2957,0,1,1,1,1,28157,1,28001
+Margaritaville Casino,2012,"Biloxi, MS",1,1,28,59,2859,0,1,1,3,4,28059,0,28047
+Margaritaville Casino,2012,"Biloxi, MS",1,1,28,131,2931,0,1,1,3,4,28131,1,28047
+Margaritaville Casino,2012,"Biloxi, MS",1,1,28,47,2847,1,0,1,4,5,28047,0,28047
+Margaritaville Casino,2012,"Biloxi, MS",1,1,22,87,2287,0,1,1,4,5,22087,1,28047
+Margaritaville Casino,2012,"Biloxi, MS",1,1,28,45,2845,0,1,1,4,5,28045,1,28047
+Margaritaville Casino,2012,"Biloxi, MS",1,1,28,109,2909,0,1,1,4,5,28109,1,28047
+Margaritaville Resort Casino,2013,"Bossier City, LA",1,1,22,17,2217,1,0,1,1,1,22017,0,22017
+Margaritaville Resort Casino,2013,"Bossier City, LA",1,1,5,91,591,0,1,1,1,1,5091,1,22017
+Margaritaville Resort Casino,2013,"Bossier City, LA",1,1,22,15,2215,0,1,1,1,1,22015,1,22017
+Margaritaville Resort Casino,2013,"Bossier City, LA",1,1,22,31,2231,0,1,1,1,1,22031,1,22017
+Margaritaville Resort Casino,2013,"Bossier City, LA",1,1,22,81,2281,0,1,1,1,1,22081,1,22017
+Margaritaville Resort Casino,2013,"Bossier City, LA",1,1,48,67,4867,0,1,1,1,1,48067,1,22017
+Margaritaville Resort Casino,2013,"Bossier City, LA",1,1,48,203,5003,0,1,1,1,1,48203,1,22017
+Margaritaville Resort Casino,2013,"Bossier City, LA",1,1,48,315,5115,0,1,1,1,1,48315,1,22017
+Margaritaville Resort Casino,2013,"Bossier City, LA",1,1,48,365,5165,0,1,1,1,1,48365,1,22017
+MGM Grand Detriot,2007,"Detriot, MI",1,1,26,163,2763,1,0,1,1,1,26163,0,26163
+MGM Grand Detriot,2007,"Detriot, MI",1,1,26,99,2699,0,1,1,1,1,26099,0,26163
+MGM Grand Detriot,2007,"Detriot, MI",1,1,26,125,2725,0,1,1,1,1,26125,0,26163
+MGM Grand Detriot,2007,"Detriot, MI",1,1,26,161,2761,0,1,1,1,1,26161,1,26163
+MGM Grand Detriot,2007,"Detriot, MI",1,1,26,115,2715,0,1,1,1,2,26115,0,26163
+MGM National Harbor,2016,"National Harbor, MD",0,0,11,1,1101,0,1,1,1,1,11001,1,24033
+MGM National Harbor,2016,"National Harbor, MD",0,0,24,9,2409,0,1,1,1,1,24009,1,24033
+MGM National Harbor,2016,"National Harbor, MD",0,0,24,17,2417,0,1,1,1,1,24017,0,24033
+MGM National Harbor,2016,"National Harbor, MD",0,0,24,31,2431,0,1,1,1,1,24031,1,24033
+MGM National Harbor,2016,"National Harbor, MD",0,0,51,59,5159,0,1,1,1,1,51059,0,24033
+MGM National Harbor,2016,"National Harbor, MD",0,0,51,510,5610,0,1,1,1,1,51510,1,24033
+MGM National Harbor,2016,"National Harbor, MD",1,1,24,33,2433,1,0,1,2,2,24033,0,24033
+MGM National Harbor,2016,"National Harbor, MD",1,1,24,3,2403,0,1,1,3,3,24003,0,24033
+MGM National Harbor,2016,"National Harbor, MD",1,1,24,27,2427,0,1,1,3,3,24027,1,24033
+MGM Northfield Park,2013,"Northfield, OH",0,0,39,151,4051,0,1,1,1,1,39151,0,39153
+MGM Northfield Park,2013,"Northfield, OH",0,0,39,169,4069,0,1,1,1,1,39169,0,39153
+MGM Northfield Park,2013,"Northfield, OH",1,1,39,153,4053,1,0,1,3,3,39153,0,39153
+MGM Northfield Park,2013,"Northfield, OH",1,1,39,35,3935,0,1,1,3,3,39035,0,39153
+MGM Northfield Park,2013,"Northfield, OH",1,1,39,55,3955,0,1,1,3,3,39055,1,39153
+MGM Northfield Park,2013,"Northfield, OH",1,1,39,103,4003,0,1,1,3,3,39103,0,39153
+MGM Northfield Park,2013,"Northfield, OH",1,1,39,133,4033,0,1,1,3,3,39133,0,39153
+Miami Valley Gaming,2013,"Turtlecreek Township, OH",0,0,39,27,3927,0,1,1,1,1,39027,1,39165
+Miami Valley Gaming,2013,"Turtlecreek Township, OH",0,0,39,57,3957,0,1,1,1,1,39057,0,39165
+Miami Valley Gaming,2013,"Turtlecreek Township, OH",0,0,39,113,4013,0,1,1,1,1,39113,0,39165
+Miami Valley Gaming,2013,"Turtlecreek Township, OH",1,1,39,165,4065,1,0,1,1,2,39165,0,39165
+Miami Valley Gaming,2013,"Turtlecreek Township, OH",1,1,39,17,3917,0,1,1,2,2,39017,0,39165
+Miami Valley Gaming,2013,"Turtlecreek Township, OH",1,1,39,25,3925,0,1,1,2,2,39025,0,39165
+Miami Valley Gaming,2013,"Turtlecreek Township, OH",1,1,39,61,3961,0,1,1,2,2,39061,0,39165
+Mohegan Pennsylvania,2006,"Wilkes-Barre, PA",0,0,42,37,4237,0,1,1,1,1,42037,1,42079
+Mohegan Pennsylvania,2006,"Wilkes-Barre, PA",0,0,42,113,4313,0,1,1,1,1,42113,1,42079
+Mohegan Pennsylvania,2006,"Wilkes-Barre, PA",0,0,42,131,4331,0,1,1,1,1,42131,1,42079
+Mohegan Pennsylvania,2006,"Wilkes-Barre, PA",1,1,42,79,4279,1,0,1,1,2,42079,0,42079
+Mohegan Pennsylvania,2006,"Wilkes-Barre, PA",1,1,42,69,4269,0,1,1,1,2,42069,0,42079
+Mohegan Pennsylvania,2006,"Wilkes-Barre, PA",1,1,42,107,4307,0,1,1,1,2,42107,1,42079
+Mohegan Pennsylvania,2006,"Wilkes-Barre, PA",1,1,42,25,4225,0,1,1,1,3,42025,1,42079
+Mohegan Pennsylvania,2006,"Wilkes-Barre, PA",1,1,42,89,4289,0,1,1,1,3,42089,0,42079
+"Morongo Casino, Resort & Spa",2004,"Cabazon, CA",1,1,4,12,412,0,1,1,1,3,4012,1,6065
+"Morongo Casino, Resort & Spa",2004,"Cabazon, CA",1,1,6,65,665,1,0,1,2,4,6065,0,6065
+"Morongo Casino, Resort & Spa",2004,"Cabazon, CA",1,1,6,25,625,0,1,1,1,4,6025,1,6065
+"Morongo Casino, Resort & Spa",2004,"Cabazon, CA",1,1,6,73,673,0,1,1,2,4,6073,0,6065
+"Morongo Casino, Resort & Spa",2004,"Cabazon, CA",1,1,6,59,659,0,1,1,2,5,6059,0,6065
+"Morongo Casino, Resort & Spa",2004,"Cabazon, CA",1,1,6,71,671,0,1,1,3,19,6071,0,6065
+Mount Airy Casino Resort,2007,"Mount Pocono, PA",0,0,34,37,3437,0,1,1,1,1,34037,1,42089
+Mount Airy Casino Resort,2007,"Mount Pocono, PA",0,0,42,103,4303,0,1,1,1,1,42103,1,42089
+Mount Airy Casino Resort,2007,"Mount Pocono, PA",0,0,42,127,4327,0,1,1,1,1,42127,1,42089
+Mount Airy Casino Resort,2007,"Mount Pocono, PA",1,1,42,69,4269,0,1,1,2,2,42069,0,42089
+Mount Airy Casino Resort,2007,"Mount Pocono, PA",1,1,42,79,4279,0,1,1,2,2,42079,0,42089
+Mount Airy Casino Resort,2007,"Mount Pocono, PA",1,1,42,89,4289,1,0,1,2,3,42089,0,42089
+Mount Airy Casino Resort,2007,"Mount Pocono, PA",1,1,34,41,3441,0,1,1,1,3,34041,1,42089
+Mount Airy Casino Resort,2007,"Mount Pocono, PA",1,1,42,25,4225,0,1,1,2,3,42025,1,42089
+Mount Airy Casino Resort,2007,"Mount Pocono, PA",1,1,42,95,4295,0,1,1,1,3,42095,1,42089
+Ocean Casino Resort,2012,"Atlantic City, NJ",1,1,34,1,3401,1,0,1,2,2,34001,0,34001
+Ocean Casino Resort,2012,"Atlantic City, NJ",1,1,34,9,3409,0,1,1,2,2,34009,0,34001
+Ocean Casino Resort,2012,"Atlantic City, NJ",1,1,34,11,3411,0,1,1,2,2,34011,0,34001
+Ocean Casino Resort,2012,"Atlantic City, NJ",1,1,34,29,3429,0,1,1,3,3,34029,0,34001
+Ocean Casino Resort,2012,"Atlantic City, NJ",1,1,34,5,3405,0,1,1,4,5,34005,0,34001
+Ocean Casino Resort,2012,"Atlantic City, NJ",1,1,34,7,3407,0,1,1,4,5,34007,1,34001
+Ocean Casino Resort,2012,"Atlantic City, NJ",1,1,34,15,3415,0,1,1,4,5,34015,1,34001
+Ocean Downs,2011,"Berlin, MD",0,0,24,45,2445,1,0,1,1,1,24045,0,24045
+Ocean Downs,2011,"Berlin, MD",0,0,10,5,1005,0,1,1,1,1,10005,0,24045
+Ocean Downs,2011,"Berlin, MD",0,0,24,19,2419,0,1,1,1,1,24019,1,24045
+Ocean Downs,2011,"Berlin, MD",0,0,24,39,2439,0,1,1,1,1,24039,1,24045
+Ocean Downs,2011,"Berlin, MD",0,0,24,47,2447,0,1,1,1,1,24047,1,24045
+Oxford Casino,2012,"Oxford, ME",0,0,23,1,2301,1,0,1,1,1,23001,0,23001
+Oxford Casino,2012,"Oxford, ME",0,0,23,5,2305,0,1,1,1,1,23005,0,23001
+Oxford Casino,2012,"Oxford, ME",0,0,23,7,2307,0,1,1,1,1,23007,1,23001
+Oxford Casino,2012,"Oxford, ME",0,0,23,11,2311,0,1,1,1,1,23011,1,23001
+Oxford Casino,2012,"Oxford, ME",0,0,23,17,2317,0,1,1,1,1,23017,1,23001
+Oxford Casino,2012,"Oxford, ME",0,0,23,23,2323,0,1,1,1,1,23023,1,23001
+Parx Casino and Racing,2009,"Bensalem, PA",0,0,34,19,3419,0,1,1,1,1,34019,1,42017
+Parx Casino and Racing,2009,"Bensalem, PA",0,0,34,21,3421,0,1,1,1,1,34021,0,42017
+Parx Casino and Racing,2009,"Bensalem, PA",1,1,42,77,4277,0,1,1,1,2,42077,1,42017
+Parx Casino and Racing,2009,"Bensalem, PA",1,1,34,41,3441,0,1,1,2,3,34041,1,42017
+Parx Casino and Racing,2009,"Bensalem, PA",1,1,42,95,4295,0,1,1,3,3,42095,1,42017
+Parx Casino and Racing,2009,"Bensalem, PA",1,1,42,17,4217,1,0,1,1,5,42017,0,42017
+Parx Casino and Racing,2009,"Bensalem, PA",1,1,34,5,3405,0,1,1,2,5,34005,0,42017
+Parx Casino and Racing,2009,"Bensalem, PA",1,1,42,91,4291,0,1,1,2,6,42091,0,42017
+Parx Casino and Racing,2009,"Bensalem, PA",1,1,42,101,4301,0,1,1,4,6,42101,0,42017
+Plainridge Park Casino,2015,"Plainville, MA",0,0,25,5,2505,0,1,1,1,1,25005,0,25021
+Plainridge Park Casino,2015,"Plainville, MA",0,0,25,23,2523,0,1,1,1,1,25023,0,25021
+Plainridge Park Casino,2015,"Plainville, MA",0,0,44,7,4407,0,1,1,1,1,44007,0,25021
+Plainridge Park Casino,2015,"Plainville, MA",1,1,25,21,2521,1,0,1,1,2,25021,0,25021
+Plainridge Park Casino,2015,"Plainville, MA",1,1,25,17,2517,0,1,1,1,2,25017,0,25021
+Plainridge Park Casino,2015,"Plainville, MA",1,1,25,25,2525,0,1,1,1,2,25025,1,25021
+Plainridge Park Casino,2015,"Plainville, MA",1,1,25,27,2527,0,1,1,1,2,25027,0,25021
+"Red Rock Casino, Resort & Spa",2006,"Summerlin South, NV",1,1,32,3,3203,1,0,1,5,16,32003,0,32003
+"Red Rock Casino, Resort & Spa",2006,"Summerlin South, NV",1,1,4,15,415,0,1,1,5,16,4015,1,32003
+"Red Rock Casino, Resort & Spa",2006,"Summerlin South, NV",1,1,6,27,627,0,1,1,5,16,6027,1,32003
+"Red Rock Casino, Resort & Spa",2006,"Summerlin South, NV",1,1,32,17,3217,0,1,1,5,16,32017,1,32003
+"Red Rock Casino, Resort & Spa",2006,"Summerlin South, NV",1,1,32,23,3223,0,1,1,5,16,32023,1,32003
+"Red Rock Casino, Resort & Spa",2006,"Summerlin South, NV",1,1,6,71,671,0,1,1,6,19,6071,1,32003
+Resorts World Las Vegas,2021,"Winchester, NV",1,1,32,3,3203,1,0,1,13,16,32003,0,32003
+Resorts World Las Vegas,2021,"Winchester, NV",1,1,4,15,415,0,1,1,13,16,4015,1,32003
+Resorts World Las Vegas,2021,"Winchester, NV",1,1,6,27,627,0,1,1,13,16,6027,1,32003
+Resorts World Las Vegas,2021,"Winchester, NV",1,1,32,17,3217,0,1,1,13,16,32017,1,32003
+Resorts World Las Vegas,2021,"Winchester, NV",1,1,32,23,3223,0,1,1,13,16,32023,1,32003
+Resorts World Las Vegas,2021,"Winchester, NV",1,1,6,71,671,0,1,1,16,19,6071,0,32003
+Rhythm City Casino Resort,2016,"Davenport, IA",0,0,19,31,1931,0,1,1,1,1,19031,1,19163
+Rhythm City Casino Resort,2016,"Davenport, IA",1,1,19,163,2063,1,0,1,2,2,19163,0,19163
+Rhythm City Casino Resort,2016,"Davenport, IA",1,1,17,161,1861,0,1,1,2,2,17161,0,19163
+Rhythm City Casino Resort,2016,"Davenport, IA",1,1,19,45,1945,0,1,1,2,2,19045,1,19163
+Rhythm City Casino Resort,2016,"Davenport, IA",1,1,19,139,2039,0,1,1,2,2,19139,1,19163
+River City Casino (Lemay),2010,"Lemay, MO",1,1,29,189,3089,1,0,1,2,2,29189,0,29189
+River City Casino (Lemay),2010,"Lemay, MO",1,1,17,119,1819,0,1,1,2,2,17119,0,29189
+River City Casino (Lemay),2010,"Lemay, MO",1,1,17,133,1833,0,1,1,2,2,17133,1,29189
+River City Casino (Lemay),2010,"Lemay, MO",1,1,17,163,1863,0,1,1,2,2,17163,0,29189
+River City Casino (Lemay),2010,"Lemay, MO",1,1,29,71,2971,0,1,1,2,2,29071,1,29189
+River City Casino (Lemay),2010,"Lemay, MO",1,1,29,99,2999,0,1,1,2,2,29099,0,29189
+River City Casino (Lemay),2010,"Lemay, MO",1,1,29,183,3083,0,1,1,2,2,29183,1,29189
+River City Casino (Lemay),2010,"Lemay, MO",1,1,29,510,3410,0,1,1,2,2,29510,0,29189
+Rivers Casino Des Plaines,2011,"Des Plaines, IL",0,0,17,43,1743,0,1,1,1,1,17043,0,17031
+Rivers Casino Des Plaines,2011,"Des Plaines, IL",0,0,17,89,1789,0,1,1,1,1,17089,0,17031
+Rivers Casino Des Plaines,2011,"Des Plaines, IL",0,0,17,111,1811,0,1,1,1,1,17111,0,17031
+Rivers Casino Des Plaines,2011,"Des Plaines, IL",0,0,17,197,1897,0,1,1,1,1,17197,1,17031
+Rivers Casino Des Plaines,2011,"Des Plaines, IL",0,0,18,89,1889,0,1,1,1,1,18089,1,17031
+Rivers Casino Des Plaines,2011,"Des Plaines, IL",1,1,17,31,1731,1,0,1,2,4,17031,0,17031
+Rivers Casino Des Plaines,2011,"Des Plaines, IL",1,1,17,97,1797,0,1,1,3,4,17097,0,17031
+Rivers Casino Des Plaines,2011,"Des Plaines, IL",1,1,18,127,1927,0,1,1,3,4,18127,1,17031
+Rivers Casino Des Plaines,2011,"Des Plaines, IL",1,1,26,21,2621,0,1,1,3,4,26021,1,17031
+Rivers Casino Philadelphia,2009,"Philadelphia, PA",1,1,42,45,4245,0,1,1,2,4,42045,0,42101
+Rivers Casino Philadelphia,2009,"Philadelphia, PA",1,1,34,5,3405,0,1,1,3,5,34005,0,42101
+Rivers Casino Philadelphia,2009,"Philadelphia, PA",1,1,34,7,3407,0,1,1,3,5,34007,0,42101
+Rivers Casino Philadelphia,2009,"Philadelphia, PA",1,1,34,15,3415,0,1,1,3,5,34015,0,42101
+Rivers Casino Philadelphia,2009,"Philadelphia, PA",1,1,42,17,4217,0,1,1,3,5,42017,1,42101
+Rivers Casino Philadelphia,2009,"Philadelphia, PA",1,1,42,101,4301,1,0,1,3,6,42101,0,42101
+Rivers Casino Philadelphia,2009,"Philadelphia, PA",1,1,42,91,4291,0,1,1,3,6,42091,0,42101
+Rivers Casino Pittsburgh,2009,"Pittsburgh, PA",1,1,42,5,4205,0,1,1,1,2,42005,1,42003
+Rivers Casino Pittsburgh,2009,"Pittsburgh, PA",1,1,42,7,4207,0,1,1,2,2,42007,0,42003
+Rivers Casino Pittsburgh,2009,"Pittsburgh, PA",1,1,42,19,4219,0,1,1,1,2,42019,0,42003
+Rivers Casino Pittsburgh,2009,"Pittsburgh, PA",1,1,42,3,4203,1,0,1,2,3,42003,0,42003
+Rivers Casino Pittsburgh,2009,"Pittsburgh, PA",1,1,42,125,4325,0,1,1,2,3,42125,0,42003
+Rivers Casino Pittsburgh,2009,"Pittsburgh, PA",1,1,42,129,4329,0,1,1,1,3,42129,0,42003
+Rivers Casino Portsmouth,2023,"Portsmouth, VA",0,0,51,740,5840,1,0,1,1,1,51740,0,51740
+Rivers Casino Portsmouth,2023,"Portsmouth, VA",0,0,51,550,5650,0,1,1,1,1,51550,0,51740
+Rivers Casino Portsmouth,2023,"Portsmouth, VA",0,0,51,650,5750,0,1,1,1,1,51650,0,51740
+Rivers Casino Portsmouth,2023,"Portsmouth, VA",0,0,51,700,5800,0,1,1,1,1,51700,0,51740
+Rivers Casino Portsmouth,2023,"Portsmouth, VA",0,0,51,710,5810,0,1,1,1,1,51710,0,51740
+Rivers Casino Portsmouth,2023,"Portsmouth, VA",0,0,51,800,5900,0,1,1,1,1,51800,1,51740
+Saganing Eagles Landing Casino,2007,"Standish, MI",0,0,26,17,2617,1,0,1,1,1,26017,0,26017
+Saganing Eagles Landing Casino,2007,"Standish, MI",0,0,26,11,2611,0,1,1,1,1,26011,1,26017
+Saganing Eagles Landing Casino,2007,"Standish, MI",0,0,26,51,2651,0,1,1,1,1,26051,1,26017
+Saganing Eagles Landing Casino,2007,"Standish, MI",0,0,26,63,2663,0,1,1,1,1,26063,1,26017
+Saganing Eagles Landing Casino,2007,"Standish, MI",0,0,26,111,2711,0,1,1,1,1,26111,1,26017
+Saganing Eagles Landing Casino,2007,"Standish, MI",0,0,26,145,2745,0,1,1,1,1,26145,1,26017
+Saganing Eagles Landing Casino,2007,"Standish, MI",0,0,26,157,2757,0,1,1,1,1,26157,1,26017
+Santa Ysabel Resort & Casino,2007,"Santa Ysabel, CA",1,1,4,12,412,0,1,1,2,3,4012,1,6065
+Santa Ysabel Resort & Casino,2007,"Santa Ysabel, CA",1,1,6,65,665,1,0,1,3,4,6065,0,6065
+Santa Ysabel Resort & Casino,2007,"Santa Ysabel, CA",1,1,6,25,625,0,1,1,3,4,6025,0,6065
+Santa Ysabel Resort & Casino,2007,"Santa Ysabel, CA",1,1,6,73,673,0,1,1,3,4,6073,0,6065
+Santa Ysabel Resort & Casino,2007,"Santa Ysabel, CA",1,1,6,59,659,0,1,1,3,5,6059,1,6065
+Santa Ysabel Resort & Casino,2007,"Santa Ysabel, CA",1,1,6,71,671,0,1,1,7,19,6071,1,6065
+Scarlet Pearl Casino,2015,"D'Iberville, MS",1,1,28,59,2859,0,1,1,4,4,28059,0,28047
+Scarlet Pearl Casino,2015,"D'Iberville, MS",1,1,28,131,2931,0,1,1,4,4,28131,1,28047
+Scarlet Pearl Casino,2015,"D'Iberville, MS",1,1,28,47,2847,1,0,1,5,5,28047,0,28047
+Scarlet Pearl Casino,2015,"D'Iberville, MS",1,1,22,87,2287,0,1,1,5,5,22087,1,28047
+Scarlet Pearl Casino,2015,"D'Iberville, MS",1,1,28,45,2845,0,1,1,5,5,28045,1,28047
+Scarlet Pearl Casino,2015,"D'Iberville, MS",1,1,28,109,2909,0,1,1,5,5,28109,1,28047
+Seminole Hard Rock Hotel & Casino Holloywood,2004,"Hollywood, FL",0,0,12,11,1211,1,0,1,1,1,12011,0,12011
+Seminole Hard Rock Hotel & Casino Holloywood,2004,"Hollywood, FL",0,0,12,21,1221,0,1,1,1,1,12021,0,12011
+Seminole Hard Rock Hotel & Casino Holloywood,2004,"Hollywood, FL",0,0,12,51,1251,0,1,1,1,1,12051,1,12011
+Seminole Hard Rock Hotel & Casino Holloywood,2004,"Hollywood, FL",0,0,12,86,1286,0,1,1,1,1,12086,0,12011
+Seminole Hard Rock Hotel & Casino Holloywood,2004,"Hollywood, FL",0,0,12,99,1299,0,1,1,1,1,12099,0,12011
+Seminole Hard Rock Hotel & Casino Tampa,2003,"Tampa, FL",0,0,12,57,1257,1,0,1,1,1,12057,0,12057
+Seminole Hard Rock Hotel & Casino Tampa,2003,"Tampa, FL",0,0,12,49,1249,0,1,1,1,1,12049,1,12057
+Seminole Hard Rock Hotel & Casino Tampa,2003,"Tampa, FL",0,0,12,81,1281,0,1,1,1,1,12081,0,12057
+Seminole Hard Rock Hotel & Casino Tampa,2003,"Tampa, FL",0,0,12,101,1301,0,1,1,1,1,12101,0,12057
+Seminole Hard Rock Hotel & Casino Tampa,2003,"Tampa, FL",0,0,12,103,1303,0,1,1,1,1,12103,0,12057
+Seminole Hard Rock Hotel & Casino Tampa,2003,"Tampa, FL",0,0,12,105,1305,0,1,1,1,1,12105,0,12057
+Seneca Buffalo Creek Casino,2007,"Buffalo, NY",0,1,36,29,3629,1,0,1,1,1,36029,0,36029
+Seneca Buffalo Creek Casino,2007,"Buffalo, NY",0,1,36,9,3609,0,1,1,1,1,36009,1,36029
+Seneca Buffalo Creek Casino,2007,"Buffalo, NY",0,1,36,13,3613,0,1,1,1,1,36013,1,36029
+Seneca Buffalo Creek Casino,2007,"Buffalo, NY",0,1,36,37,3637,0,1,1,1,1,36037,1,36029
+Seneca Buffalo Creek Casino,2007,"Buffalo, NY",0,1,36,63,3663,0,1,1,1,1,36063,0,36029
+Seneca Buffalo Creek Casino,2007,"Buffalo, NY",0,1,36,121,3721,0,1,1,1,1,36121,1,36029
+Silver Slipper Casino (Waveland),2006,"Bay St. Louis, MS",0,0,22,103,2303,1,0,1,1,1,22103,0,22103
+Silver Slipper Casino (Waveland),2006,"Bay St. Louis, MS",0,0,22,51,2251,0,1,1,1,1,22051,1,22103
+Silver Slipper Casino (Waveland),2006,"Bay St. Louis, MS",0,0,22,71,2271,0,1,1,1,1,22071,1,22103
+Silver Slipper Casino (Waveland),2006,"Bay St. Louis, MS",0,0,22,105,2305,0,1,1,1,1,22105,1,22103
+Silver Slipper Casino (Waveland),2006,"Bay St. Louis, MS",0,0,22,117,2317,0,1,1,1,1,22117,1,22103
+Silver Slipper Casino (Waveland),2006,"Bay St. Louis, MS",1,1,22,87,2287,0,1,1,3,5,22087,1,22103
+Silver Slipper Casino (Waveland),2006,"Bay St. Louis, MS",1,1,28,45,2845,0,1,1,3,5,28045,1,22103
+Silver Slipper Casino (Waveland),2006,"Bay St. Louis, MS",1,1,28,109,2909,0,1,1,3,5,28109,1,22103
+Snoqualmie Casino,2008,"Snoqualmie, WA",0,0,53,37,5337,0,1,1,1,1,53037,1,53033
+Snoqualmie Casino,2008,"Snoqualmie, WA",0,0,53,53,5353,0,1,1,1,1,53053,1,53033
+Snoqualmie Casino,2008,"Snoqualmie, WA",0,0,53,77,5377,0,1,1,1,1,53077,1,53033
+Snoqualmie Casino,2008,"Snoqualmie, WA",1,1,53,33,5333,1,0,1,3,3,53033,0,53033
+Snoqualmie Casino,2008,"Snoqualmie, WA",1,1,53,7,5307,0,1,1,3,3,53007,1,53033
+Snoqualmie Casino,2008,"Snoqualmie, WA",1,1,53,35,5335,0,1,1,3,3,53035,1,53033
+Snoqualmie Casino,2008,"Snoqualmie, WA",1,1,53,61,5361,0,1,1,3,3,53061,1,53033
+"South Point Hotel, Casino & Spa",2005,"Las Vegas, NV",1,1,32,3,3203,1,0,1,3,16,32003,0,32003
+"South Point Hotel, Casino & Spa",2005,"Las Vegas, NV",1,1,4,15,415,0,1,1,3,16,4015,1,32003
+"South Point Hotel, Casino & Spa",2005,"Las Vegas, NV",1,1,6,27,627,0,1,1,3,16,6027,1,32003
+"South Point Hotel, Casino & Spa",2005,"Las Vegas, NV",1,1,32,17,3217,0,1,1,3,16,32017,1,32003
+"South Point Hotel, Casino & Spa",2005,"Las Vegas, NV",1,1,32,23,3223,0,1,1,3,16,32023,1,32003
+"South Point Hotel, Casino & Spa",2005,"Las Vegas, NV",1,1,6,71,671,0,1,1,4,19,6071,1,32003
+Talking Stick Resort,2010,"Scottsdale, AZ",1,1,4,13,413,1,0,1,1,1,4013,0,4013
+Talking Stick Resort,2010,"Scottsdale, AZ",1,1,4,7,407,0,1,1,1,1,4007,1,4013
+Talking Stick Resort,2010,"Scottsdale, AZ",1,1,4,19,419,0,1,1,1,1,4019,1,4013
+Talking Stick Resort,2010,"Scottsdale, AZ",1,1,4,21,421,0,1,1,1,1,4021,0,4013
+Talking Stick Resort,2010,"Scottsdale, AZ",1,1,4,25,425,0,1,1,1,1,4025,1,4013
+Talking Stick Resort,2010,"Scottsdale, AZ",1,1,4,27,427,0,1,1,1,1,4027,1,4013
+Talking Stick Resort,2010,"Scottsdale, AZ",1,1,4,12,412,0,1,1,3,3,4012,1,4013
+The Palazzo,2007,"Las Vegas, NV",1,1,32,3,3203,1,0,1,6,16,32003,0,32003
+The Palazzo,2007,"Las Vegas, NV",1,1,4,15,415,0,1,1,6,16,4015,1,32003
+The Palazzo,2007,"Las Vegas, NV",1,1,6,27,627,0,1,1,6,16,6027,1,32003
+The Palazzo,2007,"Las Vegas, NV",1,1,32,17,3217,0,1,1,6,16,32017,1,32003
+The Palazzo,2007,"Las Vegas, NV",1,1,32,23,3223,0,1,1,6,16,32023,1,32003
+The Palazzo,2007,"Las Vegas, NV",1,1,6,71,671,0,1,1,8,19,6071,1,32003
+Three Rivers Casino and Resort,2004,"Florence, OR",0,1,41,39,4139,1,0,1,1,1,41039,0,41039
+Three Rivers Casino and Resort,2004,"Florence, OR",0,1,41,3,4103,0,1,1,1,1,41003,1,41039
+Three Rivers Casino and Resort,2004,"Florence, OR",0,1,41,17,4117,0,1,1,1,1,41017,1,41039
+Three Rivers Casino and Resort,2004,"Florence, OR",0,1,41,41,4141,0,1,1,1,1,41041,1,41039
+Three Rivers Casino and Resort,2004,"Florence, OR",0,1,41,43,4143,0,1,1,1,1,41043,1,41039
+Three Rivers Casino and Resort,2004,"Florence, OR",1,1,41,19,4119,0,1,1,1,2,41019,0,41039
+Three Rivers Casino and Resort,2004,"Florence, OR",1,1,41,35,4135,0,1,1,1,2,41035,1,41039
+Treasure Valley,2003,"Davis, OK",0,0,40,49,4049,0,1,1,1,1,40049,1,40099
+Treasure Valley,2003,"Davis, OK",0,0,40,69,4069,0,1,1,1,1,40069,1,40099
+Treasure Valley,2003,"Davis, OK",0,0,40,123,4123,0,1,1,1,1,40123,1,40099
+Treasure Valley,2003,"Davis, OK",1,1,40,99,4099,1,0,1,1,2,40099,0,40099
+Treasure Valley,2003,"Davis, OK",1,1,40,19,4019,0,1,1,1,2,40019,1,40099
+Tulalip Resort Casino,2003,"Tulalip, WA",1,1,53,29,5329,0,1,1,1,2,53029,1,53061
+Tulalip Resort Casino,2003,"Tulalip, WA",1,1,53,57,5357,0,1,1,1,2,53057,1,53061
+Tulalip Resort Casino,2003,"Tulalip, WA",1,1,53,61,5361,1,0,1,1,3,53061,0,53061
+Tulalip Resort Casino,2003,"Tulalip, WA",1,1,53,7,5307,0,1,1,1,3,53007,1,53061
+Tulalip Resort Casino,2003,"Tulalip, WA",1,1,53,33,5333,0,1,1,1,3,53033,0,53061
+Tulalip Resort Casino,2003,"Tulalip, WA",1,1,53,35,5335,0,1,1,1,3,53035,0,53061
+Tuscany Suites and Casino,2003,"Las Vegas, NV",1,1,32,3,3203,1,0,1,2,16,32003,0,32003
+Tuscany Suites and Casino,2003,"Las Vegas, NV",1,1,4,15,415,0,1,1,2,16,4015,1,32003
+Tuscany Suites and Casino,2003,"Las Vegas, NV",1,1,6,27,627,0,1,1,2,16,6027,1,32003
+Tuscany Suites and Casino,2003,"Las Vegas, NV",1,1,32,17,3217,0,1,1,2,16,32017,1,32003
+Tuscany Suites and Casino,2003,"Las Vegas, NV",1,1,32,23,3223,0,1,1,2,16,32023,1,32003
+Tuscany Suites and Casino,2003,"Las Vegas, NV",1,1,6,71,671,0,1,1,2,19,6071,1,32003
+Valley Forge Casino Resort,2012,"King of Prussia, PA",0,0,10,3,1003,0,1,1,1,1,10003,1,42029
+Valley Forge Casino Resort,2012,"King of Prussia, PA",0,0,24,15,2415,0,1,1,1,1,24015,1,42029
+Valley Forge Casino Resort,2012,"King of Prussia, PA",1,1,42,29,4229,1,0,1,2,2,42029,0,42029
+Valley Forge Casino Resort,2012,"King of Prussia, PA",1,1,42,11,4211,0,1,1,2,2,42011,1,42029
+Valley Forge Casino Resort,2012,"King of Prussia, PA",1,1,42,71,4271,0,1,1,2,3,42071,1,42029
+Valley Forge Casino Resort,2012,"King of Prussia, PA",1,1,42,45,4245,0,1,1,3,4,42045,0,42029
+Valley Forge Casino Resort,2012,"King of Prussia, PA",1,1,42,91,4291,0,1,1,5,6,42091,0,42029
+Virgin Hotels Las Vegas,2021,"Paradise, NV",1,1,32,3,3203,1,0,1,14,16,32003,0,32003
+Virgin Hotels Las Vegas,2021,"Paradise, NV",1,1,4,15,415,0,1,1,14,16,4015,1,32003
+Virgin Hotels Las Vegas,2021,"Paradise, NV",1,1,6,27,627,0,1,1,14,16,6027,1,32003
+Virgin Hotels Las Vegas,2021,"Paradise, NV",1,1,32,17,3217,0,1,1,14,16,32017,1,32003
+Virgin Hotels Las Vegas,2021,"Paradise, NV",1,1,32,23,3223,0,1,1,14,16,32023,1,32003
+Virgin Hotels Las Vegas,2021,"Paradise, NV",1,1,6,71,671,0,1,1,17,19,6071,0,32003
+Wendover,2004,"West Wendover, NV",1,1,32,7,3207,1,0,1,1,1,32007,0,32007
+Wendover,2004,"West Wendover, NV",1,1,16,31,1631,0,1,1,1,1,16031,0,32007
+Wendover,2004,"West Wendover, NV",1,1,16,73,1673,0,1,1,1,1,16073,0,32007
+Wendover,2004,"West Wendover, NV",1,1,16,83,1683,0,1,1,1,1,16083,0,32007
+Wendover,2004,"West Wendover, NV",1,1,32,11,3211,0,1,1,1,1,32011,0,32007
+Wendover,2004,"West Wendover, NV",1,1,32,13,3213,0,1,1,1,1,32013,0,32007
+Wendover,2004,"West Wendover, NV",1,1,32,15,3215,0,1,1,1,1,32015,0,32007
+Wendover,2004,"West Wendover, NV",1,1,32,33,3233,0,1,1,1,1,32033,0,32007
+Wendover,2004,"West Wendover, NV",1,1,49,3,4903,0,1,1,1,1,49003,0,32007
+Wendover,2004,"West Wendover, NV",1,1,49,45,4945,0,1,1,1,1,49045,1,32007
+Wind Creek Bethlehem,2009,"Bethlehem, PA",1,1,42,77,4277,0,1,1,2,2,42077,0,42095
+Wind Creek Bethlehem,2009,"Bethlehem, PA",1,1,42,95,4295,1,0,1,2,3,42095,0,42095
+Wind Creek Bethlehem,2009,"Bethlehem, PA",1,1,34,41,3441,0,1,1,3,3,34041,0,42095
+Wind Creek Bethlehem,2009,"Bethlehem, PA",1,1,42,25,4225,0,1,1,3,3,42025,1,42095
+Wind Creek Bethlehem,2009,"Bethlehem, PA",1,1,42,89,4289,0,1,1,3,3,42089,1,42095
+Wind Creek Bethlehem,2009,"Bethlehem, PA",1,1,42,17,4217,0,1,1,2,5,42017,0,42095
+WinStar World Casino,2004,"Thackerville, OK",0,0,40,67,4067,0,1,1,1,1,40067,1,40085
+WinStar World Casino,2004,"Thackerville, OK",0,0,40,95,4095,0,1,1,1,1,40095,1,40085
+WinStar World Casino,2004,"Thackerville, OK",0,0,48,97,4897,0,1,1,1,1,48097,1,40085
+WinStar World Casino,2004,"Thackerville, OK",0,0,48,181,4981,0,1,1,1,1,48181,1,40085
+WinStar World Casino,2004,"Thackerville, OK",0,0,48,337,5137,0,1,1,1,1,48337,1,40085
+WinStar World Casino,2004,"Thackerville, OK",1,1,40,85,4085,1,0,1,2,2,40085,0,40085
+WinStar World Casino,2004,"Thackerville, OK",1,1,40,19,4019,0,1,1,2,2,40019,1,40085
+Wynn Las Vegas,2005,"Las Vegas, NV",1,1,32,3,3203,1,0,1,1,16,32003,0,32003
+Wynn Las Vegas,2005,"Las Vegas, NV",1,1,4,15,415,0,1,1,4,16,4015,1,32003
+Wynn Las Vegas,2005,"Las Vegas, NV",1,1,6,27,627,0,1,1,4,16,6027,1,32003
+Wynn Las Vegas,2005,"Las Vegas, NV",1,1,32,17,3217,0,1,1,4,16,32017,1,32003
+Wynn Las Vegas,2005,"Las Vegas, NV",1,1,32,23,3223,0,1,1,4,16,32023,1,32003
+Wynn Las Vegas,2005,"Las Vegas, NV",1,1,6,71,671,0,1,1,5,19,6071,1,32003
+Yellow Brick Road Casino,2015,"Chittenango, NY",0,0,36,67,3667,1,0,1,1,1,36067,0,36067
+Yellow Brick Road Casino,2015,"Chittenango, NY",0,0,36,11,3611,0,1,1,1,1,36011,1,36067
+Yellow Brick Road Casino,2015,"Chittenango, NY",0,0,36,23,3623,0,1,1,1,1,36023,1,36067
+Yellow Brick Road Casino,2015,"Chittenango, NY",0,0,36,53,3653,0,1,1,1,1,36053,1,36067
+Yellow Brick Road Casino,2015,"Chittenango, NY",0,0,36,75,3675,0,1,1,1,1,36075,0,36067

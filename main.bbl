@@ -58,47 +58,23 @@
       \range{pages}{31}
     \endentry
     \entry{chetty2026opportunity}{article}{}
-      \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=7a853740afbc544905334cf607b3cd51}{%
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=deaa1305c24902426f9a9ca6e883ca1b}{%
            family={Chetty},
            familyi={C\bibinitperiod},
-           given={Raj},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=fb2eb6a3bea93fb3238fb8e1de2cf006}{%
-           family={Friedman},
-           familyi={F\bibinitperiod},
-           given={John\bibnamedelima N},
-           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8dddc1bd4014bf50f037b3b8772994dd}{%
-           family={Hendren},
-           familyi={H\bibinitperiod},
-           given={Nathaniel},
-           giveni={N\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=229a1ce3cd3de5c577d260fad8077dfd}{%
-           family={Jones},
-           familyi={J\bibinitperiod},
-           given={Maggie\bibnamedelima R},
-           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2222abe277b80e00ef366c6b4775419c}{%
-           family={Porter},
-           familyi={P\bibinitperiod},
-           given={Sonya\bibnamedelima R},
-           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Raj\bibnamedelimb et\bibnamedelima al.},
+           giveni={R\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim a\bibinitperiod},
            givenun=0}}%
       }
       \list{publisher}{1}{%
-        {American Economic Association 2014 Broadway, Suite 305, Nashville, TN 37203}%
+        {American Economic Association}%
       }
-      \strng{namehash}{de9f176c59c95a4d2de134921515d461}
-      \strng{fullhash}{e3fa546baf0cba3574fb219c82759ea1}
-      \strng{bibnamehash}{de9f176c59c95a4d2de134921515d461}
-      \strng{authorbibnamehash}{de9f176c59c95a4d2de134921515d461}
-      \strng{authornamehash}{de9f176c59c95a4d2de134921515d461}
-      \strng{authorfullhash}{e3fa546baf0cba3574fb219c82759ea1}
+      \strng{namehash}{deaa1305c24902426f9a9ca6e883ca1b}
+      \strng{fullhash}{deaa1305c24902426f9a9ca6e883ca1b}
+      \strng{bibnamehash}{deaa1305c24902426f9a9ca6e883ca1b}
+      \strng{authorbibnamehash}{deaa1305c24902426f9a9ca6e883ca1b}
+      \strng{authornamehash}{deaa1305c24902426f9a9ca6e883ca1b}
+      \strng{authorfullhash}{deaa1305c24902426f9a9ca6e883ca1b}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
@@ -170,41 +146,23 @@
       \range{pages}{25}
     \endentry
     \entry{doepke2023economics}{incollection}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=22db1f95704238ed92328666f9eb8b19}{%
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fc2a3fa2f02232e393a8065f363ca80e}{%
            family={Doepke},
            familyi={D\bibinitperiod},
-           given={Matthias},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=5e63bb52bde47a8a137d79bc575a9d66}{%
-           family={Hannusch},
-           familyi={H\bibinitperiod},
-           given={Anne},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=e742bf92690f6ed7efaea933f14929c8}{%
-           family={Kindermann},
-           familyi={K\bibinitperiod},
-           given={Fabian},
-           giveni={F\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1328223913df98c5f6def64a8cb40a82}{%
-           family={Tertilt},
-           familyi={T\bibinitperiod},
-           given={Michèle},
-           giveni={M\bibinitperiod},
+           given={Matthias\bibnamedelimb et\bibnamedelima al.},
+           giveni={M\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim a\bibinitperiod},
            givenun=0}}%
       }
       \list{publisher}{1}{%
         {Elsevier}%
       }
-      \strng{namehash}{57a6365ec9a1536161789e1252176c0a}
-      \strng{fullhash}{8c31bc2a2742a6c12fcfc28e14ab458a}
-      \strng{bibnamehash}{57a6365ec9a1536161789e1252176c0a}
-      \strng{authorbibnamehash}{57a6365ec9a1536161789e1252176c0a}
-      \strng{authornamehash}{57a6365ec9a1536161789e1252176c0a}
-      \strng{authorfullhash}{8c31bc2a2742a6c12fcfc28e14ab458a}
+      \strng{namehash}{fc2a3fa2f02232e393a8065f363ca80e}
+      \strng{fullhash}{fc2a3fa2f02232e393a8065f363ca80e}
+      \strng{bibnamehash}{fc2a3fa2f02232e393a8065f363ca80e}
+      \strng{authorbibnamehash}{fc2a3fa2f02232e393a8065f363ca80e}
+      \strng{authornamehash}{fc2a3fa2f02232e393a8065f363ca80e}
+      \strng{authorfullhash}{fc2a3fa2f02232e393a8065f363ca80e}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{extradatescope}{labelyear}
@@ -300,7 +258,7 @@
            givenun=0}}%
       }
       \list{publisher}{1}{%
-        {MIT Press 238 Main St., Suite 500, Cambridge, MA 02142-1046, USA journals~…}%
+        {MIT Press}%
       }
       \strng{namehash}{c7b864b51081c5a08945bc64d17bf087}
       \strng{fullhash}{c7b864b51081c5a08945bc64d17bf087}
@@ -700,50 +658,6 @@
       \verb{file}
       \verb Why Irving must say no to sands.pdf
       \endverb
-    \endentry
-    \entry{stitt2003does}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=de7c5c6947ae199cb6b7f00a1b483236}{%
-           family={Stitt},
-           familyi={S\bibinitperiod},
-           given={B\bibnamedelima Grant},
-           giveni={B\bibinitperiod\bibinitdelim G\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=864ae9c953500fdec0fafdbcf19b659d}{%
-           family={Nichols},
-           familyi={N\bibinitperiod},
-           given={Mark},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=3bb22298dbb79eb6b620223e3ec3a32f}{%
-           family={Giacopassi},
-           familyi={G\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Sage Publications}%
-      }
-      \strng{namehash}{ed67503805f78e013be7ab7391e71120}
-      \strng{fullhash}{ed67503805f78e013be7ab7391e71120}
-      \strng{bibnamehash}{ed67503805f78e013be7ab7391e71120}
-      \strng{authorbibnamehash}{ed67503805f78e013be7ab7391e71120}
-      \strng{authornamehash}{ed67503805f78e013be7ab7391e71120}
-      \strng{authorfullhash}{ed67503805f78e013be7ab7391e71120}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Crime \& Delinquency}
-      \field{number}{2}
-      \field{title}{Does the presence of casinos increase crime? An examination of casino and control communities}
-      \field{volume}{49}
-      \field{year}{2003}
-      \field{pages}{253\bibrangedash 284}
-      \range{pages}{32}
     \endentry
     \entry{wiley2011casino}{article}{}
       \name{author}{2}{}{%

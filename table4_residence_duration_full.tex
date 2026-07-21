@@ -1,0 +1,64 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Effects by Residence Duration: Number of Children:full}
+\begin{tabular}{l*{4}{c}}
+\hline\hline
+            &\multicolumn{2}{c}{Women}                  &\multicolumn{2}{c}{Men}                    \\\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+            &\multicolumn{1}{c}{Long-term (5+)}&\multicolumn{1}{c}{Recent (<5)}&\multicolumn{1}{c}{Long-term (5+)}&\multicolumn{1}{c}{Recent (<5)}\\
+\hline
+-5          &       0.040         &       0.048\sym{***}&       0.006         &       0.029\sym{**} \\
+            &     (0.025)         &     (0.010)         &     (0.024)         &     (0.013)         \\
+[1em]
+-4          &       0.056\sym{***}&       0.028\sym{***}&      -0.007         &       0.019         \\
+            &     (0.021)         &     (0.010)         &     (0.019)         &     (0.012)         \\
+[1em]
+-3          &       0.027         &       0.027\sym{***}&      -0.018         &       0.005         \\
+            &     (0.021)         &     (0.010)         &     (0.015)         &     (0.010)         \\
+[1em]
+-2          &       0.037\sym{**} &       0.024\sym{***}&      -0.015         &       0.000         \\
+            &     (0.016)         &     (0.009)         &     (0.021)         &     (0.010)         \\
+[1em]
+0           &      -0.036\sym{**} &       0.003         &      -0.073\sym{***}&      -0.001         \\
+            &     (0.016)         &     (0.009)         &     (0.013)         &     (0.009)         \\
+[1em]
+1           &      -0.047\sym{**} &      -0.009         &      -0.047\sym{**} &      -0.003         \\
+            &     (0.020)         &     (0.012)         &     (0.021)         &     (0.013)         \\
+[1em]
+2           &      -0.048\sym{*}  &       0.008         &      -0.082\sym{***}&      -0.004         \\
+            &     (0.026)         &     (0.011)         &     (0.018)         &     (0.009)         \\
+[1em]
+3           &      -0.012         &      -0.004         &      -0.068\sym{***}&       0.002         \\
+            &     (0.017)         &     (0.013)         &     (0.017)         &     (0.013)         \\
+[1em]
+4           &      -0.046\sym{*}  &      -0.015         &      -0.071\sym{***}&      -0.009         \\
+            &     (0.027)         &     (0.014)         &     (0.024)         &     (0.012)         \\
+[1em]
+5           &      -0.064\sym{*}  &      -0.021         &      -0.101\sym{***}&      -0.019         \\
+            &     (0.036)         &     (0.015)         &     (0.024)         &     (0.014)         \\
+[1em]
+6           &      -0.063\sym{***}&      -0.018         &      -0.079\sym{***}&      -0.014         \\
+            &     (0.023)         &     (0.015)         &     (0.018)         &     (0.013)         \\
+[1em]
+7           &      -0.085\sym{***}&      -0.029\sym{*}  &      -0.103\sym{***}&      -0.017         \\
+            &     (0.032)         &     (0.016)         &     (0.021)         &     (0.015)         \\
+[1em]
+8           &      -0.098\sym{**} &      -0.035\sym{**} &      -0.102\sym{***}&      -0.006         \\
+            &     (0.048)         &     (0.014)         &     (0.039)         &     (0.009)         \\
+[1em]
+9           &      -0.070\sym{**} &      -0.038\sym{**} &      -0.087\sym{**} &      -0.014         \\
+            &     (0.032)         &     (0.016)         &     (0.044)         &     (0.010)         \\
+[1em]
+10+         &      -0.083\sym{***}&      -0.049\sym{***}&      -0.097\sym{***}&      -0.033\sym{***}\\
+            &     (0.026)         &     (0.016)         &     (0.020)         &     (0.011)         \\
+\hline
+Observations&   1,253,957         &   5,582,166         &   1,156,241         &   5,775,546         \\
+Within R-squared&       0.110         &       0.214         &       0.124         &       0.160         \\
+\hline\hline
+\multicolumn{5}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{5}{l}{\footnotesize Standard errors clustered at county level in parentheses.}\\
+\multicolumn{5}{l}{\footnotesize Long-term = 5+ years in residence, Recent = <5 years in residence.}\\
+\multicolumn{5}{l}{\footnotesize Donut sample excludes nearby counties. *** p<0.01, ** p<0.05, * p<0.1.}\\
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}

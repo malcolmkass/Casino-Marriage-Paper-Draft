@@ -1,0 +1,33 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Step 5: Placebo Event Study (fake treatment = treat\_year - 3)}
+\begin{tabular}{l*{4}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+            &\multicolumn{1}{c}{Total Pop}&\multicolumn{1}{c}{Child-Rearing}&\multicolumn{1}{c}{Children}&\multicolumn{1}{c}{School-Age}\\
+\hline
+plac\_lag3   &      -0.013         &      -0.027\sym{**} &       0.006         &       0.006         \\
+            &     (0.008)         &     (0.011)         &     (0.026)         &     (0.025)         \\
+[1em]
+plac\_lag2   &      -0.018\sym{**} &      -0.020\sym{*}  &      -0.021         &      -0.011         \\
+            &     (0.008)         &     (0.010)         &     (0.022)         &     (0.024)         \\
+[1em]
+plac\_lead0  &      -0.013         &       0.013         &      -0.027         &      -0.033         \\
+            &     (0.009)         &     (0.016)         &     (0.022)         &     (0.024)         \\
+[1em]
+plac\_lead1  &      -0.006         &       0.002         &      -0.010         &      -0.016         \\
+            &     (0.011)         &     (0.016)         &     (0.025)         &     (0.028)         \\
+[1em]
+plac\_lead2  &      -0.011         &       0.009         &      -0.028         &      -0.032         \\
+            &     (0.013)         &     (0.014)         &     (0.027)         &     (0.029)         \\
+\hline
+F (placebo posts=0)&       1.122         &       0.405         &       3.653         &       3.028         \\
+p-value     &      0.3397         &      0.7496         &      0.0127         &      0.0294         \\
+Obs         &       5,932         &       5,932         &       5,932         &       5,932         \\
+Within R^2  &       0.000         &       0.000         &       0.000         &       0.000         \\
+\hline\hline
+\multicolumn{5}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{5}{l}{\footnotesize Sample restricted to pre-true-treatment data.  SEs clustered at county.}\\
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}

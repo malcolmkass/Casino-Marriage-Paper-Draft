@@ -1,0 +1,22 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Pretrends examination on family formation}
+\begin{tabular}{l*{6}{c}}
+\hline\hline
+            &\multicolumn{3}{c}{Women}                                        &\multicolumn{3}{c}{Men}                                          \\\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}\\
+            &\multicolumn{1}{c}{Marriage}&\multicolumn{1}{c}{Has Children}&\multicolumn{1}{c}{Num Children}&\multicolumn{1}{c}{Marriage}&\multicolumn{1}{c}{Has Children}&\multicolumn{1}{c}{Num Children}\\
+\hline
+casino\_county&     -0.0280\sym{*}  &     -0.0020         &      0.0297         &     -0.0192\sym{*}  &     -0.0058         &      0.0098         \\
+            &    (0.0152)         &    (0.0116)         &    (0.0300)         &    (0.0100)         &    (0.0097)         &    (0.0260)         \\
+\hline
+Observations&   4,619,427         &   4,619,427         &   4,619,427         &   4,802,349         &   4,802,349         &   4,802,349         \\
+Within R-squared&       0.177         &       0.231         &       0.212         &       0.171         &       0.175         &       0.158         \\
+\hline\hline
+\multicolumn{7}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{7}{l}{\footnotesize Standard errors clustered at county level in parentheses.}\\
+\multicolumn{7}{l}{\footnotesize All regressions include year fixed effects, age and age squared. Only pretreatment data included.}\\
+\multicolumn{7}{l}{\footnotesize Donut sample excludes nearby counties. *** p<0.01, ** p<0.05, * p<0.1.}\\
+\multicolumn{7}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}

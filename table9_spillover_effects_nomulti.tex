@@ -1,0 +1,24 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Spillover Effects: Casino vs Nearby Counties: No multi counties or pre 2005 data}
+\begin{tabular}{l*{4}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+            &\multicolumn{1}{c}{Fertility (W)}&\multicolumn{1}{c}{Fertility (M)}&\multicolumn{1}{c}{Child Pop}&\multicolumn{1}{c}{Religious}\\
+\hline
+Casino County × Post&     -0.0381\sym{***}&     -0.0222\sym{**} &     -0.0471\sym{*}  &    -12.7848         \\
+            &    (0.0068)         &    (0.0096)         &    (0.0274)         &   (15.8363)         \\
+[1em]
+Nearby County × Post&     -0.0133         &     -0.0121         &     -0.0196         &     17.9714\sym{**} \\
+            &    (0.0106)         &    (0.0080)         &    (0.0123)         &    (8.0712)         \\
+\hline
+Observations&   6,671,080         &   6,769,262         &       7,491         &       9,415         \\
+Within R-squared&       0.225         &       0.192         &       0.002         &       0.005         \\
+\hline\hline
+\multicolumn{5}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{5}{l}{\footnotesize Standard errors clustered at county level in parentheses.}\\
+\multicolumn{5}{l}{\footnotesize Tests for spillover effects to nearby counties. Justifies donut design.}\\
+\multicolumn{5}{l}{\footnotesize Reference group: control counties. *** p<0.01, ** p<0.05, * p<0.1.}\\
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}

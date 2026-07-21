@@ -1,0 +1,23 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Summary Statistics by County Type: All counties}
+\begin{tabular}{l*{3}{cc}}
+\hline\hline
+            &\multicolumn{2}{c}{(1)}  &\multicolumn{2}{c}{(2)}  &\multicolumn{2}{c}{(3)}  \\
+            &\multicolumn{2}{c}{Casino Counties}&\multicolumn{2}{c}{Nearby Counties}&\multicolumn{2}{c}{Control Counties}\\
+            &        mean&          sd&        mean&          sd&        mean&          sd\\
+\hline
+married     &       0.309&       0.462&       0.336&       0.472&       0.352&       0.478\\
+has\_children&       0.343&       0.475&       0.368&       0.482&       0.387&       0.487\\
+num\_children&       0.689&       1.133&       0.745&       1.163&       0.782&       1.177\\
+female      &       0.496&       0.500&       0.495&       0.500&       0.493&       0.500\\
+age         &      29.061&       6.555&      28.978&       6.637&      28.861&       6.679\\
+white       &       0.581&       0.493&       0.654&       0.476&       0.698&       0.459\\
+black       &       0.156&       0.363&       0.122&       0.327&       0.134&       0.341\\
+hispanic    &       0.280&       0.449&       0.232&       0.422&       0.179&       0.383\\
+\hline
+\(N\)       &     2696828&            &     2295156&            &    11338207&            \\
+\hline\hline
+\multicolumn{7}{l}{\footnotesize Notes: Individual-level statistics weighted by person weights. Sample includes individuals aged 18-40.}\\
+\end{tabular}
+\end{table}

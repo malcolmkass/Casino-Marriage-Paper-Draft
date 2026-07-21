@@ -1,0 +1,57 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Population Effects by Age Group: no multiple casino openings}
+\begin{tabular}{l*{4}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{Total Pop}&\multicolumn{1}{c}{Child-Rearing}&\multicolumn{1}{c}{Children}&\multicolumn{1}{c}{School-Age}\\\cmidrule(lr){2-2}\cmidrule(lr){3-3}\cmidrule(lr){4-4}\cmidrule(lr){5-5}
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+            &\multicolumn{1}{c}{ln\_total\_pop}&\multicolumn{1}{c}{ln\_child\_rearing\_pop}&\multicolumn{1}{c}{ln\_children\_pop}&\multicolumn{1}{c}{ln\_school\_age\_pop}\\
+\hline
+t-5         &      -0.026\sym{*}  &      -0.041\sym{**} &      -0.017         &      -0.010         \\
+            &     (0.015)         &     (0.018)         &     (0.019)         &     (0.023)         \\
+[1em]
+t-4         &      -0.021         &      -0.036\sym{*}  &      -0.013         &      -0.021         \\
+            &     (0.015)         &     (0.020)         &     (0.018)         &     (0.021)         \\
+[1em]
+t-3         &      -0.019         &      -0.006         &      -0.021         &      -0.029         \\
+            &     (0.013)         &     (0.015)         &     (0.019)         &     (0.021)         \\
+[1em]
+t-2         &       0.005         &      -0.006         &       0.018         &       0.016\sym{*}  \\
+            &     (0.007)         &     (0.012)         &     (0.011)         &     (0.009)         \\
+[1em]
+t           &      -0.008         &      -0.029\sym{***}&      -0.012         &      -0.012         \\
+            &     (0.007)         &     (0.010)         &     (0.010)         &     (0.011)         \\
+[1em]
+t+1         &      -0.012         &      -0.026\sym{**} &      -0.012         &      -0.014         \\
+            &     (0.008)         &     (0.011)         &     (0.014)         &     (0.014)         \\
+[1em]
+t+2         &      -0.028\sym{**} &      -0.028\sym{*}  &      -0.034\sym{*}  &      -0.038\sym{*}  \\
+            &     (0.014)         &     (0.015)         &     (0.020)         &     (0.022)         \\
+[1em]
+t+3         &      -0.033\sym{*}  &      -0.034         &      -0.038         &      -0.039         \\
+            &     (0.019)         &     (0.024)         &     (0.025)         &     (0.027)         \\
+[1em]
+t+4         &      -0.039\sym{*}  &      -0.040\sym{*}  &      -0.052\sym{*}  &      -0.052\sym{*}  \\
+            &     (0.020)         &     (0.024)         &     (0.027)         &     (0.029)         \\
+[1em]
+t+5         &      -0.039\sym{*}  &      -0.037         &      -0.057\sym{**} &      -0.057\sym{*}  \\
+            &     (0.022)         &     (0.028)         &     (0.029)         &     (0.030)         \\
+[1em]
+t+6         &      -0.047\sym{*}  &      -0.044         &      -0.064\sym{**} &      -0.065\sym{**} \\
+            &     (0.024)         &     (0.029)         &     (0.030)         &     (0.033)         \\
+[1em]
+t+7         &      -0.058\sym{**} &      -0.055\sym{**} &      -0.070\sym{**} &      -0.071\sym{*}  \\
+            &     (0.025)         &     (0.028)         &     (0.032)         &     (0.036)         \\
+[1em]
+t+8+        &      -0.056\sym{*}  &      -0.050         &      -0.058         &      -0.064         \\
+            &     (0.032)         &     (0.033)         &     (0.039)         &     (0.045)         \\
+\hline
+Observations&       6,091         &       6,091         &       6,091         &       6,091         \\
+Within R-squared&       0.002         &       0.001         &       0.002         &       0.002         \\
+\hline\hline
+\multicolumn{5}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{5}{l}{\footnotesize Standard errors clustered at county level in parentheses.}\\
+\multicolumn{5}{l}{\footnotesize Donut sample excludes nearby counties. All variables in logs.}\\
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}

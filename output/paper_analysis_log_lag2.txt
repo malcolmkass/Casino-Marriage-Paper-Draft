@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  C:\Users\mkass\IT Advanced Dropbox\Malcolm Kass\Casino-Marriage-Paper-Draft\output/paper_analysis_log_lag2.txt
+  log type:  text
+ opened on:   4 Jun 2026, 08:21:59
+
+. 
+. * Install required packages if needed
+. capture ssc install coefplot
+

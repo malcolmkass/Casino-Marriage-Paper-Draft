@@ -1,0 +1,30 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Step 9b: Pre-trend heterogeneity by gender (fertility)}
+\begin{tabular}{l*{2}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}\\
+            &\multicolumn{1}{c}{Women}&\multicolumn{1}{c}{Men}\\
+\hline
+lag5        &      0.0609\sym{***}&      0.0147         \\
+            &      (4.27)         &      (1.67)         \\
+[1em]
+lag4        &      0.0138         &     0.00939         \\
+            &      (0.90)         &      (0.65)         \\
+[1em]
+lag3        &      0.0240         &      0.0116         \\
+            &      (1.08)         &      (1.29)         \\
+[1em]
+lag2        &      0.0412\sym{*}  &      0.0150         \\
+            &      (1.98)         &      (0.96)         \\
+\hline
+Pre-trend F &       5.977         &       1.150         \\
+p-value     &      0.0001         &      0.3327         \\
+Obs         &   5,969,092         &   6,064,014         \\
+Within R^2  &       0.225         &       0.192         \\
+\hline\hline
+\multicolumn{3}{l}{\footnotesize \textit{t} statistics in parentheses}\\
+\multicolumn{3}{l}{\footnotesize Joint F(lag5..lag2 = 0).  SEs clustered at county.}\\
+\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+\end{table}

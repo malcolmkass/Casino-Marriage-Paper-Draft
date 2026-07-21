@@ -1,0 +1,57 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Population Effects by Age Group}
+\begin{tabular}{l*{4}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{Total Pop}&\multicolumn{1}{c}{Child-Rearing}&\multicolumn{1}{c}{Children}&\multicolumn{1}{c}{School-Age}\\\cmidrule(lr){2-2}\cmidrule(lr){3-3}\cmidrule(lr){4-4}\cmidrule(lr){5-5}
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+            &\multicolumn{1}{c}{ln\_total\_pop}&\multicolumn{1}{c}{ln\_child\_rearing\_pop}&\multicolumn{1}{c}{ln\_children\_pop}&\multicolumn{1}{c}{ln\_school\_age\_pop}\\
+\hline
+t-5         &      -0.010         &      -0.008         &      -0.006         &      -0.010         \\
+            &     (0.022)         &     (0.050)         &     (0.008)         &     (0.008)         \\
+[1em]
+t-4         &       0.005         &      -0.011         &       0.030\sym{***}&       0.019         \\
+            &     (0.015)         &     (0.030)         &     (0.011)         &     (0.013)         \\
+[1em]
+t-3         &       0.000         &       0.008         &       0.016         &       0.006         \\
+            &     (0.011)         &     (0.018)         &     (0.019)         &     (0.016)         \\
+[1em]
+t-2         &       0.001         &      -0.004         &       0.002         &      -0.008         \\
+            &     (0.005)         &     (0.016)         &     (0.014)         &     (0.014)         \\
+[1em]
+t           &       0.006         &       0.002         &      -0.004         &      -0.025         \\
+            &     (0.006)         &     (0.027)         &     (0.012)         &     (0.017)         \\
+[1em]
+t+1         &       0.012         &       0.020         &       0.021         &      -0.003         \\
+            &     (0.011)         &     (0.031)         &     (0.020)         &     (0.023)         \\
+[1em]
+t+2         &      -0.004         &       0.023         &       0.001         &      -0.011         \\
+            &     (0.013)         &     (0.020)         &     (0.017)         &     (0.018)         \\
+[1em]
+t+3         &       0.004         &       0.048\sym{*}  &       0.015         &       0.000         \\
+            &     (0.015)         &     (0.028)         &     (0.017)         &     (0.020)         \\
+[1em]
+t+4         &       0.001         &       0.028         &       0.004         &      -0.011         \\
+            &     (0.017)         &     (0.031)         &     (0.019)         &     (0.023)         \\
+[1em]
+t+5         &       0.004         &       0.045         &      -0.001         &      -0.022         \\
+            &     (0.019)         &     (0.031)         &     (0.021)         &     (0.028)         \\
+[1em]
+t+6         &      -0.001         &       0.045\sym{*}  &      -0.003         &      -0.020         \\
+            &     (0.020)         &     (0.027)         &     (0.024)         &     (0.030)         \\
+[1em]
+t+7         &      -0.005         &       0.041         &      -0.001         &      -0.005         \\
+            &     (0.019)         &     (0.026)         &     (0.025)         &     (0.027)         \\
+[1em]
+t+8+        &       0.005         &       0.053\sym{*}  &       0.019         &       0.009         \\
+            &     (0.024)         &     (0.031)         &     (0.028)         &     (0.033)         \\
+\hline
+Observations&       5,993         &       5,993         &       5,993         &       5,993         \\
+Within R-squared&       0.000         &       0.001         &       0.000         &       0.000         \\
+\hline\hline
+\multicolumn{5}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{5}{l}{\footnotesize Standard errors clustered at county level in parentheses.}\\
+\multicolumn{5}{l}{\footnotesize Donut sample excludes nearby counties. All variables in logs.}\\
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}

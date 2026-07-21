@@ -1,0 +1,57 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{School Population and Enrollment Effects}
+\begin{tabular}{l*{3}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+            &\multicolumn{1}{c}{School-Age Pop}&\multicolumn{1}{c}{Total Enrollment}&\multicolumn{1}{c}{Public Enrollment}\\
+\hline
+t-5         &       0.006         &       0.006         &       0.017         \\
+            &     (0.016)         &     (0.016)         &     (0.018)         \\
+[1em]
+t-4         &      -0.007         &      -0.007         &       0.001         \\
+            &     (0.015)         &     (0.016)         &     (0.019)         \\
+[1em]
+t-3         &      -0.032\sym{**} &      -0.031\sym{*}  &      -0.023         \\
+            &     (0.016)         &     (0.016)         &     (0.016)         \\
+[1em]
+t-2         &       0.007         &       0.010         &       0.023\sym{**} \\
+            &     (0.006)         &     (0.006)         &     (0.009)         \\
+[1em]
+t           &      -0.015\sym{**} &      -0.012\sym{*}  &      -0.009         \\
+            &     (0.006)         &     (0.007)         &     (0.008)         \\
+[1em]
+t+1         &      -0.020\sym{***}&      -0.015\sym{*}  &      -0.002         \\
+            &     (0.007)         &     (0.008)         &     (0.010)         \\
+[1em]
+t+2         &      -0.033\sym{***}&      -0.030\sym{***}&      -0.014         \\
+            &     (0.009)         &     (0.010)         &     (0.012)         \\
+[1em]
+t+3         &      -0.040\sym{***}&      -0.037\sym{***}&      -0.021         \\
+            &     (0.011)         &     (0.011)         &     (0.013)         \\
+[1em]
+t+4         &      -0.046\sym{***}&      -0.046\sym{***}&      -0.021         \\
+            &     (0.012)         &     (0.013)         &     (0.015)         \\
+[1em]
+t+5         &      -0.048\sym{***}&      -0.047\sym{***}&      -0.027\sym{*}  \\
+            &     (0.013)         &     (0.014)         &     (0.015)         \\
+[1em]
+t+6         &      -0.056\sym{***}&      -0.052\sym{***}&      -0.026         \\
+            &     (0.014)         &     (0.015)         &     (0.016)         \\
+[1em]
+t+7         &      -0.061\sym{***}&      -0.057\sym{***}&      -0.040\sym{**} \\
+            &     (0.016)         &     (0.016)         &     (0.017)         \\
+[1em]
+t+8+        &      -0.058\sym{***}&      -0.057\sym{***}&      -0.030         \\
+            &     (0.021)         &     (0.021)         &     (0.020)         \\
+\hline
+Observations&       6,946         &       6,946         &       6,946         \\
+Within R-squared&       0.004         &       0.004         &       0.002         \\
+\hline\hline
+\multicolumn{4}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{4}{l}{\footnotesize Standard errors clustered at county level in parentheses.}\\
+\multicolumn{4}{l}{\footnotesize All variables in logs. School-age = 5-17 years.}\\
+\multicolumn{4}{l}{\footnotesize Donut sample excludes nearby counties. *** p<0.01, ** p<0.05, * p<0.1.}\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}

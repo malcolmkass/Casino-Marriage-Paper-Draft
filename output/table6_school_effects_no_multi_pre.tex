@@ -1,0 +1,57 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{School Population and Enrollment Effects: No multi or pre casino counties}
+\begin{tabular}{l*{3}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+            &\multicolumn{1}{c}{School-Age Pop}&\multicolumn{1}{c}{Total Enrollment}&\multicolumn{1}{c}{Public Enrollment}\\
+\hline
+t-5         &      -0.008         &      -0.014         &       0.014         \\
+            &     (0.008)         &     (0.010)         &     (0.031)         \\
+[1em]
+t-4         &       0.019         &       0.017         &       0.055         \\
+            &     (0.013)         &     (0.021)         &     (0.047)         \\
+[1em]
+t-3         &       0.007         &       0.011         &       0.033\sym{*}  \\
+            &     (0.016)         &     (0.012)         &     (0.019)         \\
+[1em]
+t-2         &      -0.008         &      -0.013         &       0.020         \\
+            &     (0.014)         &     (0.010)         &     (0.026)         \\
+[1em]
+t           &      -0.024         &      -0.021         &      -0.008         \\
+            &     (0.017)         &     (0.020)         &     (0.024)         \\
+[1em]
+t+1         &      -0.020         &      -0.017         &       0.013         \\
+            &     (0.016)         &     (0.017)         &     (0.023)         \\
+[1em]
+t+2         &      -0.010         &      -0.007         &       0.028         \\
+            &     (0.015)         &     (0.018)         &     (0.037)         \\
+[1em]
+t+3         &       0.012         &       0.019         &       0.029         \\
+            &     (0.015)         &     (0.013)         &     (0.022)         \\
+[1em]
+t+4         &      -0.010         &      -0.012         &       0.029         \\
+            &     (0.021)         &     (0.021)         &     (0.022)         \\
+[1em]
+t+5         &      -0.007         &      -0.009         &       0.019         \\
+            &     (0.026)         &     (0.026)         &     (0.024)         \\
+[1em]
+t+6         &      -0.011         &      -0.013         &       0.030         \\
+            &     (0.031)         &     (0.034)         &     (0.032)         \\
+[1em]
+t+7         &       0.019         &       0.019         &       0.048\sym{**} \\
+            &     (0.024)         &     (0.022)         &     (0.019)         \\
+[1em]
+t+8+        &       0.003         &       0.006         &       0.045         \\
+            &     (0.037)         &     (0.034)         &     (0.028)         \\
+\hline
+Observations&       6,213         &       6,213         &       6,213         \\
+Within R-squared&       0.000         &       0.000         &       0.000         \\
+\hline\hline
+\multicolumn{4}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{4}{l}{\footnotesize Standard errors clustered at county level in parentheses.}\\
+\multicolumn{4}{l}{\footnotesize All variables in logs. School-age = 5-17 years.}\\
+\multicolumn{4}{l}{\footnotesize Donut sample excludes nearby counties. *** p<0.01, ** p<0.05, * p<0.1.}\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}

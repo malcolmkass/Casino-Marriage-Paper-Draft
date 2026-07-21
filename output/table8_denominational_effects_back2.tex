@@ -1,0 +1,23 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Religious Effects by Denomination}
+\begin{tabular}{l*{8}{c}}
+\hline\hline
+            &\multicolumn{2}{c}{Catholic}               &\multicolumn{2}{c}{Evangelical}            &\multicolumn{2}{c}{Mainline}               &\multicolumn{2}{c}{Southern Baptist}       \\\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}&\multicolumn{1}{c}{(7)}&\multicolumn{1}{c}{(8)}\\
+            &\multicolumn{1}{c}{Baseline}&\multicolumn{1}{c}{State-Yr FE}&\multicolumn{1}{c}{Baseline}&\multicolumn{1}{c}{State-Yr FE}&\multicolumn{1}{c}{Baseline}&\multicolumn{1}{c}{State-Yr FE}&\multicolumn{1}{c}{Baseline}&\multicolumn{1}{c}{State-Yr FE}\\
+\hline
+post\_treatment\_back2&     -70.411\sym{***}&     -47.751\sym{***}&      53.207\sym{***}&      15.729\sym{***}&      18.853\sym{***}&      12.534\sym{***}&      39.986\sym{***}&       4.247\sym{**} \\
+            &    (22.377)         &    (12.443)         &     (6.363)         &     (3.585)         &     (6.661)         &     (3.158)         &     (4.727)         &     (2.071)         \\
+\hline
+Observations&       9,229         &       9,226         &       9,395         &       9,392         &       9,384         &       9,381         &       8,102         &       8,099         \\
+Within R-squared&       0.041         &       0.034         &       0.033         &       0.006         &       0.017         &       0.013         &       0.027         &       0.001         \\
+\hline\hline
+\multicolumn{9}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{9}{l}{\footnotesize Standard errors clustered at county level in parentheses.}\\
+\multicolumn{9}{l}{\footnotesize Dependent variables: denomination adherents per 1,000 population.}\\
+\multicolumn{9}{l}{\footnotesize Baseline = county + year FE. State-Yr FE = county + state-year FE.}\\
+\multicolumn{9}{l}{\footnotesize *** p<0.01, ** p<0.05, * p<0.1.}\\
+\multicolumn{9}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}
